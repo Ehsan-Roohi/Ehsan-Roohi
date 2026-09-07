@@ -11,7 +11,10 @@ Checked 7 September 2026. This file documents the profile README rather than add
 - Selected articles: DOI publisher pages and Crossref title/author records, cross-checked with the author's website and FlowMLLab bibliography.
 - Preprint title/status: https://arxiv.org/abs/2609.01637
 - Linked software: public repository metadata inspected through GitHub. Private repositories are not listed.
+- Official YouTube identity and selected video titles: https://www.youtube.com/@Ehsan_Roohi (channel ID `UCUoIP0tGCwpkx0SB4rkvQBA`), checked 7 September 2026. Direct video links and thumbnails use the public YouTube video IDs.
 
 The thematic organization was inspired by https://github.com/pswpswpsw as requested by Ehsan Roohi. The profile wording is original and does not transfer that researcher's affiliations, projects, achievements or research claims to this profile.
+
+The separate visual research page was inspired by the project-by-project video-and-explanation structure at https://sites.google.com/view/itsanikesh/research, as requested by Ehsan Roohi. Its text, grouping, citations and evidence cautions are original; no content or research claim was copied from that site.
 
 No citation counts, h-index, journal impact factors, unverified awards or claims of independently reproduced article accuracy are included. Collaborators receive credit in the publication and book entries. Current research is separated from journal articles. The profile does not grant a new license to linked software or data.

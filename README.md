@@ -6,7 +6,19 @@ I am a [Lecturer in Mechanical and Industrial Engineering at the University of M
 
 My work began with molecular–continuum modeling and direct simulation Monte Carlo (DSMC), and now also explores learned collision models, physics-informed neural networks and flow-field surrogates. A central question across these efforts is how to reduce computational cost while retaining the physical behavior that matters: conservation, fluctuations, transport and non-equilibrium effects.
 
-[UMass website](https://websites.umass.edu/roohie/) · [Google Scholar](https://scholar.google.com/citations?user=AWKLce4AAAAJ&hl=en) · [ORCID](https://orcid.org/0000-0001-5739-3210) · [Email](mailto:roohie@umass.edu)
+[Research portfolio](RESEARCH.md) · [UMass website](https://websites.umass.edu/roohie/) · [Google Scholar](https://scholar.google.com/citations?user=AWKLce4AAAAJ&hl=en) · [ORCID](https://orcid.org/0000-0001-5739-3210) · [YouTube](https://www.youtube.com/@Ehsan_Roohi) · [Email](mailto:roohie@umass.edu)
+
+## Research in motion
+
+Selected short visual explanations and simulation results from my official channel. The dedicated [research portfolio](RESEARCH.md) connects each video to the corresponding scientific question, publication or open artifact.
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="https://www.youtube.com/watch?v=SQxV9lnMc1I"><img src="https://img.youtube.com/vi/SQxV9lnMc1I/hqdefault.jpg" width="100%" alt="Mach 3 shock formation over a diamond airfoil"><br><b>Mach 3 shock formation</b></a><br><sub>MFC schlieren · diamond airfoil</sub></td>
+<td width="33%" align="center"><a href="https://www.youtube.com/watch?v=QBXaqeFriUk"><img src="https://img.youtube.com/vi/QBXaqeFriUk/hqdefault.jpg" width="100%" alt="Shock-aware artificial intelligence"><br><b>Shock-aware AI</b></a><br><sub>Learning across sharp flow features</sub></td>
+<td width="33%" align="center"><a href="https://www.youtube.com/watch?v=S6U-0hBSJ98"><img src="https://img.youtube.com/vi/S6U-0hBSJ98/hqdefault.jpg" width="100%" alt="Artificial intelligence for rarefied gas dynamics"><br><b>AI for rarefied gas dynamics</b></a><br><sub>Surrogates for kinetic-flow analysis</sub></td>
+</tr>
+</table>
 
 ## Research areas
 
@@ -17,6 +29,8 @@ My work began with molecular–continuum modeling and direct simulation Monte Ca
 - **Verification and reproducibility:** numerical benchmarks, explicit data provenance and comparisons with classical methods.
 
 ## Selected research
+
+For a visual, project-centered overview with videos, papers and software links, open the **[research portfolio](RESEARCH.md)**.
 
 ### Molecular simulation and collision algorithms
 
