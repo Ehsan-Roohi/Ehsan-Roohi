@@ -1,5 +1,21 @@
 # Profile source record
 
+## Real ML-results gallery — 8 September 2026
+
+Replaced the two introductory video thumbnails in RESEARCH.md with four real
+retained figures from FlowMLLab commit c157997d7c5e1b5318888ba790ca244f1759f87e.
+The videos remain as text links; unrelated galleries and profile videos are unchanged.
+Caption claims were checked against the source READMEs for
+results/abinitio_deeponet_cylinder, results/week11_research,
+results/week12_research, and results/week13_rectangular_pinn.
+Distinctions retained: later DeepONet versus paper MLP; unequal full-field times;
+development-test inference versus independently labelled segmentation accuracy;
+archived reconstruction versus new training; finite-sample DSMC reference;
+near-matched square PINN versus still-unvalidated deep cavities.
+Images are original repo outputs, embedded at pinned URLs without interpolation,
+retouching, cropping or invented scientific detail. No simulations were rerun
+for this profile update.
+
 ## Cavitation extension — 8 September 2026
 
 The user requested inclusion of cavitation. The original UMass research page

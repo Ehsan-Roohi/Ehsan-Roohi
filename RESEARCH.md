@@ -8,12 +8,33 @@ My research connects molecular simulation, rarefied-gas dynamics, computational 
 
 The central objective is not simply to replace a solver with a neural network. It is to identify where learned representations can reduce repeated computational cost while preserving the quantities that carry physical meaning: conservation, shock location, internal-energy relaxation, boundary loads and non-equilibrium transport.
 
-<table>
-<tr>
-<td width="48%" valign="top"><a href="https://www.youtube.com/watch?v=QBXaqeFriUk"><img src="https://img.youtube.com/vi/QBXaqeFriUk/hqdefault.jpg" width="100%" alt="Shock-aware artificial intelligence"><br><b>Watch: Shock-aware AI</b></a><br>A short introduction to why sharp fronts need physically meaningful evaluation rather than a single global error.</td>
-<td width="48%" valign="top"><a href="https://www.youtube.com/watch?v=S6U-0hBSJ98"><img src="https://img.youtube.com/vi/S6U-0hBSJ98/hqdefault.jpg" width="100%" alt="Artificial intelligence for rarefied gas dynamics"><br><b>Watch: AI for rarefied gas dynamics</b></a><br>An overview of learned models for computationally demanding kinetic-flow analysis.</td>
-</tr>
-</table>
+The gallery below shows retained numerical fields and model outputs, rather than promotional thumbnails. Each example links to its provenance and evaluation limits. Images are pinned to an archived Git commit; clicking opens the full-size figure.
+
+### Neural collision models — hypersonic cylinder
+
+<p align="center"><a href="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/abinitio_deeponet_cylinder/temperature_exact_deeponet.png"><img src="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/abinitio_deeponet_cylinder/temperature_exact_deeponet.png" width="1000" alt="Retained Jager argon cylinder temperature fields comparing exact-scattering and DeepONet collision runs"></a></p>
+
+**Research extension related to a published paper.** Retained Jäger Ar–Ar DSMC temperature fields compare exact-scattering and DeepONet collision runs. The full fields are from different output times (NOUT98 versus NOUT95), so this is not a time-matched error map. The July 2026 DeepONet package extends the research direction of [Physics of Fluids 38, 057123](https://doi.org/10.1063/5.0328463); that article describes an MLP, not this DeepONet checkpoint. [Data origin, sampling windows and surface comparisons](https://github.com/Ehsan-Roohi/FlowMLLab/blob/c157997d7c5e1b5318888ba790ca244f1759f87e/results/abinitio_deeponet_cylinder/README.md).
+
+### Learned shock and vortex-core identification
+
+<p align="center"><a href="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week11_research/airfoil_2.png"><img src="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week11_research/airfoil_2.png" width="1000" alt="Real airfoil density schlieren with learned shock fronts and vortex-core masks"></a></p>
+
+**Ongoing research.** A frozen research checkpoint identifies shock fronts and vortex cores on an existing CFD airfoil field. These are model predictions on a previously inspected development-test trajectory, not independent human-validated segmentation accuracy. No new CFD simulation or model training was performed to make this figure. [ShockVortexML](https://github.com/Ehsan-Roohi/ShockVortexML) · [Six retained inference examples and provenance](https://github.com/Ehsan-Roohi/FlowMLLab/blob/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week11_research/README.md).
+
+### Reconstruction of noisy DSMC moment fields
+
+<p align="center"><a href="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week12_research/cavity_qy_hero.png"><img src="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week12_research/cavity_qy_hero.png" width="1000" alt="Real DSMC cavity heat-flux observations, reference and archived reconstruction"></a></p>
+
+**Preprint-linked research archive.** Real cavity heat-flux fields at Kn = 0.085 and lid speed 350 m/s illustrate observation-conditioned reconstruction. This re-evaluation uses pre-existing DSMC samples and stored predictions, not synthetic noise or new training. Across eight seeds, the archived conditioned estimator's mean qy relative L2 error was 4.34%, compared with 17.61% for Raw(3); the reference itself is a finite-sample DSMC average. [Preprint: Geometry-native machine learning reconstruction of DSMC moment fields with support monitoring](https://arxiv.org/abs/2609.01637) · [Methods, eight-seed audit and limitations](https://github.com/Ehsan-Roohi/FlowMLLab/blob/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week12_research/README.md).
+
+### Physics-informed cavity flow
+
+<p align="center"><a href="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week13_rectangular_pinn/re100-d1/fields.png"><img src="https://raw.githubusercontent.com/Ehsan-Roohi/FlowMLLab/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week13_rectangular_pinn/re100-d1/fields.png" width="1000" alt="Actual Re100 square-cavity PINN speed, streamfunction and streamlines from an A100 training run"></a></p>
+
+**Computational pilot, not a published validation result.** A float64 A100 run uses a streamfunction PINN based on Chris McDevitt's DeepPlasma code, with 1,000 Adam and 3,000 SSBroyden2 steps. For this Re = 100 square case, the near-matched CFD vector-field difference is 3.34%; the lid regularization differs from the CFD reference and corner residuals remain significant. The deep-cavity cases are not presented as validated CFD matches. [Fields, loss curves and independent audits](https://github.com/Ehsan-Roohi/FlowMLLab/blob/c157997d7c5e1b5318888ba790ca244f1759f87e/results/week13_rectangular_pinn/README.md) · [McDevitt's original LDC code](https://github.com/cmcdevitt2/DeepPlasma/tree/main/LDC).
+
+For introductory talks, see [Shock-aware AI](https://www.youtube.com/watch?v=QBXaqeFriUk) and [AI for rarefied gas dynamics](https://www.youtube.com/watch?v=S6U-0hBSJ98).
 
 Selected papers and open artifacts:
 
