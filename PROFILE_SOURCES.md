@@ -1,5 +1,19 @@
 # Profile source record
 
+## Cavitation extension — 8 September 2026
+
+The user requested inclusion of cavitation. The original UMass research page
+identifies image-2-1.png as the Pendar–Roohi sphere case at sigma=0.45 and
+image-3-1024x534-1.png as the Mousavi–Roohi hydrofoil case at sigma=0.4.
+Both are embedded from https://websites.umass.edu/roohie/files/2025/05/,
+without cropping, forced height, or a new license assertion.
+Sphere title, authors, journal, pages and DOI were checked against the publisher:
+https://www.sciencedirect.com/science/article/abs/pii/S0301932216307868.
+The UMass page supplies the wettability and bio-inspired hydrofoil article links:
+https://www.sciencedirect.com/science/article/abs/pii/S1876107023001578 and
+https://www.sciencedirect.com/science/article/abs/pii/S0301932220305243.
+These archived multiphase results are distinguished from the cavity PINN campaign.
+
 ## Research-gallery extension — 8 September 2026
 
 Six original image URLs and adjacent descriptions were read directly from

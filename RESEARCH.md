@@ -90,6 +90,32 @@ Rarefaction introduces velocity slip, temperature jump, thermal polarization and
 
 For a consolidated review, see [A comprehensive review on micro- and nano-scale gas flow effects](https://doi.org/10.1016/j.physrep.2022.10.004), *Physics Reports* **997** (2023). The 2025 book [*Advances in Direct Simulation Monte Carlo*](https://doi.org/10.1007/978-981-96-8200-3) develops the broader kinetic-theory and application context.
 
+## Cavitation and multiphase-flow control
+
+My work with collaborators also investigates liquid–vapor flows: cavity formation and shedding, interactions with vortical structures, and ways to control cavitation through geometry and surface properties. This is a separate research direction from rarefied-gas DSMC, using continuum multiphase-flow simulation and large-eddy simulation (LES).
+
+### Cavitation around a sphere
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/image-2-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/image-2-1.png" width="800" alt="Velocity vectors over mean water volume fraction around a cavitating sphere at cavitation number 0.45"></a></p>
+
+Velocity vectors over the mean water volume fraction at cavitation number **σ = 0.45**. The UMass caption identifies boundary-layer separation near 96° and cavity inception near 76°. The study examines unsteady partial and supercavitation, including cavity evolution and vortex shedding.
+
+**Paper:** Mohammad-Reza Pendar and Ehsan Roohi, [Cavitation characteristics around a sphere: An LES investigation](https://doi.org/10.1016/j.ijmultiphaseflow.2017.08.013), *International Journal of Multiphase Flow* **98**, 1–23 (2018). [Original figure and caption](https://websites.umass.edu/roohie/research/).
+
+### Supercavitation and hybrid surface wettability
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/image-3-1024x534-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/image-3-1024x534-1.png" width="800" alt="Supercavitating flow around a hydrofoil at cavitation number 0.4"></a></p>
+
+Supercavitating hydrofoil flow at **σ = 0.4**, from the Mousavi–Roohi study identified on my UMass page. This research explores surface wettability as a means of modifying cavitating-flow structure.
+
+**Paper:** Mousavi and Roohi, [On the effects of hybrid surface wettability on the structure of cavitating flow using implicit large eddy simulation](https://www.sciencedirect.com/science/article/abs/pii/S1876107023001578), *Journal of the Taiwan Institute of Chemical Engineers* (2023). [Original figure and caption](https://websites.umass.edu/roohie/research/).
+
+### Bio-inspired hydrofoils
+
+Related work with Pendar investigates wavy leading-edge hydrofoils inspired by humpback-whale geometry, examining how geometric modifications influence cavitation. See the [International Journal of Multiphase Flow study linked from my UMass page](https://www.sciencedirect.com/science/article/abs/pii/S0301932220305243) and the broader [research gallery](https://websites.umass.edu/roohie/research/).
+
+These are figures from existing research, not newly executed simulations or results from the lid-driven-cavity PINN campaign.
+
 ## Open research and teaching
 
 [FlowMLLab](https://github.com/Ehsan-Roohi/FlowMLLab) turns selected, properly attributed research cases into reproducible lecture notes and executable audits. The course code, newly written baselines and teaching claims are kept distinct from the original paper solvers and article results. Case-level origin and reuse status are recorded in its [data provenance statement](https://github.com/Ehsan-Roohi/FlowMLLab/blob/main/DATA_PROVENANCE.md).
