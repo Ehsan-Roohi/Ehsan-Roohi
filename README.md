@@ -10,6 +10,8 @@ My work began with molecular–continuum modeling and direct simulation Monte Ca
 
 ## Research in motion
 
+Research without a video is featured too: **[hypersonic cylinder and biconic simulations](RESEARCH.md#hypersonic-dsmc-and-shock-structure)** and **[DSMC collision-model diagrams and benchmarks](RESEARCH.md#dsmc-collision-algorithms-and-non-equilibrium-transport)**, illustrated with figures from my UMass research page.
+
 Selected short visual explanations and simulation results from my official channel. The dedicated [research portfolio](RESEARCH.md) connects each video to the corresponding scientific question, publication or open artifact.
 
 <table>

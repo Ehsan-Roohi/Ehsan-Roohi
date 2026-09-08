@@ -23,7 +23,23 @@ Selected papers and open artifacts:
 - [Micro-nozzle POD and shock-aligned surrogate reproducibility](https://github.com/Ehsan-Roohi/roohi-nozzle-pod-reproducibility).
 - [ShockVortexML](https://github.com/Ehsan-Roohi/ShockVortexML), ongoing work on joint shock and vortex-core identification with explicit physical audits.
 
-## High-speed CFD and shock structure
+## Hypersonic DSMC and shock structure
+
+My hypersonic research connects particle collision algorithms to the prediction of shock layers and non-equilibrium flow around aerodynamic bodies. These studies complement the newer machine-learning work: the underlying DSMC calculations are a research direction in their own right.
+
+### Hypersonic cylinder
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/image.jpg"><img src="https://websites.umass.edu/roohie/files/2025/05/image.jpg" width="800" alt="Hypersonic cylinder flow-field illustration from Ehsan Roohi's UMass research gallery"></a></p>
+
+Hypersonic-cylinder flow visualization from my [UMass research gallery](https://websites.umass.edu/roohie/research/). The cylinder connects collision-sampling research with shock-layer prediction. This archived illustration is distinct from the later [2026 neural-network cylinder study](https://doi.org/10.1063/5.0334590); it is not labelled as a result of that paper.
+
+### Hypersonic biconic geometry
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/image-1-1024x791-1-1-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/image-1-1024x791-1-1-1.png" width="800" alt="Shock-wave structure around a hypersonic biconic geometry"></a></p>
+
+Shock-wave structure around a biconic body, associated on the UMass page with Goshayeshi, Roohi and Stefanov's [DSMC simulation of hypersonic flows using an improved SBT-TAS technique](https://doi.org/10.1016/j.jcp.2015.09.027), *Journal of Computational Physics* **303**, 28–44 (2015). This work links adaptive collision treatment to hypersonic-flow simulation. [Figure source](https://websites.umass.edu/roohie/research/).
+
+### Related high-speed CFD visualization
 
 Shock-bearing flows are useful stress tests for both numerical methods and learned models. Local front position, topology, surface quantities and conservation can reveal failures hidden by field-averaged scores.
 
@@ -34,6 +50,32 @@ The video is a visualization of an MFC CFD schlieren calculation. It should be r
 ## DSMC collision algorithms and non-equilibrium transport
 
 This long-running direction develops and evaluates particle collision procedures and uses DSMC to study flows for which continuum constitutive assumptions become unreliable.
+
+### Collision-scheme development
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/5-5-1024x562-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/5-5-1024x562-1.png" width="900" alt="Timeline of DSMC collision schemes including contributions by Roohi and collaborators"></a></p>
+
+The timeline places our group's contributions within the wider development of DSMC collision schemes. My collaborative work includes intelligent SBT and adaptive-subcell methods, GBT, SSBT and SGBT. Earlier NTC, BT and SBT methods are background contributions by their respective developers, not claimed as our inventions. [Original timeline and descriptions](https://websites.umass.edu/roohie/research/).
+
+### How collision partners are selected
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/6-6-1024x753-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/6-6-1024x753-1.png" width="800" alt="Comparison of collision-partner selection in BT, SBT and SSBT schemes"></a></p>
+
+BT, SBT and SSBT use different candidate-selection procedures. The diagram illustrates those differences; collision probabilities and algorithmic details belong to the original formulations. See the [2016 review](https://doi.org/10.1016/j.physrep.2016.08.002), the [2018 GBT paper](https://doi.org/10.1016/j.jcp.2017.10.033), and the [2022 SSBT paper](https://pubs.aip.org/aip/pof/article-abstract/34/1/012010/2845513/A-symmetrized-and-simplified-Bernoulli-trial). [Figure source](https://websites.umass.edu/roohie/research/).
+
+### Simplified generalized Bernoulli trials (SGBT)
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/7-7-908x1024-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/7-7-908x1024-1.png" width="640" alt="SGBT collision-selection procedure attributed to Javani and collaborators, 2024, on the UMass page"></a></p>
+
+The UMass gallery attributes this procedure to Javani and collaborators (2024): SGBT applies a symmetrized selection procedure to a selected subset of particles. The diagram provides an algorithmic overview, not a standalone implementation specification. [Source and attribution](https://websites.umass.edu/roohie/research/).
+
+### Sensitivity to particles per cell
+
+<p align="center"><a href="https://websites.umass.edu/roohie/files/2025/05/8-8-1024x841-1.png"><img src="https://websites.umass.edu/roohie/files/2025/05/8-8-1024x841-1.png" width="800" alt="Heat-transfer comparison examining DSMC collision schemes at different particle counts per cell"></a></p>
+
+The displayed heat-transfer benchmark examines sensitivity to particles per cell, a practical concern for computational cost and collision sampling. The low-particle-count behavior shown here is specific to the reported test, not a universal accuracy guarantee for arbitrary flows. [Original figure and study description](https://websites.umass.edu/roohie/research/).
+
+Selected publications and implementations:
 
 - [An open source, parallel DSMC code for rarefied gas flows in arbitrary geometries](https://doi.org/10.1016/j.compfluid.2010.07.014), *Computers & Fluids* (2010).
 - [Collision partner selection schemes in DSMC: From micro/nano flows to hypersonic flows](https://doi.org/10.1016/j.physrep.2016.08.002), *Physics Reports* (2016).

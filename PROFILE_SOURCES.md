@@ -1,5 +1,24 @@
 # Profile source record
 
+## Research-gallery extension — 8 September 2026
+
+Six original image URLs and adjacent descriptions were read directly from
+https://websites.umass.edu/roohie/research/: image.jpg (cylinder),
+image-1-1024x791-1-1-1.png (biconic), 5-5-1024x562-1.png (timeline),
+6-6-1024x753-1.png (partner selection), 7-7-908x1024-1.png (SGBT),
+8-8-1024x841-1.png (particles-per-cell comparison). All are under
+https://websites.umass.edu/roohie/files/2025/05/ and are embedded from that
+original source, with click-through originals, no cropping and no forced height.
+The user expressly requested these additions. No new image license is asserted.
+
+The cylinder caption on UMass calls its method SSBT and dates it to 2015, while
+the same page dates SSBT development to 2022. The portfolio therefore does not
+repeat that method/year attribution or associate this image with the 2026 paper.
+The biconic caption and listed reference identify DOI 10.1016/j.jcp.2015.09.027.
+The SGBT and low-particle-count captions cite the UMass source without inventing
+unverified article DOIs. Historical NTC/BT/SBT contributions are distinguished
+from Roohi-group contributions. Existing video entries are preserved.
+
 Checked 7 September 2026. This file documents the profile README rather than adding claims to it.
 
 - Current title and affiliation: https://www.umass.edu/engineering/about/directory/ehsan-roohi
