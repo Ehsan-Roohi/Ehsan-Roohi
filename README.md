@@ -2,6 +2,8 @@
 
 **Rarefied gas dynamics · Molecular simulation · Scientific machine learning**
 
+[![Sponsor FlowMLLab and open-source research](https://img.shields.io/badge/Sponsor-FlowMLLab-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Ehsan-Roohi)
+
 I am a [Lecturer in Mechanical and Industrial Engineering at the University of Massachusetts Amherst](https://www.umass.edu/engineering/about/directory/ehsan-roohi). My research connects kinetic theory, computational fluid dynamics and machine learning, with applications spanning micro/nanoscale gas transport and hypersonic flows.
 
 My work began with molecular–continuum modeling and direct simulation Monte Carlo (DSMC), and now also explores learned collision models, physics-informed neural networks and flow-field surrogates. A central question across these efforts is how to reduce computational cost while retaining the physical behavior that matters: conservation, fluctuations, transport and non-equilibrium effects.
