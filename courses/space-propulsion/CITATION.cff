@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the instructor and the original semester when using these teaching materials."
+title: "AE 414 Space Propulsion course archive"
+type: dataset
+authors:
+  - family-names: "Roohi Golkhatmi"
+    given-names: "Ehsan"
+abstract: "Teaching notes, lecture recordings and exercises for Space Propulsion at Embry-Riddle Aeronautical University, Fall 2024 and Spring 2025."
+keywords:
+  - rocket propulsion
+  - space propulsion
+  - aerospace education
+  - NASA CEA

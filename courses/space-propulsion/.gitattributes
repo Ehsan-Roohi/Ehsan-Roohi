@@ -1,0 +1,8 @@
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.mp4 binary
+*.jpg binary
+*.svg text eol=lf
+*.md text eol=lf

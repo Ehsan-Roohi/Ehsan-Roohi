@@ -80,6 +80,15 @@ Research archives and teaching implementations have different purposes. Where ea
 - [Geometry-native machine learning reconstruction of DSMC moment fields with support monitoring](https://arxiv.org/abs/2609.01637) — 2026 preprint on reconstructing noisy DSMC moment fields. Listed as a preprint, not as a published journal article.
 - [ShockVortexML](https://github.com/Ehsan-Roohi/ShockVortexML) — ongoing research on joint shock and vortex-core identification, with physical audits and documented evaluation limits.
 
+## Open courses
+
+| Course | Materials |
+| --- | --- |
+| **[Space Propulsion — AE 414](courses/space-propulsion/README.md)** | Embry-Riddle, Fall 2024 and Spring 2025. Syllabus, 63 lecture PDFs, 17 lecture recordings, 25 exercise and homework sheets, a team project and computational resources, organized in ten topic modules. |
+| [Aerospace Structures](https://github.com/Ehsan-Roohi/Aerospace-Structures) | Syllabus, ordered lectures, worked examples and assignments. |
+| [FlowMLLab](https://github.com/Ehsan-Roohi/FlowMLLab) | CFD and scientific machine learning: lecture notes, executable notebooks and physical validation. [Course site](https://ehsan-roohi.github.io/FlowMLLab/) |
+
+
 ## Books and teaching
 
 With Hassan Akhlaghi and Stefan Stefanov, I coauthored [*Advances in Direct Simulation Monte Carlo: From Micro-Scale to Rarefied Flow Phenomena*](https://doi.org/10.1007/978-981-96-8200-3), Springer, 2025.
