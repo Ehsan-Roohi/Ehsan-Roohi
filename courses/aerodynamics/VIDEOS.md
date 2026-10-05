@@ -44,10 +44,14 @@ Ordered by topic with original section, week and part labels. These are companio
 | 4 | Potential flow · worked example | 20 min | [MP4](assets/videos/erau-potential-flow-example.mp4) |
 | 5 | Week 4 · viscous-flow summary | 17 min | [MP4](assets/videos/erau-summary-of-week-4.mp4) |
 | 6 | Thin-airfoil theory · part 1 | 24 min | [MP4](assets/videos/erau-thin-airfoil-theory-part-1.mp4) |
+| 7 | Thin-airfoil theory · full lecture | 54 min | [Part 1](assets/videos/erau-thin-airfoil-theory-full-lecture-part-01.mp4) · [Part 2](assets/videos/erau-thin-airfoil-theory-full-lecture-part-02.mp4) |
 | 8 | Thin-airfoil theory · worked examples | 17 min | [MP4](assets/videos/erau-thin-airfoil-theory-examples.mp4) |
 | 9 | Week 7 · thin-airfoil theory recap | 12 min | [MP4](assets/videos/erau-week-7-thin-airfoil-theory.mp4) |
 | 10 | Section 5 · airfoil moments | 14 min | [MP4](assets/videos/erau-section-5.mp4) |
+| 11 | Finite wings · part I | 49 min | [Part 1](assets/videos/erau-wing-part-i-part-01.mp4) · [Part 2](assets/videos/erau-wing-part-i-part-02.mp4) |
+| 12 | Finite wings · part II | 20 min | [MP4](assets/videos/erau-wing-lecture-part-2-erau.mp4) |
 | 13 | Finite wings · part III | 17 min | [MP4](assets/videos/erau-wing-lecture-part-3-erau.mp4) |
+| 14 | Week 8 · three-dimensional wing recap | 35 min | [MP4](assets/videos/erau-week-8-3d-wing.mp4) |
 | 15 | Compressible flow · summary | 25 min | [MP4](assets/videos/erau-compressible-flow-summary.mp4) |
 | 16 | Nozzle flow and subsonic compressibility · summary | 23 min | [MP4](assets/videos/erau-nozzle-flow-and-subsonic-compressible-flow-summary.mp4) |
 | 17 | Supersonic airfoils · final compressible-flow summary | 13 min | [MP4](assets/videos/erau-last-part-of-compressible-flow.mp4) |
@@ -58,6 +62,8 @@ The same wing recordings also occur in the Summer folder; their files are linked
 
 | Order | Recording | Length | Files |
 | --- | --- | --- | --- |
+| 11 | Finite wings · part I | 49 min | [Part 1](assets/videos/erau-wing-part-i-part-01.mp4) · [Part 2](assets/videos/erau-wing-part-i-part-02.mp4) |
+| 12 | Finite wings · part II | 20 min | [MP4](assets/videos/erau-wing-lecture-part-2-erau.mp4) |
 | 13 | Finite wings · part III | 17 min | [MP4](assets/videos/erau-wing-lecture-part-3-erau.mp4) |
 
 ## Source audio notes

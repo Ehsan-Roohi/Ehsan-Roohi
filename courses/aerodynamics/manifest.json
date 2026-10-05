@@ -1,7 +1,7 @@
 {
   "title": "Aerodynamics course archive",
   "instructor": "Ehsan Roohi",
-  "publication_complete": false,
+  "publication_complete": true,
   "expected_recordings": 38,
   "offerings": [
     {
@@ -3497,6 +3497,42 @@
     },
     {
       "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Thin Airfoil Theory Full Lecture.mp4",
+      "bytes": 837177773,
+      "id": "erau-thin-airfoil-theory-full-lecture",
+      "duration_seconds": 3255.62,
+      "width": 1436,
+      "height": 1080,
+      "source_sha256": "b8a1e04f20fcbed62f17ab3b2e2d440f6311e311b7638d568919baf996328e91",
+      "derivative_sha256": "9ef6630b682adfe838c20ff8d0425ff4ea73d99c999cd8e1a37bdbed7672d8d2",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.5 dB",
+      "poster": "assets/posters/erau-thin-airfoil-theory-full-lecture.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-thin-airfoil-theory-full-lecture-part-01.mp4",
+          "bytes": 31540014,
+          "sha256": "b18317031a52a4fd035415300cafa559c98d2fa01c6eb1251205b4eecf4f9dba",
+          "duration_seconds": 1647.58
+        },
+        {
+          "path": "assets/videos/erau-thin-airfoil-theory-full-lecture-part-02.mp4",
+          "bytes": 27951374,
+          "sha256": "2913a24e3d33b5f94c05eb14c8f6137d6e24f7e89dfe90e5440d4b21d1b992bf",
+          "duration_seconds": 1608.18
+        }
+      ],
+      "order": 7,
+      "title": "Thin-airfoil theory · full lecture",
+      "module": 4,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
       "path": "Summary of the Weeks/Thin Airfoil Theory Examples.mp4",
       "bytes": 221130082,
       "id": "erau-thin-airfoil-theory-examples",
@@ -3587,6 +3623,74 @@
     },
     {
       "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "All Lecture Notes/notesInstructor/Wing Part I.mp4",
+      "bytes": 726178737,
+      "id": "erau-wing-part-i",
+      "duration_seconds": 2946.51,
+      "width": 1436,
+      "height": 1080,
+      "source_sha256": "8321a21a0775ba9083752b4d59ac95b40864ed05768bca69c5c973367af82942",
+      "derivative_sha256": "e63792e1caf13114fe2afc9e75eaa636d50f770c56147530ffc334a01b0d8dfc",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.7 dB",
+      "poster": "assets/posters/erau-wing-part-i.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-wing-part-i-part-01.mp4",
+          "bytes": 25982367,
+          "sha256": "f385cfac337267e2897b09d56d9735ba6ddacbf710d745d735e62a6a77c98b3a",
+          "duration_seconds": 1485.42
+        },
+        {
+          "path": "assets/videos/erau-wing-part-i-part-02.mp4",
+          "bytes": 25884248,
+          "sha256": "775b51b0c04cb509b285329fe474c7746c67018bf00c48ccc087d662d7d057ee",
+          "duration_seconds": 1461.24
+        }
+      ],
+      "order": 11,
+      "title": "Finite wings · part I",
+      "module": 5,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024",
+        "erau-2025"
+      ],
+      "note": "Companion recording from the Fall 2024 archive. This same recording also appears in the Summer 2025 collection."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "All Lecture Notes/notesInstructor/Wing Lecture Part 2 ERAU.mp4",
+      "bytes": 341516876,
+      "id": "erau-wing-lecture-part-2-erau",
+      "duration_seconds": 1171.5,
+      "width": 1440,
+      "height": 1080,
+      "source_sha256": "be1b33f66b0ce97dc5d115d7b8d0f88e4f0c7a7c3cc275808c6952bffb88c8f8",
+      "derivative_sha256": "093e25c19cf76375b8cc1bf08f39ce4a6f92a09bc46e769c70ae02af9c16c581",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.9 dB",
+      "poster": "assets/posters/erau-wing-lecture-part-2-erau.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-wing-lecture-part-2-erau.mp4",
+          "bytes": 21408613,
+          "sha256": "093e25c19cf76375b8cc1bf08f39ce4a6f92a09bc46e769c70ae02af9c16c581",
+          "duration_seconds": 1171.5
+        }
+      ],
+      "order": 12,
+      "title": "Finite wings · part II",
+      "module": 5,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024",
+        "erau-2025"
+      ],
+      "note": "Companion recording from the Fall 2024 archive. This same recording also appears in the Summer 2025 collection."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
       "path": "All Lecture Notes/notesInstructor/Wing Lecture Part 3 ERAU.mp4",
       "bytes": 279265274,
       "id": "erau-wing-lecture-part-3-erau",
@@ -3615,6 +3719,36 @@
         "erau-2025"
       ],
       "note": "Companion recording from the Fall 2024 archive. This same recording also appears in the Summer 2025 collection."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Week 8 (3D Wing).mp4",
+      "bytes": 702439120,
+      "id": "erau-week-8-3d-wing",
+      "duration_seconds": 2088.33,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "fa4fd571ec36197ccc136b095cf38e4d592bceb95ca2a1faca92712f3a0d8ecc",
+      "derivative_sha256": "d6eb3b14f22a3caf5403ca4f9e739eecda467308515983c52773e6daba7461ab",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.6 dB",
+      "poster": "assets/posters/erau-week-8-3d-wing.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-week-8-3d-wing.mp4",
+          "bytes": 29430134,
+          "sha256": "d6eb3b14f22a3caf5403ca4f9e739eecda467308515983c52773e6daba7461ab",
+          "duration_seconds": 2088.33
+        }
+      ],
+      "order": 14,
+      "title": "Week 8 · three-dimensional wing recap",
+      "module": 5,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
     },
     {
       "source": "Aerodynamics Fall 2024 ERAU",
