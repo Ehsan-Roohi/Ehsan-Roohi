@@ -29,6 +29,8 @@ The source folder is explicitly named “Recording of 2021”, inside the Fall 2
 | 17 | Session 17 · Quiz question review | 80 min | [MP4](assets/videos/fum-17.mp4) |
 | 18 | Session 18 · Cambered airfoils and NACA examples | 62 min | [MP4](assets/videos/fum-18.mp4) |
 | 19 | Session 19 · Introduction to propulsion | 62 min | [MP4](assets/videos/fum-19.mp4) |
+| 20 | Session 20 · Turbojet cycles | 70 min | [MP4](assets/videos/fum-20.mp4) |
+| 21 | Session 21 · Turboprop and turboshaft cycles | 66 min | [MP4](assets/videos/fum-21.mp4) |
 
 ## Embry-Riddle · Fall 2024 companions
 
@@ -36,7 +38,12 @@ Ordered by topic with original section, week and part labels. These are companio
 
 | Order | Recording | Length | Files |
 | --- | --- | --- | --- |
-
+| 2 | Continuity equation · example | 6 min | [MP4](assets/videos/erau-example-of-continuity-eq.mp4) |
+| 3 | Section 2 · potential-flow summary | 13 min | [MP4](assets/videos/erau-section-2-summary.mp4) |
+| 4 | Potential flow · worked example | 20 min | [MP4](assets/videos/erau-potential-flow-example.mp4) |
+| 15 | Compressible flow · summary | 25 min | [MP4](assets/videos/erau-compressible-flow-summary.mp4) |
+| 16 | Nozzle flow and subsonic compressibility · summary | 23 min | [MP4](assets/videos/erau-nozzle-flow-and-subsonic-compressible-flow-summary.mp4) |
+| 17 | Supersonic airfoils · final compressible-flow summary | 13 min | [MP4](assets/videos/erau-last-part-of-compressible-flow.mp4) |
 
 ## Summer 2025 shared wing recordings
 

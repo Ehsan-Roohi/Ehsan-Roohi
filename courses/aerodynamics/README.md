@@ -12,13 +12,13 @@ Original teaching materials organized by institution, offering and topic. FUM ma
 | --- | --- |
 | [Syllabus and course guide](SYLLABUS.md) | Original syllabi and curriculum differences |
 | [Ordered lectures](LECTURES.md) | 59 lecture files, including 17 dated Summer 2025 PDFs |
-| [Video library](VIDEOS.md) | 19 original recordings · 24.3 hours |
+| [Video library](VIDEOS.md) | 27 original recordings · 28.2 hours |
 | [Assignments](ASSIGNMENTS.md) | 30 homework PDFs, editable sources and practice questions |
 | [Supporting materials](MATERIALS.md) | Worked classroom examples, derivations, formula sheets and reviews |
 | [Course browser](index.html) | Download the HTML file and open it for search, semester filters and playback |
 | [Provenance](PROVENANCE.md) | Original file attribution, archive gaps and video processing |
 
-**Video publication in progress:** 19 of 38 source recordings are available. Remaining recordings are being prepared and verified.
+**Video publication in progress:** 27 of 38 source recordings are available. Remaining recordings are being prepared and verified.
 
 ## Choose your offering
 

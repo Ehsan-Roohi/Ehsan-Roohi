@@ -3252,6 +3252,248 @@
         "fum-2022"
       ],
       "note": "Recorded in 2021; reused in the 2022 archive. Student attendee, chat and webcam sidebar removed."
+    },
+    {
+      "source": "Aerodynamics Fall 2022",
+      "path": "Recording of 2021/Lecture 20.mp4",
+      "bytes": 75557012,
+      "id": "fum-20",
+      "duration_seconds": 4209.13,
+      "width": 1024,
+      "height": 768,
+      "source_sha256": "983df23b20a02a590f1ef0de85131f084987383765162cd4d9d7d4d7b69a8e0b",
+      "derivative_sha256": "4cc7dcbfdcf6299d6f291bca85f23159fc9f98e2ce1eb5fce3c2ee8e17d03e9d",
+      "processing": "Student sidebar removed permanently: crop 768x736 at 0,0; H.264/AAC web copy.",
+      "source_mean_volume": "-14.8 dB",
+      "poster": "assets/posters/fum-20.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/fum-20.mp4",
+          "bytes": 30436573,
+          "sha256": "4cc7dcbfdcf6299d6f291bca85f23159fc9f98e2ce1eb5fce3c2ee8e17d03e9d",
+          "duration_seconds": 4209.13
+        }
+      ],
+      "order": 20,
+      "title": "Session 20 · Turbojet cycles",
+      "module": 12,
+      "kind": "videos",
+      "offerings": [
+        "fum-2021",
+        "fum-2022"
+      ],
+      "note": "Recorded in 2021; reused in the 2022 archive. Student attendee, chat and webcam sidebar removed."
+    },
+    {
+      "source": "Aerodynamics Fall 2022",
+      "path": "Recording of 2021/Lecture 21.mp4",
+      "bytes": 75015000,
+      "id": "fum-21",
+      "duration_seconds": 3972.62,
+      "width": 1024,
+      "height": 768,
+      "source_sha256": "26e722cd3672e368c077d8032401c026f4120ee6e98f32715d4a29fd1669976d",
+      "derivative_sha256": "52fc7f2bf6e64d11ff0d50e2f9d995705c4e78caadb44c0e9e185271acf7137d",
+      "processing": "Student sidebar removed permanently: crop 768x736 at 0,0; H.264/AAC web copy.",
+      "source_mean_volume": "-13.2 dB",
+      "poster": "assets/posters/fum-21.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/fum-21.mp4",
+          "bytes": 30483802,
+          "sha256": "52fc7f2bf6e64d11ff0d50e2f9d995705c4e78caadb44c0e9e185271acf7137d",
+          "duration_seconds": 3972.62
+        }
+      ],
+      "order": 21,
+      "title": "Session 21 · Turboprop and turboshaft cycles",
+      "module": 12,
+      "kind": "videos",
+      "offerings": [
+        "fum-2021",
+        "fum-2022"
+      ],
+      "note": "Recorded in 2021; reused in the 2022 archive. Student attendee, chat and webcam sidebar removed."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Example of Continuity Eq.mp4",
+      "bytes": 79155909,
+      "id": "erau-example-of-continuity-eq",
+      "duration_seconds": 378.02,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "6ef706fc16c5fd9298fe2ff24777349031e74b81a5439f27b372133d85551284",
+      "derivative_sha256": "ba067517ba9085b455f67c5b71928a4ef3ddd241e701c28f932083d6564eb8e0",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.8 dB",
+      "poster": "assets/posters/erau-example-of-continuity-eq.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-example-of-continuity-eq.mp4",
+          "bytes": 4404722,
+          "sha256": "ba067517ba9085b455f67c5b71928a4ef3ddd241e701c28f932083d6564eb8e0",
+          "duration_seconds": 378.02
+        }
+      ],
+      "order": 2,
+      "title": "Continuity equation · example",
+      "module": 1,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Section 2 Summary.mp4",
+      "bytes": 186441464,
+      "id": "erau-section-2-summary",
+      "duration_seconds": 763.02,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "80b5a1dcb0104adf1c7bd6a67c67ef9952b0bcfab5532858d2231869baba213a",
+      "derivative_sha256": "64b490bbc5757ccfd04fa2c679e9ef08eacb6312ddc0d0fe11c1484a8d182645",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.8 dB",
+      "poster": "assets/posters/erau-section-2-summary.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-section-2-summary.mp4",
+          "bytes": 9499437,
+          "sha256": "64b490bbc5757ccfd04fa2c679e9ef08eacb6312ddc0d0fe11c1484a8d182645",
+          "duration_seconds": 763.02
+        }
+      ],
+      "order": 3,
+      "title": "Section 2 · potential-flow summary",
+      "module": 2,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "All Lecture Notes/inClassEx/Potential Flow Example.mp4",
+      "bytes": 311694431,
+      "id": "erau-potential-flow-example",
+      "duration_seconds": 1208.63,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "1b60b5e7c8b4e841b0848a54fffd3fc1e0df281f6d3d4df1e476c423ecc54404",
+      "derivative_sha256": "6900003b516a8f59cdb483bf6658c26d4962607f0d6122ea09382e692b12ae03",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.4 dB",
+      "poster": "assets/posters/erau-potential-flow-example.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-potential-flow-example.mp4",
+          "bytes": 16126629,
+          "sha256": "6900003b516a8f59cdb483bf6658c26d4962607f0d6122ea09382e692b12ae03",
+          "duration_seconds": 1208.63
+        }
+      ],
+      "order": 4,
+      "title": "Potential flow · worked example",
+      "module": 2,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Compressible Flow Summary.mp4",
+      "bytes": 247749673,
+      "id": "erau-compressible-flow-summary",
+      "duration_seconds": 1502.12,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "ad1f5262cb3ed70b0ed59d8fe0ed97d9bf3ccc793d16cc4845c20b47dc194824",
+      "derivative_sha256": "3bb7afdc107c4f090af0f4e1b9ecc824fff143a26a133e34044e75d1ab0ae213",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.8 dB",
+      "poster": "assets/posters/erau-compressible-flow-summary.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-compressible-flow-summary.mp4",
+          "bytes": 13272839,
+          "sha256": "3bb7afdc107c4f090af0f4e1b9ecc824fff143a26a133e34044e75d1ab0ae213",
+          "duration_seconds": 1502.12
+        }
+      ],
+      "order": 15,
+      "title": "Compressible flow · summary",
+      "module": 7,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Nozzle flow and subsonic compressible flow Summary.mp4",
+      "bytes": 265622173,
+      "id": "erau-nozzle-flow-and-subsonic-compressible-flow-summary",
+      "duration_seconds": 1370.63,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "3effe70fc3f4b150ca415ade28cf4e31e2ab82d31a41cfb670653f951582c064",
+      "derivative_sha256": "c45df08c1a53dfb2127a5cf06c8b0673923cb81b1f679c2ddae019ea977e4eba",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.9 dB",
+      "poster": "assets/posters/erau-nozzle-flow-and-subsonic-compressible-flow-summary.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-nozzle-flow-and-subsonic-compressible-flow-summary.mp4",
+          "bytes": 12503300,
+          "sha256": "c45df08c1a53dfb2127a5cf06c8b0673923cb81b1f679c2ddae019ea977e4eba",
+          "duration_seconds": 1370.63
+        }
+      ],
+      "order": 16,
+      "title": "Nozzle flow and subsonic compressibility · summary",
+      "module": 8,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Last Part of Compressible Flow.mp4",
+      "bytes": 135526653,
+      "id": "erau-last-part-of-compressible-flow",
+      "duration_seconds": 759.2,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "e49854b411cead1cadacf29dbe553245003c4d53e6122ffcb3b89d1641ff6a8d",
+      "derivative_sha256": "667e2ad2ebaadfcbf9e645b464a58745da3bf716c9e839c50688509087bddc39",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.5 dB",
+      "poster": "assets/posters/erau-last-part-of-compressible-flow.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-last-part-of-compressible-flow.mp4",
+          "bytes": 6794939,
+          "sha256": "667e2ad2ebaadfcbf9e645b464a58745da3bf716c9e839c50688509087bddc39",
+          "duration_seconds": 759.2
+        }
+      ],
+      "order": 17,
+      "title": "Supersonic airfoils · final compressible-flow summary",
+      "module": 10,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
     }
   ]
 }
