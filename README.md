@@ -84,6 +84,7 @@ Research archives and teaching implementations have different purposes. Where ea
 
 | Course | Materials |
 | --- | --- |
+| **[Aerodynamics — FUM & Embry-Riddle](courses/aerodynamics/README.md)** | Ferdowsi 2021–2022 and ERAU Fall 2024 / Summer 2025. Historical syllabi, 59 lecture files, 30 homework PDFs, classroom resources and ordered recordings in 12 topic modules. |
 | **[Space Propulsion — AE 414](courses/space-propulsion/README.md)** | Embry-Riddle, Fall 2024 and Spring 2025. Syllabus, 63 lecture PDFs, 17 lecture recordings, 25 exercise and homework sheets, a team project and computational resources, organized in ten topic modules. |
 | [Aerospace Structures](https://github.com/Ehsan-Roohi/Aerospace-Structures) | Syllabus, ordered lectures, worked examples and assignments. |
 | [FlowMLLab](https://github.com/Ehsan-Roohi/FlowMLLab) | CFD and scientific machine learning: lecture notes, executable notebooks and physical validation. [Course site](https://ehsan-roohi.github.io/FlowMLLab/) |

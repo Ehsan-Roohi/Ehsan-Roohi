@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this course archive and preserve original document and figure credits."
+title: "Aerodynamics: Ferdowsi and Embry-Riddle course archive"
+authors:
+  - family-names: Roohi
+    given-names: Ehsan
+year: 2026
+url: "https://github.com/Ehsan-Roohi/Ehsan-Roohi/tree/main/courses/aerodynamics"
+keywords:
+  - aerodynamics
+  - potential flow
+  - thin-airfoil theory
+  - finite wings
+  - compressible flow
