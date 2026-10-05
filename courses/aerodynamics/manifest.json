@@ -3317,6 +3317,36 @@
     },
     {
       "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Week 1 Summary.webm",
+      "bytes": 125563768,
+      "id": "erau-week-1-summary",
+      "duration_seconds": 1104.58,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "034acdcae2eb7d8abf5024e3004bb572de1f82e255ada8bf6151b7f2fb0d6ee6",
+      "derivative_sha256": "98035424b99393e7cceef64b2f7eccc314a1d6692b584bf1af62e99c40b76551",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-20.0 dB",
+      "poster": "assets/posters/erau-week-1-summary.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-week-1-summary.mp4",
+          "bytes": 12967178,
+          "sha256": "98035424b99393e7cceef64b2f7eccc314a1d6692b584bf1af62e99c40b76551",
+          "duration_seconds": 1104.58
+        }
+      ],
+      "order": 1,
+      "title": "Week 1 · conservation summary",
+      "module": 1,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
       "path": "Summary of the Weeks/Example of Continuity Eq.mp4",
       "bytes": 79155909,
       "id": "erau-example-of-continuity-eq",
@@ -3404,6 +3434,187 @@
         "erau-2024"
       ],
       "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Summary of Week#4.mp4",
+      "bytes": 364289734,
+      "id": "erau-summary-of-week-4",
+      "duration_seconds": 1049.24,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "4f5fb4663f99e40b026fa4c2c8e330c7c52cb54b5680604458204540577ca18a",
+      "derivative_sha256": "a2a3bd15314da844a81a3d6b9d6374aa22b911463a416207522736ce988726ac",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-27.9 dB",
+      "poster": "assets/posters/erau-summary-of-week-4.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-summary-of-week-4.mp4",
+          "bytes": 16240587,
+          "sha256": "a2a3bd15314da844a81a3d6b9d6374aa22b911463a416207522736ce988726ac",
+          "duration_seconds": 1049.24
+        }
+      ],
+      "order": 5,
+      "title": "Week 4 · viscous-flow summary",
+      "module": 3,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Thin Airfoil Theory Part 1.mp4",
+      "bytes": 383567782,
+      "id": "erau-thin-airfoil-theory-part-1",
+      "duration_seconds": 1440.64,
+      "width": 1436,
+      "height": 1080,
+      "source_sha256": "3ad51886790440a769819d871b7c061496a06da6ec666c265f36379595bff780",
+      "derivative_sha256": "02d81f329f1f02dc9c9f22e39dfddb221477f88c3b45af04901c9211c922b1bb",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.9 dB",
+      "poster": "assets/posters/erau-thin-airfoil-theory-part-1.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-thin-airfoil-theory-part-1.mp4",
+          "bytes": 26430166,
+          "sha256": "02d81f329f1f02dc9c9f22e39dfddb221477f88c3b45af04901c9211c922b1bb",
+          "duration_seconds": 1440.64
+        }
+      ],
+      "order": 6,
+      "title": "Thin-airfoil theory · part 1",
+      "module": 4,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Thin Airfoil Theory Examples.mp4",
+      "bytes": 221130082,
+      "id": "erau-thin-airfoil-theory-examples",
+      "duration_seconds": 997.69,
+      "width": 1396,
+      "height": 1080,
+      "source_sha256": "f524b3760ed5c3b34af232bade20cd629c7aa2d7364bef1f9e6df50a06d527f0",
+      "derivative_sha256": "ffbc567725b84c26609e5a947c278e5bf38cee9189c482168632afba1d301ece",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-29.0 dB",
+      "poster": "assets/posters/erau-thin-airfoil-theory-examples.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-thin-airfoil-theory-examples.mp4",
+          "bytes": 16099646,
+          "sha256": "ffbc567725b84c26609e5a947c278e5bf38cee9189c482168632afba1d301ece",
+          "duration_seconds": 997.69
+        }
+      ],
+      "order": 8,
+      "title": "Thin-airfoil theory · worked examples",
+      "module": 4,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Week 7 (Thin Airfoil Theory).mp4",
+      "bytes": 227619693,
+      "id": "erau-week-7-thin-airfoil-theory",
+      "duration_seconds": 745.69,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "6260e09cde032d814f5391d42b5a7d997bbb5bff23f8a21bbbcf5646a6229f40",
+      "derivative_sha256": "b921c73419af87a7073cb097199145780552b00344fe5ec57227e29360d2788b",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.4 dB",
+      "poster": "assets/posters/erau-week-7-thin-airfoil-theory.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-week-7-thin-airfoil-theory.mp4",
+          "bytes": 10520383,
+          "sha256": "b921c73419af87a7073cb097199145780552b00344fe5ec57227e29360d2788b",
+          "duration_seconds": 745.69
+        }
+      ],
+      "order": 9,
+      "title": "Week 7 · thin-airfoil theory recap",
+      "module": 4,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "Summary of the Weeks/Section 5.mp4",
+      "bytes": 186636242,
+      "id": "erau-section-5",
+      "duration_seconds": 835.39,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "03e3230c0d22df1e1124757c8665c98bf66550a59e84de594f8a4232b75c4ad2",
+      "derivative_sha256": "494eea75950f3f40a33834c214549112d43a2113db66c993848fb42e56b801ed",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.7 dB",
+      "poster": "assets/posters/erau-section-5.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-section-5.mp4",
+          "bytes": 10455412,
+          "sha256": "494eea75950f3f40a33834c214549112d43a2113db66c993848fb42e56b801ed",
+          "duration_seconds": 835.39
+        }
+      ],
+      "order": 10,
+      "title": "Section 5 · airfoil moments",
+      "module": 4,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024"
+      ],
+      "note": "Companion recording from the Fall 2024 archive."
+    },
+    {
+      "source": "Aerodynamics Fall 2024 ERAU",
+      "path": "All Lecture Notes/notesInstructor/Wing Lecture Part 3 ERAU.mp4",
+      "bytes": 279265274,
+      "id": "erau-wing-lecture-part-3-erau",
+      "duration_seconds": 1031.49,
+      "width": 1920,
+      "height": 1080,
+      "source_sha256": "627ec2b261494922f10ee629c49ebdfc2bf9e6808a924f66f4a883a32d3f8e99",
+      "derivative_sha256": "509a5f8447c74eecc6a9fde64532336a0668df56d0201919a9e9c128bd380e54",
+      "processing": "H.264/AAC web copy; maximum width 1280 px; 12 fps.",
+      "source_mean_volume": "-28.5 dB",
+      "poster": "assets/posters/erau-wing-lecture-part-3-erau.jpg",
+      "parts": [
+        {
+          "path": "assets/videos/erau-wing-lecture-part-3-erau.mp4",
+          "bytes": 13905064,
+          "sha256": "509a5f8447c74eecc6a9fde64532336a0668df56d0201919a9e9c128bd380e54",
+          "duration_seconds": 1031.49
+        }
+      ],
+      "order": 13,
+      "title": "Finite wings · part III",
+      "module": 5,
+      "kind": "videos",
+      "offerings": [
+        "erau-2024",
+        "erau-2025"
+      ],
+      "note": "Companion recording from the Fall 2024 archive. This same recording also appears in the Summer 2025 collection."
     },
     {
       "source": "Aerodynamics Fall 2024 ERAU",
