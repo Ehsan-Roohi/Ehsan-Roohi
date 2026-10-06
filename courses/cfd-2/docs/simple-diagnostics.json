@@ -1,0 +1,29 @@
+{
+  "upstream_commit": "6a1d90684c9462aa48416894f147910ca20e238f",
+  "numpy_version": "2.3.5",
+  "matplotlib_version": "3.11.2",
+  "scope": "Isolated source-function diagnostics; no full flow simulation",
+  "orthogonal_affine_pressure_velocity": [
+    0.0,
+    0.0
+  ],
+  "skew_affine_pressure_velocity": [
+    -0.5857864376269051,
+    0.0
+  ],
+  "skew_expected_velocity_for_affine_pressure": [
+    0.0,
+    0.0
+  ],
+  "checkpoint_exception": null,
+  "pressure_plot_declared_clim": [
+    500.0,
+    -500.0
+  ],
+  "pressure_plot_observed_clim": [
+    [
+      -550.0,
+      500.0
+    ]
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "course": "Computational Fluid Dynamics II - Mazaheri",
+  "student": "Ehsan Roohi",
+  "prepared_on": "2026-10-06",
+  "mazaheri_lecture_files_located": false,
+  "upstream_simple_commit": "6a1d90684c9462aa48416894f147910ca20e238f",
+  "files": [
+    {
+      "path": "projects/01-conical-flow/all-codes/CONTOUR.for",
+      "source": "CFD 2/project 1/all codes/CONTOUR.for",
+      "kind": "code",
+      "bytes": 1281,
+      "sha256": "083c728f7de9158e2bc85dbd7635e0e9a86fb8b2e12ad29dcee308660fdca84e"
+    },
+    {
+      "path": "projects/01-conical-flow/all-codes/Second0.for",
+      "source": "CFD 2/project 1/all codes/Second0.for",
+      "kind": "code",
+      "bytes": 36004,
+      "sha256": "1b4a5f42928001a0173c9bc0b2a41ee879890a7f363bc50dbe9e25eb313d7c2c"
+    },
+    {
+      "path": "projects/01-conical-flow/all-codes/uniform.for",
+      "source": "CFD 2/project 1/all codes/uniform.for",
+      "kind": "code",
+      "bytes": 27159,
+      "sha256": "6c10c22155f97536dd32b3732e2f7362ccd8d571b0b0f5f620200309921cf41b"
+    },
+    {
+      "path": "projects/01-conical-flow/all-codes/VAN LEER.for",
+      "source": "CFD 2/project 1/all codes/VAN LEER.for",
+      "kind": "code",
+      "bytes": 26777,
+      "sha256": "c893bbeed7a8a8a7f224a58b2460d211674eebda9ad277e93170e00f1af234d2"
+    },
+    {
+      "path": "projects/01-conical-flow/hlr-final/Second.for",
+      "source": "CFD 2/project 1/HLR Final/Second.for",
+      "kind": "code",
+      "bytes": 35648,
+      "sha256": "5f2fb6cec15ebddfc8983679b51df8df861af18b2fd118e93586b9e417554da9"
+    },
+    {
+      "path": "projects/01-conical-flow/hlr-final/Second0.for",
+      "source": "CFD 2/project 1/HLR Final/Second0.for",
+      "kind": "code",
+      "bytes": 35781,
+      "sha256": "0f29114c509451ba954055641037e621539ca80977e4b4975b7386caa9b639c8"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/airfoil.for",
+      "source": "CFD 2/Project 2/airfoil.for",
+      "kind": "code",
+      "bytes": 15845,
+      "sha256": "dfef21be249e2d60fff9b6ca806dd36cf0fe6e8e3e148c44cdde888d4ba6bdb0"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/airfoil23.for",
+      "source": "CFD 2/Project 2/airfoil23.for",
+      "kind": "code",
+      "bytes": 23794,
+      "sha256": "7e9ce45132825fc7762580e2d5156b4510af6fabf38eae02239a8ead09daf02f"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/airfoil3.for",
+      "source": "CFD 2/Project 2/airfoil3.for",
+      "kind": "code",
+      "bytes": 25585,
+      "sha256": "b662a99d3697a89ac818a26984b14557aa7f598f09c8c2121cc49698a417a7b9"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/airfoil4.for",
+      "source": "CFD 2/Project 2/airfoil4.for",
+      "kind": "code",
+      "bytes": 27766,
+      "sha256": "047b03b94a3799d33983ce20095d0eb934bc145e8efb8abb5d4d630403a251d2"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/airfoilfinal.for",
+      "source": "CFD 2/Project 2/airfoilfinal.for",
+      "kind": "code",
+      "bytes": 27910,
+      "sha256": "47f6be909f0383a031e50d2f7d44dc307080a3281e85d97550c64aa150009005"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/NUM1,CFD2,PRO2,T,uniform.f90",
+      "source": "CFD 2/Project 2/NUM1,CFD2,PRO2,T,uniform.f90",
+      "kind": "code",
+      "bytes": 22530,
+      "sha256": "089eaa1780ff27083063fc2bacfcc8c7a64688b3ca3ac5c46559294da09b95a7"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/variants/unstructured0.for",
+      "source": "CFD 2/Project 2/unstructured0.for",
+      "kind": "code",
+      "bytes": 10075,
+      "sha256": "ee8e939436ad9f063139c8646e2791525e24a869e181f72b7fa8129e6ed45694"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/airfoilla QUANTITY.for",
+      "source": "CFD 2/Project 3/Roohi code/airfoilla QUANTITY.for",
+      "kind": "code",
+      "bytes": 44511,
+      "sha256": "9e4bde693d70c70b168b79eac9b9b5629b269e0906db1c925cc621e88ff05d27"
+    },
+    {
+      "path": "projects/04-grid-generation/my-grid/LAST GRID.FOR",
+      "source": "CFD 2/Project 3/My Grid/LAST GRID.FOR",
+      "kind": "code",
+      "bytes": 12966,
+      "sha256": "7492cc736cc78b253f34865e60818ced9d8c97892e3f5a9faf7ab2536b128de3"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-medium/airfoil4.for",
+      "source": "CFD 2/Project 2/85 MEDIUM/airfoil4.for",
+      "kind": "code",
+      "bytes": 27299,
+      "sha256": "044bdc92f8f8cc71d1e1161c37b912f28a655e066dac18eeb304f07b09dba9b6"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-medium/BC.DAT",
+      "source": "CFD 2/Project 2/85 MEDIUM/BC.DAT",
+      "kind": "mesh-input",
+      "bytes": 904,
+      "sha256": "4f8c145e83f49d04dae91dad4629e1afa940ba49444a82b3cae56a98455629c1"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-medium/BE.DAT",
+      "source": "CFD 2/Project 2/85 MEDIUM/BE.DAT",
+      "kind": "mesh-input",
+      "bytes": 1290,
+      "sha256": "fe21aec1558414ee90e4a2474b909e7dbf71cdf54010c7a83053cd5fafb87ab4"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-medium/connectivity.dat",
+      "source": "CFD 2/Project 2/85 MEDIUM/connectivity.dat",
+      "kind": "mesh-input",
+      "bytes": 103557,
+      "sha256": "d71a2452e0da03a05fe91bbec22523ed310b11a7beedf720425cf1c68fd31095"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-medium/node.dat",
+      "source": "CFD 2/Project 2/85 MEDIUM/node.dat",
+      "kind": "mesh-input",
+      "bytes": 67485,
+      "sha256": "ce8f54e2d9b2e799d6a5ec0c4cfe3c7b4f09ac1ac77d0625bb86285ad56be913"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-high/airfoil4.for",
+      "source": "CFD 2/Project 2/85 high/airfoil4.for",
+      "kind": "code",
+      "bytes": 27174,
+      "sha256": "186438fe158ceb496a56e5e403dd75be438dff78b302c827aa306dc59c00e682"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-high/BC.DAT",
+      "source": "CFD 2/Project 2/85 high/BC.DAT",
+      "kind": "mesh-input",
+      "bytes": 1150,
+      "sha256": "070c0c04de8e94c7405d35c2741f16388535895fc25ff1745ee95c887b76e5a7"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-high/connectivity.dat",
+      "source": "CFD 2/Project 2/85 high/connectivity.dat",
+      "kind": "mesh-input",
+      "bytes": 325285,
+      "sha256": "c709ffd4caf09bf6df77f6feb665edda8dfee976e4e8edcbec0174cc7fb5f319"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/85-high/node.dat",
+      "source": "CFD 2/Project 2/85 high/node.dat",
+      "kind": "mesh-input",
+      "bytes": 208613,
+      "sha256": "6835a0e4af05a565986bfc3d7decdedba009309384010803d5b8859b3477c6a8"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/very-high/airfoil4.for",
+      "source": "CFD 2/Project 2/very high/airfoil4.for",
+      "kind": "code",
+      "bytes": 27115,
+      "sha256": "12dd1ef7da7dec03ca308f3c62071d353d2a6d41cbf5a18fa4e744c993d587c5"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/very-high/BC.DAT",
+      "source": "CFD 2/Project 2/very high/BC.DAT",
+      "kind": "mesh-input",
+      "bytes": 1021,
+      "sha256": "1f444fa19ba0ce78f7579254244ede138662a6245ed2385f036da365c647dfac"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/very-high/BE.DAT",
+      "source": "CFD 2/Project 2/very high/BE.DAT",
+      "kind": "mesh-input",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/very-high/connectivity.dat",
+      "source": "CFD 2/Project 2/very high/connectivity.dat",
+      "kind": "mesh-input",
+      "bytes": 429999,
+      "sha256": "4d5719e02553bcf592c7c31eb980745bd50391143d4b4edd0c07bb85270baa6b"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/very-high/node.dat",
+      "source": "CFD 2/Project 2/very high/node.dat",
+      "kind": "mesh-input",
+      "bytes": 274759,
+      "sha256": "523ef9d98b9651c312ac275f876abfa26bc053dd2bb45026f65388422a07309f"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/exact/AIRFOIL2.neu",
+      "source": "CFD 2/Project 2/EXACT/AIRFOIL2.neu",
+      "kind": "mesh-input",
+      "bytes": 60817,
+      "sha256": "4050e28effb85bb985f3f11719e2af41fc777d408e6fc9404cfae520fa477547"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/exact/airfoil3.for",
+      "source": "CFD 2/Project 2/EXACT/airfoil3.for",
+      "kind": "code",
+      "bytes": 25426,
+      "sha256": "a23af6bf5d162901e813c5e310649a00de470c789fbbaa27549b9b0500463f48"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/exact/BC.DAT",
+      "source": "CFD 2/Project 2/EXACT/BC.DAT",
+      "kind": "mesh-input",
+      "bytes": 570,
+      "sha256": "cba841ce6014c75d00cf50286e850df78b6fe6ffbca1f6e1e0662887790d02a9"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/exact/BE.DAT",
+      "source": "CFD 2/Project 2/EXACT/BE.DAT",
+      "kind": "mesh-input",
+      "bytes": 1596,
+      "sha256": "250186f42e348c761a61fd461249528cab1f49c4d10dc616503fb12e6d00c6ad"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/exact/connectivity.dat",
+      "source": "CFD 2/Project 2/EXACT/connectivity.dat",
+      "kind": "mesh-input",
+      "bytes": 31807,
+      "sha256": "0b451123ddb14b3efe8c6e0292cac9f42dd6b68c7ca33657f0757467f9f2e5b8"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/exact/node.dat",
+      "source": "CFD 2/Project 2/EXACT/node.dat",
+      "kind": "mesh-input",
+      "bytes": 21258,
+      "sha256": "7b132e5f032be669e04ecf078e1846e7c330e36fe671b887943c9b186ec58b8e"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/airfoil.for",
+      "source": "CFD 2/Project 2/uniform/airfoil.for",
+      "kind": "code",
+      "bytes": 22140,
+      "sha256": "62b8929fd3d726a684820d47151928fbd7244670928f0b8dda28cbbe341b4c1a"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/airfoil3.for",
+      "source": "CFD 2/Project 2/uniform/airfoil3.for",
+      "kind": "code",
+      "bytes": 23318,
+      "sha256": "b76fbab032bfc27fbf2d9f7d9f5090c7b164bece29f082ecf881327931eceb19"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/BC e.DAT",
+      "source": "CFD 2/Project 2/uniform/BC e.DAT",
+      "kind": "mesh-input",
+      "bytes": 1098,
+      "sha256": "a7d793fd729e4d9887b89fbfbe521a877803a2c9d7165c2eabdcc5c98b3f0d94"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/BC.DAT",
+      "source": "CFD 2/Project 2/uniform/BC.DAT",
+      "kind": "mesh-input",
+      "bytes": 609,
+      "sha256": "9073f91ccf20984a107bbd96e9390904c233065fb7af927f379910f38d1278d2"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/BE.DAT",
+      "source": "CFD 2/Project 2/uniform/BE.DAT",
+      "kind": "mesh-input",
+      "bytes": 1900,
+      "sha256": "be45abf490b43180fc6c44164bc8f8606860c0022eddd85d088263cfd0172857"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/connectivity.dat",
+      "source": "CFD 2/Project 2/uniform/connectivity.dat",
+      "kind": "mesh-input",
+      "bytes": 19022,
+      "sha256": "f6ecf170b302babf38124034008a91dc810887207f15a7bef6c39e324ce191cd"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/node.dat",
+      "source": "CFD 2/Project 2/uniform/node.dat",
+      "kind": "mesh-input",
+      "bytes": 13405,
+      "sha256": "d47323f8cd4ab19a3b16a7779d910029bd3dcf2f698cd4bcb37058765539b0a7"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/UNI.neu",
+      "source": "CFD 2/Project 2/uniform/UNI.neu",
+      "kind": "mesh-input",
+      "bytes": 38564,
+      "sha256": "564ec07ec8b0346d8c96e6bc11c8122dfa365d78bc2ca80d6f8e7aa37351ea58"
+    },
+    {
+      "path": "projects/02-compressible-airfoil/cases/uniform/UNIELEMENT.neu",
+      "source": "CFD 2/Project 2/uniform/UNIELEMENT.neu",
+      "kind": "mesh-input",
+      "bytes": 37967,
+      "sha256": "663b0eb66b95e2f4f661a08e11b32051f3fc30d095a2e495825f036627bc1d5a"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/airfoilla V LAST.for",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/airfoilla V LAST.for",
+      "kind": "code",
+      "bytes": 41501,
+      "sha256": "b27beb68baf45cedb6e0810a4b038334193c8b014151a4e81a75d8ae146480ea"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/BC.DAT",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/BC.DAT",
+      "kind": "mesh-input",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/BC1.DAT",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/BC1.DAT",
+      "kind": "mesh-input",
+      "bytes": 234,
+      "sha256": "3c03af63c42ecb0a9d94cf007de5ea1c2295cef634f2619117e04395faec273b"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/BC2.DAT",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/BC2.DAT",
+      "kind": "mesh-input",
+      "bytes": 305,
+      "sha256": "45fa510379c296ee3d9f6044af67536cab0af8fed8f4d59339872c41798772e1"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/BC3.DAT",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/BC3.DAT",
+      "kind": "mesh-input",
+      "bytes": 304,
+      "sha256": "7a52decd15889360b502d24ca5fa27398a73b42c91b43c54531566cddacf1f90"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/connectivity1.DAT",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/connectivity1.DAT",
+      "kind": "mesh-input",
+      "bytes": 11361,
+      "sha256": "bb6755eeeb031ebf8150defab590e2ef17049b9622cff545f620279c70e634a0"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/connectivity2.dat",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/connectivity2.dat",
+      "kind": "mesh-input",
+      "bytes": 46815,
+      "sha256": "e4504386dcd5a445ad2b579817e5d5c7f3c33ea790315e97ab95f633a9f5e102"
+    },
+    {
+      "path": "projects/03-viscous-airfoil/roohi-code/Viscous/node.dat",
+      "source": "CFD 2/Project 3/Roohi code/Viscous/node.dat",
+      "kind": "mesh-input",
+      "bytes": 43567,
+      "sha256": "a8ccf237a87c7d2138bb5e0f90c3d6bae4263edeb2840ce8faeb15c42537bf80"
+    },
+    {
+      "path": "projects/04-grid-generation/GRID generation.FOR",
+      "source": "CFD 2/Project 3/Roohi code/grid/GRID generation.FOR",
+      "kind": "code",
+      "bytes": 6246,
+      "sha256": "c24e18ddfbfcf20e2d0df7dd004922e82bfef0e964ed0059789d2a9070d09fb9"
+    },
+    {
+      "path": "results/02-airfoil-85-medium/output.plt",
+      "source": "CFD 2/Project 2/85 MEDIUM/output.plt",
+      "kind": "historical-result",
+      "bytes": 353100,
+      "sha256": "c46bda24bcbe9900c996cd756e6fb7cd70639758596de93a393735bf505e52ed"
+    },
+    {
+      "path": "results/02-airfoil-85-medium/RES.DAT",
+      "source": "CFD 2/Project 2/85 MEDIUM/RES.DAT",
+      "kind": "historical-result",
+      "bytes": 1517074,
+      "sha256": "696a290c240587bd51592fbfe6e382d8eccc1515a3793f9387dbb55fc34450d5"
+    },
+    {
+      "path": "results/04-grid-generation/GRID1.plt",
+      "source": "CFD 2/Project 3/My Grid/GRID1.plt",
+      "kind": "historical-result",
+      "bytes": 30802,
+      "sha256": "157a78d7f3657ed9b63bffe39253181dcd1b089e0343588fb9d3f7f2c1757082"
+    },
+    {
+      "path": "results/04-grid-generation/error.plt",
+      "source": "CFD 2/Project 3/My Grid/error.plt",
+      "kind": "historical-result",
+      "bytes": 12002,
+      "sha256": "01bcc2619fc4b71bed81f28cd73c6fe93abd220ef330cfd17de4389c779f890f"
+    },
+    {
+      "path": "reports/01-conical-flow/Project.doc",
+      "source": "CFD 2/project 1/HLR Final/Project.doc",
+      "kind": "project-report",
+      "bytes": 879616,
+      "sha256": "c32457ed842915b43561b5e13afad0ccca08c73abf6eddc78a66c406eb94f0b7"
+    },
+    {
+      "path": "reports/02-compressible-airfoil/Project II.doc",
+      "source": "CFD 2/Project 2/Project II.doc",
+      "kind": "project-report",
+      "bytes": 276992,
+      "sha256": "b5296f0bf0a4153e259f7d2194fcc235876ed2f499a7a988747576b012a991d4"
+    },
+    {
+      "path": "reports/02-compressible-airfoil/Report 2.doc",
+      "source": "CFD 2/Project 2/Report 2.doc",
+      "kind": "project-report",
+      "bytes": 1525248,
+      "sha256": "b09ffb6bbf30c67d63d758ab3a18b081d4cb1f0ebb06311b928e454447c555e1"
+    },
+    {
+      "path": "reports/02-compressible-airfoil/Appendix M=2 Results.doc",
+      "source": "CFD 2/Project 2/Appendix M=2 Results.doc",
+      "kind": "project-report",
+      "bytes": 154112,
+      "sha256": "6898b4df18a19f44910d024a7b0818389d6d2bb7423c14beabfcc22522551ea7"
+    },
+    {
+      "path": "reports/03-viscous-airfoil/Report 3.doc",
+      "source": "CFD 2/Project 3/report/Report 3.doc",
+      "kind": "project-report",
+      "bytes": 1151488,
+      "sha256": "ad3c5a16affb7f38a7d9279917c02679689e45b509b4252c91df51c7b13c814c"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-01.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 1-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 960964,
+      "sha256": "672cdc4c59a503d9bf474ae274b305a47f73fc8c1a30d1946bdae9eb6227f3e0"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-02.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 2-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 729546,
+      "sha256": "faa78a80f8a016911c580b54ad5ff3999eb0415a738d08419d6578e7695a4cc3"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-03.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 3-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 709447,
+      "sha256": "7a8673f2a45bdeb13545258a6cdff47735a4c56cca916cee312dcc5fa1c3d604"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-04.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 4-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 3094715,
+      "sha256": "0e0be6df3d45176893a3e96b43458dbac9032cb51d621e930c54fe470419b4f0"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-05.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 5-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 1334345,
+      "sha256": "2e056e736a53ce0f357d484107c971b5cd5674c8b48c17bd22ad33deeeda9a26"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-06.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 6-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 1154740,
+      "sha256": "e5887e38195a5ab44933429e7842479f474b263c85081e5a1e8b289cc143a8e5"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-07.pdf",
+      "source": "CFD 2 Hejranfar/CFD2-Chapter 7-Part1.pdf",
+      "kind": "lecture-note",
+      "bytes": 895054,
+      "sha256": "f3c4adb78bfecf15b961df05b630c5120377ab6b8b4a7c672d6ba130b5e64b5f"
+    },
+    {
+      "path": "lectures/hejranfar/chapter-05-scanned.pdf",
+      "source": "CFD 2 Hejranfar/CFD-2-Kazem-chap-5.pdf",
+      "kind": "lecture-note",
+      "bytes": 19673440,
+      "sha256": "bd00c910d3b1a518aa80498d41060c90403c121264abfe26b949ebacc8cd730b"
+    },
+    {
+      "path": "lectures/van-leer/courseOutline11.pdf",
+      "source": "Van Leer Notes/courseOutline11.pdf",
+      "kind": "supplementary-note",
+      "bytes": 33235,
+      "sha256": "f5146a76cf1d3cb330c6d373bc48eaa81ff7adc8b60abc50581f5212720a52b1"
+    },
+    {
+      "path": "lectures/van-leer/gasdynamics_LectureNotes.pdf",
+      "source": "Van Leer Notes/gasdynamics_LectureNotes.pdf",
+      "kind": "supplementary-note",
+      "bytes": 5057851,
+      "sha256": "f580b4b738d202d1f8b368ffedd874cbc85687f57242026e781f07370ca020a6"
+    },
+    {
+      "path": "lectures/van-leer/lecturenotes2DSSBurgers.pdf",
+      "source": "Van Leer Notes/lecturenotes2DSSBurgers.pdf",
+      "kind": "supplementary-note",
+      "bytes": 8701436,
+      "sha256": "7bb853d5d56f2faf870040e3c19a8e52b96bf7aa728a6b6bda22b9dd75b9e603"
+    },
+    {
+      "path": "lectures/aachen/01-notes.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/01-notes.pdf",
+      "kind": "supplementary-note",
+      "bytes": 59606,
+      "sha256": "d922b1fef9407c001223ec464b4c6b3e4d87c234a0324b5f5bb0228179ad47d2"
+    },
+    {
+      "path": "lectures/aachen/02.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/02.pdf",
+      "kind": "supplementary-note",
+      "bytes": 896026,
+      "sha256": "46967b971a43a9e20fdd480896990baa074e819894424319fd3df0ef58eb18de"
+    },
+    {
+      "path": "lectures/aachen/03.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/03.pdf",
+      "kind": "supplementary-note",
+      "bytes": 7619940,
+      "sha256": "d9a152fee8acae41e6ff6c4fb7da428000cab01825edd08832238566ab683732"
+    },
+    {
+      "path": "lectures/aachen/04.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/04.pdf",
+      "kind": "supplementary-note",
+      "bytes": 1473258,
+      "sha256": "4ea1563b05279ef896a78611ca679d0d8c2e3ab839df4042d9a8ecb7c03b8052"
+    },
+    {
+      "path": "lectures/aachen/05.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/05.pdf",
+      "kind": "supplementary-note",
+      "bytes": 265670,
+      "sha256": "15b6174722f6d40fe7b2b14bfaf971bedb80034e41ec762c2aae38c7a4951e17"
+    },
+    {
+      "path": "lectures/aachen/06.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/06.pdf",
+      "kind": "supplementary-note",
+      "bytes": 168118,
+      "sha256": "2bc26e9d1316ea9388a1b4b47bbf3058fcba1117142fbc70bae8f4225ca7611f"
+    },
+    {
+      "path": "lectures/aachen/07.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/07.pdf",
+      "kind": "supplementary-note",
+      "bytes": 258595,
+      "sha256": "40c3816cf7004a841564468c609a19f2d08b7e4dc5a601bba38574d0f64a254e"
+    },
+    {
+      "path": "lectures/aachen/08.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/08.pdf",
+      "kind": "supplementary-note",
+      "bytes": 81237,
+      "sha256": "9dadbb6f59a460d803e2171d2fdd97bf7de435dbcd3f5d914076af5b87186029"
+    },
+    {
+      "path": "lectures/aachen/09.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/09.pdf",
+      "kind": "supplementary-note",
+      "bytes": 2672061,
+      "sha256": "e842f6e0fb1c7298a6e41cffaeb8b5965fb12429cc3c3ff844e93fd6d3b42a9e"
+    },
+    {
+      "path": "lectures/aachen/10.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/10.pdf",
+      "kind": "supplementary-note",
+      "bytes": 608665,
+      "sha256": "8d709a8d6bfbaf8261ebf8572eaf1d644a395e5f9d4a51c5ad10e481007ed0e5"
+    },
+    {
+      "path": "lectures/aachen/12.pdf",
+      "source": "CFD Achen/artifacts.zip::public/lectures/12.pdf",
+      "kind": "supplementary-note",
+      "bytes": 828691,
+      "sha256": "0fdeb6ad6dd5ca5549b3671c959a99375e82f68e09f6618cdded603abd5200f0"
+    },
+    {
+      "path": "lectures/aachen/syllabus.pdf",
+      "source": "CFD Achen/artifacts.zip::public/syllabus.pdf",
+      "kind": "syllabus",
+      "bytes": 26593,
+      "sha256": "ce594d98bd27d6e1add9e8b2f97af5cca173550177cd730b460ed06e3c09fd17"
+    }
+  ]
+}

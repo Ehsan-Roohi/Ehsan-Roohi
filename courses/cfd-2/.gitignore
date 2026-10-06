@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+work/
+.review-cache/
+*.o
+*.obj
+*.exe
+*.mod

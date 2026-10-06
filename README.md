@@ -84,6 +84,7 @@ Research archives and teaching implementations have different purposes. Where ea
 
 | Course | Materials |
 | --- | --- |
+| **[Computational Fluid Dynamics II — Mazaheri](courses/cfd-2/README.md)** | Historical coursework: Fortran project codes, meshes and reports; attributed lecture notes from Hejranfar, Bakker/Van Leer and RWTH Aachen; Persian review of the SIMPLE solver. |
 | **[Aerodynamics — FUM & Embry-Riddle](courses/aerodynamics/README.md)** | Ferdowsi 2021–2022 and ERAU Fall 2024 / Summer 2025. Historical syllabi, 59 lecture files, 30 homework PDFs, classroom resources and ordered recordings in 12 topic modules. |
 | **[Space Propulsion — AE 414](courses/space-propulsion/README.md)** | Embry-Riddle, Fall 2024 and Spring 2025. Syllabus, 63 lecture PDFs, 17 lecture recordings, 25 exercise and homework sheets, a team project and computational resources, organized in ten topic modules. |
 | [Aerospace Structures](https://github.com/Ehsan-Roohi/Aerospace-Structures) | Syllabus, ordered lectures, worked examples and assignments. |
