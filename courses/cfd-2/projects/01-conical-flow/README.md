@@ -1,5 +1,7 @@
 # Project 1 - conical flow
 
+[Open the illustrated case page: pressure reconstruction and angular profile →](../../case-studies/conical-flow/README.md)
+
 The source declares `PROGRAM CONICALFLOW` and radial/tangential velocity, density, pressure, temperature and energy fields. `Second0.for` offers interactive choices labeled Roe, Van Leer and H-L-R. The boundary switch labels uniform, inviscid and viscous configurations.
 
 - [Second0.for](all-codes/Second0.for): interactive flux choice; source default `BCTYPE=1`, `SECOND=1`.

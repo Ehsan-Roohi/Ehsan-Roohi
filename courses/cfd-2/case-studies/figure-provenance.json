@@ -1,0 +1,67 @@
+{
+  "purpose": "Visualization of preserved data; no solver was executed by this script.",
+  "cases": {
+    "conical-flow": {
+      "inputs": [
+        {
+          "path": "results/01-conical-flow/ROE FINAL.plt",
+          "bytes": 52903,
+          "sha256": "83561640683ac506ebceb47969223e5b0fe2648ec7a0a80538026086261f81c0"
+        }
+      ],
+      "samples": 238,
+      "pressure_ratio_min": 0.999972464962425,
+      "pressure_ratio_max": 4.35654085513812,
+      "angular_offset_degrees": [
+        0.01000000000000031,
+        4.75
+      ],
+      "display_cone_half_angle_degrees": 10.0,
+      "transformation": "Angular pressure profile reconstructed along rays and mirrored about axis. Radial scale is arbitrary.",
+      "configuration_status": "Original run configuration and convergence not independently established. Filename does not prove flux choice."
+    },
+    "compressible-airfoil": {
+      "inputs": [
+        {
+          "path": "results/02-airfoil-85-medium/output.plt",
+          "bytes": 353100,
+          "sha256": "c46bda24bcbe9900c996cd756e6fb7cd70639758596de93a393735bf505e52ed"
+        }
+      ],
+      "nodes": 1298,
+      "triangles": 2526,
+      "mach_min": 0.570700252664158,
+      "mach_max": 1.43582398831596,
+      "surface_nodes": 20,
+      "transformation": "Piecewise-linear contours on original triangles; surface CPP from topological boundary nodes.",
+      "configuration_status": "0.85 is the preserved source setting; original output convergence not independently established."
+    },
+    "viscous-airfoil": {
+      "inputs": [
+        {
+          "path": "projects/03-viscous-airfoil/roohi-code/Viscous/node.dat",
+          "bytes": 43567,
+          "sha256": "a8ccf237a87c7d2138bb5e0f90c3d6bae4263edeb2840ce8faeb15c42537bf80"
+        },
+        {
+          "path": "projects/03-viscous-airfoil/roohi-code/Viscous/connectivity1.DAT",
+          "bytes": 11361,
+          "sha256": "bb6755eeeb031ebf8150defab590e2ef17049b9622cff545f620279c70e634a0"
+        },
+        {
+          "path": "projects/03-viscous-airfoil/roohi-code/Viscous/connectivity2.dat",
+          "bytes": 46815,
+          "sha256": "e4504386dcd5a445ad2b579817e5d5c7f3c33ea790315e97ab95f633a9f5e102"
+        }
+      ],
+      "nodes": 838,
+      "cells": 1374,
+      "quadrilaterals": 232,
+      "triangles": 1142,
+      "area_min_chord_squared": 6.630222371562661e-07,
+      "area_max_chord_squared": 3.798481113543545,
+      "transformation": "Shoelace area of original polygons; no triangulation or flow-field interpolation.",
+      "configuration_status": "Reynolds 1000 and Mach 1.2 are source settings; this visualization contains no flow solution."
+    }
+  }
+}

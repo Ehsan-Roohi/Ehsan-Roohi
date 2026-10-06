@@ -1,5 +1,7 @@
 # Project 2 - compressible airfoil
 
+[Open the illustrated case page: Mach contour and surface pressure →](../../case-studies/compressible-airfoil/README.md)
+
 The archived `AIRFOIL` programs evolve density, two velocity components, pressure and energy, with Roe-related flux routines and multistage update coefficients. They are compressible-flow codes, whereas the separately reviewed SIMPLE solver is incompressible.
 
 [Root source variants](variants) are preserved separately from five case directories: [85-medium](cases/85-medium), [85-high](cases/85-high), [very-high](cases/very-high), [exact](cases/exact), and [uniform](cases/uniform).

@@ -2,6 +2,15 @@
 
 Historical CFD II coursework from Ehsan Roohi's course with Dr. Mazaheri, including Fortran sources, mesh inputs, project reports and supplementary lectures. A local Project 1 cover names Dr. Mazaheri and Spring 1386 in the Persian calendar. Repository documentation is in English; original reports and scanned lecture documents retain their source language and attribution.
 
+## Explore the three visual case pages
+
+| [01 · Conical flow](case-studies/conical-flow/README.md) | [02 · Compressible airfoil](case-studies/compressible-airfoil/README.md) | [03 · Viscous airfoil](case-studies/viscous-airfoil/README.md) |
+| --- | --- | --- |
+| [![Conical pressure reconstruction](case-studies/conical-flow/figure.png)](case-studies/conical-flow/README.md) | [![Airfoil Mach contour](case-studies/compressible-airfoil/figure.png)](case-studies/compressible-airfoil/README.md) | [![Viscous mixed mesh](case-studies/viscous-airfoil/figure.png)](case-studies/viscous-airfoil/README.md) |
+| Historical pressure profile and conical reconstruction | Historical Mach field and surface pressure curves | Actual mixed mesh colored by cell area |
+
+Each page explains the physical problem, the numerical method and the figure, with direct links to code and reports. [Full-size visual gallery](case-studies/README.md).
+
 ## How many projects are there?
 
 The available archive contains **three numbered course projects**, plus a supporting grid-generation component. Four code directories organize these materials; the grid directory does not establish a fourth independent course assignment. The archive contains **23 Fortran files**, including alternative versions, copies configured for different meshes, and a postprocessor. They are not 23 separate projects.
@@ -47,8 +56,8 @@ The validation report gives dependencies, compiler options and the exact scope o
 
 - [Detailed project guides](projects/README.md): 23 Fortran files and 30 mesh input files.
 - [Reports](reports/README.md): five original Word documents.
-- [Historical results](results/README.md): four original outputs, distinguished from new validation evidence.
+- [Historical results](results/README.md): five original outputs, distinguished from new validation evidence.
 - [Lecture notes](lectures/README.md): 23 attributed educational PDFs.
-- [Manifest](manifest.json): byte counts, SHA-256 hashes and original paths for 85 preserved originals.
+- [Manifest](manifest.json): byte counts, SHA-256 hashes and original paths for 86 preserved originals.
 
 Original documents retain their authors' reuse terms; no blanket license is assigned to third-party material.
