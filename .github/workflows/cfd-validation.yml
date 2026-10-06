@@ -1,0 +1,54 @@
+name: CFD II validation
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'courses/cfd-2/projects/**'
+      - 'courses/cfd-2/tools/**'
+      - '.github/workflows/cfd-validation.yml'
+permissions:
+  contents: read
+jobs:
+  legacy-fortran:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check compiler
+        run: |
+          if ! command -v gfortran >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y gfortran
+          fi
+          gfortran --version
+          python3 --version
+      - name: Check originals and meshes
+        working-directory: courses/cfd-2
+        run: |
+          python3 tools/verify_archive.py
+          python3 tools/validate_meshes.py --output work/ci-mesh-validation.json
+      - name: Build and execute Fortran variants with diagnostic checks
+        working-directory: courses/cfd-2
+        run: |
+          python3 tools/validate_fortran.py --compiler "$(command -v gfortran)" --work work/ci-fortran --output work/ci-fortran-validation.json --timeout 30
+      - name: Print reproducible evidence
+        if: always()
+        working-directory: courses/cfd-2
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for name in ["ci-fortran-validation.json", "ci-mesh-validation.json"]:
+              path = Path("work") / name
+              if path.exists():
+                  print("CFD_EVIDENCE_BEGIN " + name)
+                  print(path.read_text())
+                  print("CFD_EVIDENCE_END " + name)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cfd-validation-evidence
+          path: |
+            courses/cfd-2/work/ci-fortran-validation.json
+            courses/cfd-2/work/ci-mesh-validation.json
+          retention-days: 30
