@@ -11,7 +11,7 @@ Ehsan Roohi's historical CFD 2 coursework: conical-flow solvers, compressible an
 
 | Section | Contents |
 | --- | --- |
-| [Lectures](lectures/README.md) | Seven Hejranfar chapter PDFs, one additional scanned chapter three Van Leer supplementary PDFs, and eleven RWTH Aachen lecture PDFs with a syllabus. Mazaheri's own lecture files have not yet been located. |
+| [Lectures](lectures/README.md) | Seven Hejranfar chapter PDFs, one additional scanned chapter, three Van Leer supplementary PDFs, and eleven RWTH Aachen lecture PDFs with a syllabus. Mazaheri's own lecture files have not yet been located. |
 | [Project 1: conical flow](projects/01-conical-flow/README.md) | Roe, Van Leer and H-L-R method branches; primitive/conservative variables and inviscid/viscous boundary-condition variants. |
 | [Project 2: compressible airfoil](projects/02-compressible-airfoil/README.md) | Legacy two-dimensional airfoil solvers, five preserved mesh cases and matching mesh/boundary files. |
 | [Project 3: viscous airfoil](projects/03-viscous-airfoil/README.md) | Personal Roohi-code variants and a mixed-connectivity viscous case. |
