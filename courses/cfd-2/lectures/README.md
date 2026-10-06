@@ -1,22 +1,21 @@
-# Lectures and lecture notes / لکچرها و جزوه‌ها
+# Lectures and lecture notes
 
 The personal CFD 2 projects are identified by Ehsan Roohi as coursework for Dr. Mazaheri. The lecture PDFs located for this publication are supplementary material from other named instructors. Mazaheri's own lecture files have not yet been identified in the available folders.
 
-پروژه‌های CFD 2 مربوط به درس دکتر مظاهری هستند. جزوه‌های موجود در این بخش، منابع تکمیلی با نام مدرس اصلی‌اند؛ هنوز فایل مستقلی از لکچرهای مظاهری در پوشه‌های بررسی‌شده شناسایی نشده است.
 
 ## Kazem Hejranfar - Sharif University of Technology
 
 The title pages of the seven chapter PDFs explicitly identify Kazem Hejranfar and the Aerospace Engineering Department, Sharif University of Technology. Original slides are preserved without editing. Chapter topics below were identified from the opening pages.
 
-| Chapter | Topic / موضوع | Pages | File |
+| Chapter |Topic | Pages | File |
 | --- | --- | ---: | --- |
-| 1 | معادلات حاکم و دسته‌بندی / Governing equations and classification | 41 | [PDF](hejranfar/chapter-01.pdf) |
-| 2 | معادلات اویلر و ساختار ریاضی / Euler equations and mathematical structure | 36 | [PDF](hejranfar/chapter-02.pdf) |
-| 3 | شرایط مرزی / Boundary conditions | 14 | [PDF](hejranfar/chapter-03.pdf) |
-| 4 | تولید شبکهٔ باسازمان / Structured grid generation | 70 | [PDF](hejranfar/chapter-04.pdf) |
-| 5 | روش حجم محدود / Finite-volume method | 56 | [PDF](hejranfar/chapter-05.pdf) |
-| 6 | ناویر–استوکس تراکم‌ناپذیر و کوپل فشار–سرعت / Incompressible Navier–Stokes and pressure–velocity coupling | 38 | [PDF](hejranfar/chapter-06.pdf) |
-| 7 | اختلاف محدود فشرده / Compact finite differences | 18 | [PDF](hejranfar/chapter-07.pdf) |
+| 1 |Governing equations and classification | 41 | [PDF](hejranfar/chapter-01.pdf) |
+| 2 |Euler equations and mathematical structure | 36 | [PDF](hejranfar/chapter-02.pdf) |
+| 3 |Boundary conditions | 14 | [PDF](hejranfar/chapter-03.pdf) |
+| 4 |Structured grid generation | 70 | [PDF](hejranfar/chapter-04.pdf) |
+| 5 |Finite-volume method | 56 | [PDF](hejranfar/chapter-05.pdf) |
+| 6 |Incompressible Navier–Stokes and pressure–velocity coupling | 38 | [PDF](hejranfar/chapter-06.pdf) |
+| 7 |Compact finite differences | 18 | [PDF](hejranfar/chapter-07.pdf) |
 
 [Additional scanned chapter 5 notes](hejranfar/chapter-05-scanned.pdf) - 63 pages. This file is in the same Hejranfar source folder; its original filename is `CFD-2-Kazem-chap-5.pdf`. Its content is image-based, so no text-derived topic or authorship beyond the folder attribution is asserted.
 

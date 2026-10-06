@@ -1,0 +1,251 @@
+{
+  "upstream_commit": "6a1d90684c9462aa48416894f147910ca20e238f",
+  "case": "uniform",
+  "mesh": "data/meshes/rectangle.msh",
+  "mesh_sha256": "6830b38aafff7a3473ed7e92d67682dda899a9b305f1b57043966d6d7240c6f7",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "gmsh": "4.15.2",
+    "matplotlib": "3.11.2"
+  },
+  "requested_iterations": 20,
+  "budget_seconds": 120.0,
+  "non_orthogonal_correctors": 1,
+  "mu": 1.79e-05,
+  "rho": 1.0,
+  "initial_conditions": {
+    "u": 1.0,
+    "v": 0.0,
+    "p": 101325.0
+  },
+  "mesh_cells": 931,
+  "mesh_nodes": 1000,
+  "minimum_cell_area": 0.26852846401568087,
+  "all_cell_areas_positive": true,
+  "source_hashes": {
+    "src/__main__.py": "375630be7ad55c3d9eabf6112fbaccbf4b899d64ba303b5d4fdd39d33c4cbb99",
+    "src/boundaries/__init__.py": "da16b0ed8671d279e9745144f0e411e0dd6d3718f42c8a70e5ac0b4bc1d70162",
+    "src/boundaries/boundaries.py": "56fd1be1e523fcf5c50b84acf772aeafaa5ad9d69386f83533fce754f27028de",
+    "src/boundaries/PressureOutlet.py": "2ecbe0e6c318eacee0c439addaee127b6d15505277f7f21abd2adfebac243586",
+    "src/boundaries/SlipWall.py": "c91af4c65cf2984cf36e07a4a41d5d72a1fb71eb399059a69d6d31d60f7e6b53",
+    "src/boundaries/VelocityInlet.py": "5b5b113ddd7a8ed2f1180ac82b672bf564f779718888a8eb16bcc2c7ad80f353",
+    "src/helpers.py": "7056c14efac8276008d6a8a1e0cc6574c55e4d89ae6d1299d088c02f196c6ec2",
+    "src/mesh.py": "e3a83414275bc6fa12e9961e0ecba2f982bffbb7d7a2d28a041aafa02ed18967",
+    "src/numerics/__init__.py": "1feb8b9fa1c05b497c58d442f54443ce7633efe3ea7e64e1374d416dde66990d",
+    "src/numerics/gradients.py": "adc53a26227a5aad9b848270e924bfeca1d61d87295ae3c2dfbe223784ecbf98",
+    "src/numerics/interpolations.py": "178d90c99e823826814c716e5fcaf4b5e35a9091d3b5cbfd7c4019e055bbd951",
+    "src/numerics/non_orthogonal_correction.py": "30711ecbe518d941c05eb80bf7225db6005996bf8ef9ea79410bc2763782f2a4",
+    "src/solution/__init__.py": "125034a3c20a236f4a035e767a6125c2f33a53b4b954b19b1df98284ddbcfec6",
+    "src/solution/discretize.py": "ad96b7277808c230af8fdb35e048eb12be30a4b8270525cf7a1c3ad742b7a234",
+    "src/solution/initialize.py": "85424c13f2cdbb3a389295477dbf76dbbddf3ebfa144bd8bb6440cdea10e2727",
+    "src/solution/SIMPLE.py": "f4282d65f42f88548288c66e719d88833a093f2fe4ba063fb9a7a648af82413a"
+  },
+  "status": "requested_iterations_completed",
+  "history": [
+    {
+      "iteration": 1,
+      "continuity_max": 1.6426415783143966e-11,
+      "continuity_L1": 3.274294502197961e-09,
+      "continuity_net": 1.4547252291663426e-12,
+      "maximum_velocity_change": 2.211963945342177e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000221196
+    },
+    {
+      "iteration": 2,
+      "continuity_max": 1.1856737813786822e-11,
+      "continuity_L1": 2.0640774645031e-09,
+      "continuity_net": 2.10997885830011e-12,
+      "maximum_velocity_change": 1.630618746458588e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.000000000034768
+    },
+    {
+      "iteration": 3,
+      "continuity_max": 7.736367102495478e-12,
+      "continuity_L1": 1.3913343810401102e-09,
+      "continuity_net": 3.869793374633446e-12,
+      "maximum_velocity_change": 1.316667086821095e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000424047
+    },
+    {
+      "iteration": 4,
+      "continuity_max": 9.586331728428377e-12,
+      "continuity_L1": 1.7593269063809203e-09,
+      "continuity_net": 5.404343639270337e-12,
+      "maximum_velocity_change": 1.0982941664133086e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000438887
+    },
+    {
+      "iteration": 5,
+      "continuity_max": 1.265854088217111e-11,
+      "continuity_L1": 2.443362179249675e-09,
+      "continuity_net": 6.16973139244692e-12,
+      "maximum_velocity_change": 9.750767707583623e-12,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000414573
+    },
+    {
+      "iteration": 6,
+      "continuity_max": 1.5245471551850187e-11,
+      "continuity_L1": 2.983238767129137e-09,
+      "continuity_net": 6.222578008419077e-12,
+      "maximum_velocity_change": 8.96227832907947e-12,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000378801
+    },
+    {
+      "iteration": 7,
+      "continuity_max": 1.7132850693712953e-11,
+      "continuity_L1": 3.323798458687577e-09,
+      "continuity_net": 5.924927215517073e-12,
+      "maximum_velocity_change": 9.015677093771046e-12,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000349447
+    },
+    {
+      "iteration": 8,
+      "continuity_max": 1.76371139914977e-11,
+      "continuity_L1": 3.499087797287359e-09,
+      "continuity_net": 5.632272426225882e-12,
+      "maximum_velocity_change": 1.0536016503692736e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.000000000036216
+    },
+    {
+      "iteration": 9,
+      "continuity_max": 1.73820957627413e-11,
+      "continuity_L1": 3.584608276874235e-09,
+      "continuity_net": 5.523470569812616e-12,
+      "maximum_velocity_change": 1.0911493930620964e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000394023
+    },
+    {
+      "iteration": 10,
+      "continuity_max": 1.789890458070431e-11,
+      "continuity_L1": 3.6258391844512516e-09,
+      "continuity_net": 5.5995208469994395e-12,
+      "maximum_velocity_change": 1.2112311154055533e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000429985
+    },
+    {
+      "iteration": 11,
+      "continuity_max": 1.806033100848481e-11,
+      "continuity_L1": 3.6811230730293687e-09,
+      "continuity_net": 5.763500787736575e-12,
+      "maximum_velocity_change": 1.265809679296126e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000511946
+    },
+    {
+      "iteration": 12,
+      "continuity_max": 1.7872703317323158e-11,
+      "continuity_L1": 3.795322167654547e-09,
+      "continuity_net": 5.916933609739772e-12,
+      "maximum_velocity_change": 1.2954526340536177e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.000000000056271
+    },
+    {
+      "iteration": 13,
+      "continuity_max": 1.7874257629557633e-11,
+      "continuity_L1": 3.932202119472095e-09,
+      "continuity_net": 6.007416786246722e-12,
+      "maximum_velocity_change": 1.375832781036479e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.000000000064471
+    },
+    {
+      "iteration": 14,
+      "continuity_max": 1.8076540264644336e-11,
+      "continuity_L1": 4.0502893261518125e-09,
+      "continuity_net": 6.031730670486013e-12,
+      "maximum_velocity_change": 1.3826939593286625e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000720024
+    },
+    {
+      "iteration": 15,
+      "continuity_max": 1.936450999551198e-11,
+      "continuity_L1": 4.106864071040661e-09,
+      "continuity_net": 6.015077325116636e-12,
+      "maximum_velocity_change": 1.4179990515117424e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000777145
+    },
+    {
+      "iteration": 16,
+      "continuity_max": 2.0653478927101787e-11,
+      "continuity_L1": 4.1124301741746194e-09,
+      "continuity_net": 5.987210727198544e-12,
+      "maximum_velocity_change": 1.4328316311207345e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000000888105
+    },
+    {
+      "iteration": 17,
+      "continuity_max": 2.0785040355519868e-11,
+      "continuity_L1": 4.08032208021325e-09,
+      "continuity_net": 5.966338534335591e-12,
+      "maximum_velocity_change": 1.4763967826070257e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000001021512
+    },
+    {
+      "iteration": 18,
+      "continuity_max": 2.058209158661839e-11,
+      "continuity_L1": 4.0422506453197116e-09,
+      "continuity_net": 5.958233906255828e-12,
+      "maximum_velocity_change": 1.4732437492170902e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000001168148
+    },
+    {
+      "iteration": 19,
+      "continuity_max": 2.148237143728693e-11,
+      "continuity_L1": 4.047181700883584e-09,
+      "continuity_net": 5.959455151582915e-12,
+      "maximum_velocity_change": 1.5335732683752212e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000001309453
+    },
+    {
+      "iteration": 20,
+      "continuity_max": 2.2029933433032056e-11,
+      "continuity_L1": 4.074642623308478e-09,
+      "continuity_net": 5.963451954471566e-12,
+      "maximum_velocity_change": 1.5772716466244674e-11,
+      "all_fields_finite": true,
+      "maximum_speed": 1.0000000001425784
+    }
+  ],
+  "warnings": [],
+  "completed_iterations": 20,
+  "all_fields_finite": true,
+  "field_ranges": {
+    "u": [
+      0.9999999998613855,
+      1.0000000001425784
+    ],
+    "v": [
+      -1.0803963657087232e-10,
+      1.4391530129651282e-10
+    ],
+    "p": [
+      101325.0,
+      101325.0
+    ]
+  },
+  "exact_solution_errors": {
+    "u_Linf": 1.425783935360414e-10,
+    "v_Linf": 1.4391530129651282e-10,
+    "p_Linf": 0.0
+  },
+  "uniform_solution_preserved": true,
+  "elapsed_seconds": 80.015
+}

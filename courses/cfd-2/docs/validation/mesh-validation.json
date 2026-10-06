@@ -1,0 +1,183 @@
+{
+  "scope": "Geometry/connectivity and source-dimension checks; not flow validation",
+  "cases": [
+    {
+      "case": "projects/02-compressible-airfoil/cases/85-high",
+      "nodes": 4012,
+      "cells": 7934,
+      "triangle_cells": 7934,
+      "quad_cells": 0,
+      "positive_signed_areas": 7934,
+      "negative_signed_areas": 0,
+      "zero_area_cells": 0,
+      "minimum_absolute_area": 0.0011455831348616144,
+      "boundary_edges": 90,
+      "non_manifold_edges": 0,
+      "input_hashes": {
+        "node.dat": "6835a0e4af05a565986bfc3d7decdedba009309384010803d5b8859b3477c6a8",
+        "connectivity.dat": "c709ffd4caf09bf6df77f6feb665edda8dfee976e4e8edcbec0174cc7fb5f319"
+      },
+      "sources": [
+        {
+          "file": "airfoil4.for",
+          "NN": 4012,
+          "NE": 7934,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": false
+        }
+      ],
+      "issues": [],
+      "geometry_checks_passed": true
+    },
+    {
+      "case": "projects/02-compressible-airfoil/cases/85-medium",
+      "nodes": 1298,
+      "cells": 2526,
+      "triangle_cells": 2526,
+      "quad_cells": 0,
+      "positive_signed_areas": 2526,
+      "negative_signed_areas": 0,
+      "zero_area_cells": 0,
+      "minimum_absolute_area": 0.005064685727255507,
+      "boundary_edges": 70,
+      "non_manifold_edges": 0,
+      "input_hashes": {
+        "node.dat": "ce8f54e2d9b2e799d6a5ec0c4cfe3c7b4f09ac1ac77d0625bb86285ad56be913",
+        "connectivity.dat": "d71a2452e0da03a05fe91bbec22523ed310b11a7beedf720425cf1c68fd31095"
+      },
+      "sources": [
+        {
+          "file": "airfoil4.for",
+          "NN": 1298,
+          "NE": 2526,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": false
+        }
+      ],
+      "issues": [],
+      "geometry_checks_passed": true
+    },
+    {
+      "case": "projects/02-compressible-airfoil/cases/exact",
+      "nodes": 409,
+      "cells": 776,
+      "triangle_cells": 776,
+      "quad_cells": 0,
+      "positive_signed_areas": 776,
+      "negative_signed_areas": 0,
+      "zero_area_cells": 0,
+      "minimum_absolute_area": 0.01626948445321209,
+      "boundary_edges": 42,
+      "non_manifold_edges": 0,
+      "input_hashes": {
+        "node.dat": "7b132e5f032be669e04ecf078e1846e7c330e36fe671b887943c9b186ec58b8e",
+        "connectivity.dat": "0b451123ddb14b3efe8c6e0292cac9f42dd6b68c7ca33657f0757467f9f2e5b8"
+      },
+      "sources": [
+        {
+          "file": "airfoil3.for",
+          "NN": 409,
+          "NE": 776,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": false
+        }
+      ],
+      "issues": [],
+      "geometry_checks_passed": true
+    },
+    {
+      "case": "projects/02-compressible-airfoil/cases/uniform",
+      "nodes": 258,
+      "cells": 464,
+      "triangle_cells": 464,
+      "quad_cells": 0,
+      "positive_signed_areas": 464,
+      "negative_signed_areas": 0,
+      "zero_area_cells": 0,
+      "minimum_absolute_area": 0.11307075724084881,
+      "boundary_edges": 50,
+      "non_manifold_edges": 0,
+      "input_hashes": {
+        "node.dat": "d47323f8cd4ab19a3b16a7779d910029bd3dcf2f698cd4bcb37058765539b0a7",
+        "connectivity.dat": "f6ecf170b302babf38124034008a91dc810887207f15a7bef6c39e324ce191cd"
+      },
+      "sources": [
+        {
+          "file": "airfoil.for",
+          "NN": 258,
+          "NE": 464,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": false
+        },
+        {
+          "file": "airfoil3.for",
+          "NN": 258,
+          "NE": 464,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": false
+        }
+      ],
+      "issues": [],
+      "geometry_checks_passed": true
+    },
+    {
+      "case": "projects/02-compressible-airfoil/cases/very-high",
+      "nodes": 5284,
+      "cells": 10488,
+      "triangle_cells": 10488,
+      "quad_cells": 0,
+      "positive_signed_areas": 10488,
+      "negative_signed_areas": 0,
+      "zero_area_cells": 0,
+      "minimum_absolute_area": 0.0006577721854725462,
+      "boundary_edges": 80,
+      "non_manifold_edges": 0,
+      "input_hashes": {
+        "node.dat": "523ef9d98b9651c312ac275f876abfa26bc053dd2bb45026f65388422a07309f",
+        "connectivity.dat": "4d5719e02553bcf592c7c31eb980745bd50391143d4b4edd0c07bb85270baa6b"
+      },
+      "sources": [
+        {
+          "file": "airfoil4.for",
+          "NN": 5284,
+          "NE": 10488,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": false
+        }
+      ],
+      "issues": [],
+      "geometry_checks_passed": true
+    },
+    {
+      "case": "projects/03-viscous-airfoil/roohi-code/Viscous",
+      "nodes": 838,
+      "cells": 1374,
+      "triangle_cells": 1142,
+      "quad_cells": 232,
+      "positive_signed_areas": 1374,
+      "negative_signed_areas": 0,
+      "zero_area_cells": 0,
+      "minimum_absolute_area": 6.630222371556155e-7,
+      "boundary_edges": 70,
+      "non_manifold_edges": 0,
+      "input_hashes": {
+        "node.dat": "a8ccf237a87c7d2138bb5e0f90c3d6bae4263edeb2840ce8faeb15c42537bf80",
+        "connectivity1.DAT": "bb6755eeeb031ebf8150defab590e2ef17049b9622cff545f620279c70e634a0",
+        "connectivity2.dat": "e4504386dcd5a445ad2b579817e5d5c7f3c33ea790315e97ab95f633a9f5e102"
+      },
+      "sources": [
+        {
+          "file": "airfoilla V LAST.for",
+          "NN": 838,
+          "NE": 1374,
+          "dimensions_match_inputs": true,
+          "quad_Y_centroid_uses_X4": true,
+          "maximum_quad_Y_centroid_error": 0.25237153230000003,
+          "affected_quad_cells": 232
+        }
+      ],
+      "issues": [],
+      "geometry_checks_passed": true
+    }
+  ]
+}

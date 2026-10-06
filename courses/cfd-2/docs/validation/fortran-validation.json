@@ -1,0 +1,2028 @@
+{
+  "compiler": "GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "flags": [
+    "-std=legacy",
+    "-fdec",
+    "-ffixed-line-length-none",
+    "-ffree-line-length-none",
+    "-fallow-argument-mismatch",
+    "-O0",
+    "-g",
+    "-fcheck=all",
+    "-ffpe-trap=invalid,zero,overflow",
+    "-fbacktrace",
+    "-finit-real=snan",
+    "-finit-integer=-999999"
+  ],
+  "scope": "All selected archived sources",
+  "run_timeout_seconds": 30,
+  "sources": [
+    {
+      "source": "projects/01-conical-flow/all-codes/CONTOUR.for",
+      "sha256": "083c728f7de9158e2bc85dbd7635e0e9a86fb8b2e12ad29dcee308660fdca84e",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 2.837,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_postprocessor_requires_flow_outputs"
+    },
+    {
+      "source": "projects/01-conical-flow/all-codes/Second0.for",
+      "sha256": "1b4a5f42928001a0173c9bc0b2a41ee879890a7f363bc50dbe9e25eb313d7c2c",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 83,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 84,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 85,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 86,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 87,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 88,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.549,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": 2,
+        "timed_out": false,
+        "seconds": 0.086,
+        "stdout": "",
+        "stderr": "At line 126 of file source.for (unit = 5, file = 'Output.plt')\nFortran runtime error: End of file\n\nError termination. Backtrace:\n#0  0x7fd4fbe23e59 in ???\n#1  0x7fd4fbe24a71 in ???\n#2  0x7fd4fbe256dc in ???\n#3  0x7fd4fc0bb6c3 in ???\n#4  0x7fd4fc0b437e in ???\n#5  0x7fd4fc0b502f in ???\n#6  0x55975043dbb9 in input\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/02/source.for:126\n#7  0x55975041c74d in conicalflow\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/02/source.for:92\n#8  0x55975043de5f in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/02/source.for:104\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "Output.plt",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHO.DAT",
+          "bytes": 93
+        },
+        {
+          "file": "U.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/01-conical-flow/all-codes/VAN LEER.for",
+      "sha256": "c893bbeed7a8a8a7f224a58b2460d211674eebda9ad277e93170e00f1af234d2",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 83,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 84,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 85,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 86,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 87,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 88,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.313,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.133,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f6135623e59 in ???\n#1  0x7f6135622e75 in ???\n#2  0x7f613524532f in ???\n#3  0x557196c367dc in viscus\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/03/source.for:938\n#4  0x557196c303a6 in conicalflow\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/03/source.for:97\n#5  0x557196c49579 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/03/source.for:104\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "Output.plt",
+          "bytes": 0
+        },
+        {
+          "file": "P.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHOO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "U.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UR.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UT.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/01-conical-flow/all-codes/uniform.for",
+      "sha256": "6c10c22155f97536dd32b3732e2f7362ccd8d571b0b0f5f620200309921cf41b",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 83,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 84,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 85,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 86,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 87,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 88,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.316,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.073,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f0ddde23e59 in ???\n#1  0x7f0ddde22e75 in ???\n#2  0x7f0ddda4532f in ???\n#3  0x7f0dde1a3f06 in ???\n#4  0x55a3f9ffe3dc in initialize\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/04/source.for:210\n#5  0x55a3f9fe6379 in conicalflow\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/04/source.for:94\n#6  0x55a3f9fff781 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/04/source.for:104\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "Output.plt",
+          "bytes": 0
+        },
+        {
+          "file": "P.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHOO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "U.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UR.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UT.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/01-conical-flow/hlr-final/Second.for",
+      "sha256": "5f2fb6cec15ebddfc8983679b51df8df861af18b2fd118e93586b9e417554da9",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 83,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 84,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 85,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 86,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 87,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 88,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.402,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.071,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f39a9623e59 in ???\n#1  0x7f39a9622e75 in ???\n#2  0x7f39a924532f in ???\n#3  0x558a1d1c3e65 in viscus\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/05/source.for:1358\n#4  0x558a1d1bb768 in conicalflow\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/05/source.for:97\n#5  0x558a1d1dc775 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/05/source.for:104\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "Output.plt",
+          "bytes": 0
+        },
+        {
+          "file": "P.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHOO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "T.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "U.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UR.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UT.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/01-conical-flow/hlr-final/Second0.for",
+      "sha256": "0f29114c509451ba954055641037e621539ca80977e4b4975b7386caa9b639c8",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 83,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 84,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 85,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 86,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 87,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 88,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.404,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.073,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f0ad5423e59 in ???\n#1  0x7f0ad5422e75 in ???\n#2  0x7f0ad504532f in ???\n#3  0x55a31def3e97 in viscus\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/06/source.for:1366\n#4  0x55a31deeb768 in conicalflow\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/06/source.for:97\n#5  0x55a31df0cbcf in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/06/source.for:104\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "Output.plt",
+          "bytes": 0
+        },
+        {
+          "file": "P.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RHOO.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "T.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "U.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UR.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "UT.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/cases/85-high/airfoil4.for",
+      "sha256": "186438fe158ceb496a56e5e403dd75be438dff78b302c827aa306dc59c00e682",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.015,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.485,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity.dat",
+          "alias": "connectivity.DAT"
+        }
+      ],
+      "staged_files": [
+        "node.dat",
+        "connectivity.dat",
+        "BC.DAT",
+        "Node.DAT",
+        "connectivity.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 2.661,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7fc837e23e59 in ???\n#1  0x7fc837e22e75 in ???\n#2  0x7fc837a4532f in ???\n#3  0x55eaea4b7c19 in initialize\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/07/source.for:396\n#4  0x55eaea49e0dc in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/07/source.for:87\n#5  0x55eaea4bce85 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/07/source.for:96\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "BE.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/cases/85-medium/airfoil4.for",
+      "sha256": "044bdc92f8f8cc71d1e1161c37b912f28a655e066dac18eeb304f07b09dba9b6",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.009,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.438,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity.dat",
+          "alias": "connectivity.DAT"
+        }
+      ],
+      "staged_files": [
+        "node.dat",
+        "connectivity.dat",
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "connectivity.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.324,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f9f97e23e59 in ???\n#1  0x7f9f97e22e75 in ???\n#2  0x7f9f97a4532f in ???\n#3  0x560c25e81e67 in initialize\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/08/source.for:396\n#4  0x560c25e68136 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/08/source.for:87\n#5  0x560c25e86e5b in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/08/source.for:96\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/cases/exact/airfoil3.for",
+      "sha256": "a23af6bf5d162901e813c5e310649a00de470c789fbbaa27549b9b0500463f48",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.01,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.364,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity.dat",
+          "alias": "connectivity.DAT"
+        }
+      ],
+      "staged_files": [
+        "node.dat",
+        "connectivity.dat",
+        "AIRFOIL2.neu",
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "connectivity.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": 2,
+        "timed_out": false,
+        "seconds": 0.031,
+        "stdout": "",
+        "stderr": "At line 495 of file source.for\nFortran runtime error: Index '-999999' of dimension 2 of array 'dx' below lower bound of 1\n\nError termination. Backtrace:\n#0  0x7f6edea23e59 in ???\n#1  0x7f6edea24a71 in ???\n#2  0x7f6edea25082 in ???\n#3  0x55f5fa7f9328 in flux\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/09/source.for:495\n#4  0x55f5fa7f4661 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/09/source.for:88\n#5  0x55f5fa810bc9 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/09/source.for:95\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "output1.plt",
+          "bytes": 61106
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/cases/uniform/airfoil.for",
+      "sha256": "62b8929fd3d726a684820d47151928fbd7244670928f0b8dda28cbbe341b4c1a",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.008,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.281,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity.dat",
+          "alias": "connectivity.DAT"
+        }
+      ],
+      "staged_files": [
+        "UNIELEMENT.neu",
+        "node.dat",
+        "UNI.neu",
+        "BC e.DAT",
+        "connectivity.dat",
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "connectivity.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.093,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f9ea7223e59 in ???\n#1  0x7f9ea7222e75 in ???\n#2  0x7f9ea6e4532f in ???\n#3  0x559da556c4e3 in flux\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/10/source.for:513\n#4  0x559da5565683 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/10/source.for:89\n#5  0x559da557a399 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/10/source.for:95\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/cases/uniform/airfoil3.for",
+      "sha256": "b76fbab032bfc27fbf2d9f7d9f5090c7b164bece29f082ecf881327931eceb19",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.009,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.313,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity.dat",
+          "alias": "connectivity.DAT"
+        }
+      ],
+      "staged_files": [
+        "UNIELEMENT.neu",
+        "node.dat",
+        "UNI.neu",
+        "BC e.DAT",
+        "connectivity.dat",
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "connectivity.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": -8,
+        "timed_out": false,
+        "seconds": 0.085,
+        "stdout": "",
+        "stderr": "\nProgram received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.\n\nBacktrace for this error:\n#0  0x7f7a44623e59 in ???\n#1  0x7f7a44622e75 in ???\n#2  0x7f7a4424532f in ???\n#3  0x559058cda057 in initialize\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/11/source.for:370\n#4  0x559058cc8218 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/11/source.for:85\n#5  0x559058cdf217 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/11/source.for:94\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/cases/very-high/airfoil4.for",
+      "sha256": "12dd1ef7da7dec03ca308f3c62071d353d2a6d41cbf5a18fa4e744c993d587c5",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.009,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.845,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity.dat",
+          "alias": "connectivity.DAT"
+        }
+      ],
+      "staged_files": [
+        "node.dat",
+        "connectivity.dat",
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "connectivity.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": 2,
+        "timed_out": false,
+        "seconds": 4.54,
+        "stdout": "",
+        "stderr": "At line 487 of file source.for\nFortran runtime error: Index '-999999' of dimension 2 of array 'dx' below lower bound of 1\n\nError termination. Backtrace:\n#0  0x7fa9d6a23e59 in ???\n#1  0x7fa9d6a24a71 in ???\n#2  0x7fa9d6a25082 in ???\n#3  0x55d2c53c52df in flux\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/12/source.for:487\n#4  0x55d2c53bfc71 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/12/source.for:90\n#5  0x55d2c53df3d7 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/12/source.for:96\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "output1.plt",
+          "bytes": 805575
+        }
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/NUM1,CFD2,PRO2,T,uniform.f90",
+      "sha256": "089eaa1780ff27083063fc2bacfcc8c7a64688b3ca3ac5c46559294da09b95a7",
+      "format": "free",
+      "cleanup_only_build": {
+        "edits": [],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.469,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "1.txt",
+        "2.txt",
+        "3.txt",
+        "Area of cells.txt",
+        "Contours.plt",
+        "Inf NBs.txt",
+        "M.plt",
+        "M.txt",
+        "Wall11 NBs.txt",
+        "Wall13 NBs.txt",
+        "Wall21 NBs.txt",
+        "Wall23 NBs.txt",
+        "X of nodes.txt",
+        "Y of nodes.txt",
+        "face.txt",
+        "faceEndpoints.txt",
+        "nb.txt"
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/airfoil.for",
+      "sha256": "dfef21be249e2d60fff9b6ca806dd36cf0fe6e8e3e148c44cdde888d4ba6bdb0",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 69,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 70,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.008,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 69,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 70,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 17,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.196,
+        "stdout": "",
+        "stderr": "source.for:245:15:\n\n  245 |             RHOO(1:NE)=RHO(1:NE)\n      |                      1\nWarning: Upper array reference at (1) is out of bounds (892 > 481) in dimension 1\nsource.for:245:25:\n\n  245 |             RHOO(1:NE)=RHO(1:NE)\n      |                                1\nWarning: Upper array reference at (1) is out of bounds (892 > 481) in dimension 1\nsource.for:348:10:\n\n  346 |         DO I=1,NE\n      |                      2\n  347 | \n  348 |         QLO(I,1)=(UO(I)*DY(I,1)-VO(I)*DX(I,1))/DS(I,1)\n      |                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:348:19:\n\n  346 |         DO I=1,NE\n      |                      2    \n  347 | \n  348 |         QLO(I,1)=(UO(I)*DY(I,1)-VO(I)*DX(I,1))/DS(I,1)\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:348:33:\n\n  346 |         DO I=1,NE\n      |                      2                  \n  347 | \n  348 |         QLO(I,1)=(UO(I)*DY(I,1)-VO(I)*DX(I,1))/DS(I,1)\n      |                                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:349:10:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  349 |       QLO(I,2)=(UO(I)*DY(I,2)-VO(I)*DX(I,2))/DS(I,2)\n      |          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:349:19:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  349 |       QLO(I,2)=(UO(I)*DY(I,2)-VO(I)*DX(I,2))/DS(I,2)\n      |                   1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:349:33:\n\n  346 |         DO I=1,NE\n      |                      2           \n......\n  349 |       QLO(I,2)=(UO(I)*DY(I,2)-VO(I)*DX(I,2))/DS(I,2)\n      |                                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:350:10:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  350 |       QLO(I,3)=(UO(I)*DY(I,3)-VO(I)*DX(I,3))/DS(I,3)\n      |          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:350:19:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  350 |       QLO(I,3)=(UO(I)*DY(I,3)-VO(I)*DX(I,3))/DS(I,3)\n      |                   1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:350:33:\n\n  346 |         DO I=1,NE\n      |                      2           \n......\n  350 |       QLO(I,3)=(UO(I)*DY(I,3)-VO(I)*DX(I,3))/DS(I,3)\n      |                                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:352:10:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  352 |         RLO(I,1)=(UO(I)*DX(I,1)+VO(I)*DY(I,1))/DS(I,1)\n      |                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:352:19:\n\n  346 |         DO I=1,NE\n      |                      2    \n......\n  352 |         RLO(I,1)=(UO(I)*DX(I,1)+VO(I)*DY(I,1))/DS(I,1)\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:352:33:\n\n  346 |         DO I=1,NE\n      |                      2                  \n......\n  352 |         RLO(I,1)=(UO(I)*DX(I,1)+VO(I)*DY(I,1))/DS(I,1)\n      |                                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:353:10:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  353 |       RLO(I,2)=(UO(I)*DX(I,2)+VO(I)*DY(I,2))/DS(I,2)\n      |          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:353:19:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  353 |       RLO(I,2)=(UO(I)*DX(I,2)+VO(I)*DY(I,2))/DS(I,2)\n      |                   1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:353:33:\n\n  346 |         DO I=1,NE\n      |                      2           \n......\n  353 |       RLO(I,2)=(UO(I)*DX(I,2)+VO(I)*DY(I,2))/DS(I,2)\n      |                                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:354:10:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  354 |       RLO(I,3)=(UO(I)*DX(I,3)+VO(I)*DY(I,3))/DS(I,3)\n      |          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:354:19:\n\n  346 |         DO I=1,NE\n      |                      2\n......\n  354 |       RLO(I,3)=(UO(I)*DX(I,3)+VO(I)*DY(I,3))/DS(I,3)\n      |                   1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:354:33:\n\n  346 |         DO I=1,NE\n      |                      2           \n......\n  354 |       RLO(I,3)=(UO(I)*DX(I,3)+VO(I)*DY(I,3))/DS(I,3)\n      |                                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:371:23:\n\n  363 |         DO I=1,NE\n      |                      2 \n......\n  371 |       RHOFH1=SQRT(RHOO(I)*RHOO(NE1))\n      |                       1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:373:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  373 |         RHOFH2=SQRT(RHOO(I)*RHOO(NE2))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:375:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  375 |         RHOFH3=SQRT(RHOO(I)*RHOO(NE3))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:378:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  378 |         RHOS1=(SQRT(RHOO(I))+SQRT(RHOO(NE1)))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:380:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  380 |         RHOS2=(SQRT(RHOO(I))+SQRT(RHOO(NE2)))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:382:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  382 |         RHOS3=(SQRT(RHOO(I))+SQRT(RHOO(NE3)))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:385:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  385 |         PFHAT1=(PO(I)*SQRT(RHOO(I))+PO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:385:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  385 |         PFHAT1=(PO(I)*SQRT(RHOO(I))+PO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:387:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  387 |         PFHAT2=(PO(I)*SQRT(RHOO(I))+PO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:387:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  387 |         PFHAT2=(PO(I)*SQRT(RHOO(I))+PO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:389:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  389 |         PFHAT3=(PO(I)*SQRT(RHOO(I))+PO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:389:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  389 |         PFHAT3=(PO(I)*SQRT(RHOO(I))+PO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:392:16:\n\n  363 |         DO I=1,NE\n      |                      2 \n......\n  392 |         CHAT1=(CO(I)*SQRT(RHOO(I))+CO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                       1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:392:29:\n\n  363 |         DO I=1,NE\n      |                      2              \n......\n  392 |         CHAT1=(CO(I)*SQRT(RHOO(I))+CO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                                    1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:394:16:\n\n  363 |         DO I=1,NE\n      |                      2 \n......\n  394 |         CHAT2=(CO(I)*SQRT(RHOO(I))+CO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                       1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:394:29:\n\n  363 |         DO I=1,NE\n      |                      2              \n......\n  394 |         CHAT2=(CO(I)*SQRT(RHOO(I))+CO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                                    1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:396:16:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  396 |       CHAT3=(CO(I)*SQRT(RHOO(I))+CO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:396:29:\n\n  363 |         DO I=1,NE\n      |                      2       \n......\n  396 |       CHAT3=(CO(I)*SQRT(RHOO(I))+CO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                             1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:399:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  399 |         VFHAT1=(VO(I)*SQRT(RHOO(I))+VO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:399:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  399 |         VFHAT1=(VO(I)*SQRT(RHOO(I))+VO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:401:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  401 |         VFHAT2=(VO(I)*SQRT(RHOO(I))+VO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:401:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  401 |         VFHAT2=(VO(I)*SQRT(RHOO(I))+VO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:403:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  403 |         VFHAT3=(VO(I)*SQRT(RHOO(I))+VO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:403:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  403 |         VFHAT3=(VO(I)*SQRT(RHOO(I))+VO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:406:17:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  406 |       UFHAT1=(UO(I)*SQRT(RHOO(I))+UO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:406:30:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  406 |       UFHAT1=(UO(I)*SQRT(RHOO(I))+UO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:408:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  408 |         UFHAT2=(UO(I)*SQRT(RHOO(I))+UO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:408:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  408 |         UFHAT2=(UO(I)*SQRT(RHOO(I))+UO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:410:17:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  410 |       UFHAT3=(UO(I)*SQRT(RHOO(I))+UO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:410:30:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  410 |       UFHAT3=(UO(I)*SQRT(RHOO(I))+UO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:427:17:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  427 |       HFHAT1=(HO(I)*SQRT(RHOO(I))+HO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:427:30:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  427 |       HFHAT1=(HO(I)*SQRT(RHOO(I))+HO(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:429:17:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  429 |       HFHAT2=(HO(I)*SQRT(RHOO(I))+HO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                 1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:429:30:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  429 |       HFHAT2=(HO(I)*SQRT(RHOO(I))+HO(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:431:17:\n\n  363 |         DO I=1,NE\n      |                      2  \n......\n  431 |         HFHAT3=(HO(I)*SQRT(RHOO(I))+HO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                        1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:431:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  431 |         HFHAT3=(HO(I)*SQRT(RHOO(I))+HO(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:434:19:\n\n  363 |         DO I=1,NE\n      |                      2    \n......\n  434 |         TFHAT1=(TOLD(I)*SQRT(RHOO(I))+TOLD(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:434:32:\n\n  363 |         DO I=1,NE\n      |                      2                 \n......\n  434 |         TFHAT1=(TOLD(I)*SQRT(RHOO(I))+TOLD(NE1)*SQRT(RHOO(NE1)))/RHOS1\n      |                                       1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:436:19:\n\n  363 |         DO I=1,NE\n      |                      2    \n......\n  436 |         TFHAT2=(TOLD(I)*SQRT(RHOO(I))+TOLD(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:436:32:\n\n  363 |         DO I=1,NE\n      |                      2                 \n......\n  436 |         TFHAT2=(TOLD(I)*SQRT(RHOO(I))+TOLD(NE2)*SQRT(RHOO(NE2)))/RHOS2\n      |                                       1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:438:19:\n\n  363 |         DO I=1,NE\n      |                      2    \n......\n  438 |         TFHAT3=(TOLD(I)*SQRT(RHOO(I))+TOLD(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:438:32:\n\n  363 |         DO I=1,NE\n      |                      2                 \n......\n  438 |         TFHAT3=(TOLD(I)*SQRT(RHOO(I))+TOLD(NE3)*SQRT(RHOO(NE3)))/RHOS3\n      |                                       1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:443:21:\n\n  363 |         DO I=1,NE\n      |                      2      \n......\n  443 |         DP1=PO(NE1)-PO(I)\n      |                            1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:445:25:\n\n  363 |         DO I=1,NE\n      |                      2          \n......\n  445 |         DQ1=QLO(NE1,1)-QLO(I,1)\n      |                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:447:27:\n\n  363 |         DO I=1,NE\n      |                      2            \n......\n  447 |         DRHO1=RHOO(NE1)-RHOO(I)\n      |                                  1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:449:25:\n\n  363 |         DO I=1,NE\n      |                      2          \n......\n  449 |         DR1=RLO(NE1,1)-RLO(I,1)\n      |                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:474:21:\n\n  363 |         DO I=1,NE\n      |                      2      \n......\n  474 |         DP2=PO(NE2)-PO(I)\n      |                            1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:476:25:\n\n  363 |         DO I=1,NE\n      |                      2          \n......\n  476 |         DQ2=QLO(NE2,2)-QLO(I,2)\n      |                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:478:27:\n\n  363 |         DO I=1,NE\n      |                      2            \n......\n  478 |         DRHO2=RHOO(NE2)-RHOO(I)\n      |                                  1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:480:25:\n\n  363 |         DO I=1,NE\n      |                      2          \n......\n  480 |         DR2=RLO(NE2,2)-RLO(I,2)\n      |                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:503:21:\n\n  363 |         DO I=1,NE\n      |                      2      \n......\n  503 |         DP3=PO(NE3)-PO(I)\n      |                            1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:505:25:\n\n  363 |         DO I=1,NE\n      |                      2          \n......\n  505 |         DQ3=QLO(NE3,3)-QLO(I,3)\n      |                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:507:27:\n\n  363 |         DO I=1,NE\n      |                      2            \n......\n  507 |         DRHO3=RHOO(NE3)-RHOO(I)\n      |                                  1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:509:25:\n\n  363 |         DO I=1,NE\n      |                      2          \n......\n  509 |         DR3=RLO(NE3,3)-RLO(I,3)\n      |                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:556:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  556 |         PHI1=1./2.*(RHOO(I)*QLO(I,1)+RHOO(NE1)*QLO(NE1,1))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:556:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  556 |         PHI1=1./2.*(RHOO(I)*QLO(I,1)+RHOO(NE1)*QLO(NE1,1))\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:560:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  560 |         PHI2=1./2.*(RHOO(I)*QLO(I,2)+RHOO(NE2)*QLO(NE2,2))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:560:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  560 |         PHI2=1./2.*(RHOO(I)*QLO(I,2)+RHOO(NE2)*QLO(NE2,2))\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:564:23:\n\n  363 |         DO I=1,NE\n      |                      2        \n......\n  564 |         PHI3=1./2.*(RHOO(I)*QLO(I,3)+RHOO(NE3)*QLO(NE3,3))\n      |                              1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:564:30:\n\n  363 |         DO I=1,NE\n      |                      2               \n......\n  564 |         PHI3=1./2.*(RHOO(I)*QLO(I,3)+RHOO(NE3)*QLO(NE3,3))\n      |                                     1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:568:9:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  568 |         DF(I)=PHI1*DS(I,1)+PHI2*DS(I,2)+PHI3*DS(I,3)\n      |                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:570:12:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  570 |         RESC1(I)=-DF(I)/AREA(I)\n      |                   1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:570:19:\n\n  363 |         DO I=1,NE\n      |                      2    \n......\n  570 |         RESC1(I)=-DF(I)/AREA(I)\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:574:11:\n\n  363 |         DO I=1,NE\n      |                      2\n......\n  574 |         RHOO(I)=RHOO(I)+ALFA(J+1)*DT*RESC1(I)\n      |                  1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:574:19:\n\n  363 |         DO I=1,NE\n      |                      2    \n......\n  574 |         RHOO(I)=RHOO(I)+ALFA(J+1)*DT*RESC1(I)\n      |                          1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\nsource.for:574:41:\n\n  363 |         DO I=1,NE\n      |                      2                          \n......\n  574 |         RHOO(I)=RHOO(I)+ALFA(J+1)*DT*RESC1(I)\n      |                                                1\nWarning: Array reference at (1) out of bounds (892 > 481) in loop beginning at (2)\n"
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "BC.DAT",
+        "Node.DAT",
+        "connectivity.DAT",
+        "output.plt"
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/airfoil23.for",
+      "sha256": "7e9ce45132825fc7762580e2d5156b4510af6fabf38eae02239a8ead09daf02f",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.008,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.295,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "RES.DAT",
+        "connectivity.DAT",
+        "output.DAT",
+        "output.plt",
+        "output1.plt"
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/airfoil3.for",
+      "sha256": "b662a99d3697a89ac818a26984b14557aa7f598f09c8c2121cc49698a417a7b9",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.008,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 71,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 72,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.322,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "BC.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "RES.DAT",
+        "connectivity.DAT",
+        "output.DAT",
+        "output.plt",
+        "output1.plt"
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/airfoil4.for",
+      "sha256": "047b03b94a3799d33983ce20095d0eb934bc145e8efb8abb5d4d630403a251d2",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.008,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.444,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "BC1.DAT",
+        "BC2.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "RES.DAT",
+        "connectivity.DAT",
+        "output.DAT",
+        "output.plt",
+        "output1.plt"
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/airfoilfinal.for",
+      "sha256": "47f6be909f0383a031e50d2f7d44dc307080a3281e85d97550c64aa150009005",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.008,
+        "stdout": "",
+        "stderr": "source.for:10:14:\n\n   10 |             USE MSIMSL\n      |                     1\nFatal Error: Cannot open module file ‘msimsl.mod’ for reading at (1): No such file or directory\ncompilation terminated.\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 10,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 11,
+            "kind": "remove_legacy_import"
+          },
+          {
+            "line": 73,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 18,
+            "kind": "reorder_implicit",
+            "before_original_line": 13
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.427,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "BC1.DAT",
+        "BC2.DAT",
+        "BC3.DAT",
+        "BE.DAT",
+        "Node.DAT",
+        "RES.DAT",
+        "connectivity.DAT",
+        "output.DAT",
+        "output.plt",
+        "output1.plt"
+      ]
+    },
+    {
+      "source": "projects/02-compressible-airfoil/variants/unstructured0.for",
+      "sha256": "ee8e939436ad9f063139c8646e2791525e24a869e181f72b7fa8129e6ed45694",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.197,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "status": "build_passed_inputs_not_co_located",
+      "referenced_filenames": [
+        "Mesh.element",
+        "Mesh.epart",
+        "Mesh.node",
+        "output.plt"
+      ]
+    },
+    {
+      "source": "projects/03-viscous-airfoil/roohi-code/Viscous/airfoilla V LAST.for",
+      "sha256": "b27beb68baf45cedb6e0810a4b038334193c8b014151a4e81a75d8ae146480ea",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 79,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.033,
+        "stdout": "",
+        "stderr": "source.for:1591:12:\n\n  988 |         CALL VISCOUS(I,1,TAU_XX,TAU_XY,TAU_YY,Q_X,Q_Y)\n      |                                                           2\n......\n 1591 |         I=ELEM\n      |                   1\nError: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\nsource.for:1591:12: Error: (1)\nsource.for:1047:52: Error: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\nsource.for:1591:12: Error: (1)\nsource.for:1104:52: Error: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\nsource.for:1591:12: Error: (1)\nsource.for:1164:52: Error: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 79,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 16,
+            "kind": "reorder_implicit",
+            "before_original_line": 11
+          },
+          {
+            "kind": "localize_viscous_loop_index",
+            "subroutine": "VISCOUS",
+            "variable": "I"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.721,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [
+        {
+          "original": "node.dat",
+          "alias": "Node.DAT"
+        },
+        {
+          "original": "connectivity2.dat",
+          "alias": "connectivity2.DAT"
+        }
+      ],
+      "staged_files": [
+        "BC2.DAT",
+        "BC1.DAT",
+        "connectivity1.DAT",
+        "node.dat",
+        "BC3.DAT",
+        "connectivity2.dat",
+        "BC.DAT",
+        "Node.DAT",
+        "connectivity2.DAT"
+      ],
+      "stdin": "1",
+      "run": {
+        "exit_code": 2,
+        "timed_out": false,
+        "seconds": 0.046,
+        "stdout": "",
+        "stderr": "At line 1552 of file source.for\nFortran runtime error: Index '-999999' of dimension 1 of array 'rhoo' below lower bound of 1\n\nError termination. Backtrace:\n#0  0x7f6420e23e59 in ???\n#1  0x7f6420e24a71 in ???\n#2  0x7f6420e25082 in ???\n#3  0x55fa21c0e201 in cellnode\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/20/source.for:1552\n#4  0x55fa21c09212 in viscous\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/20/source.for:1606\n#5  0x55fa21c1ebb9 in flux\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/20/source.for:989\n#6  0x55fa21c05992 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/20/source.for:91\n#7  0x55fa21c3381a in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/20/source.for:98\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "GRID HYBRID.plt",
+          "bytes": 123766
+        },
+        {
+          "file": "NEIB.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "NEIGHBOUR.DAT",
+          "bytes": 83814
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/03-viscous-airfoil/roohi-code/airfoilla QUANTITY.for",
+      "sha256": "9e4bde693d70c70b168b79eac9b9b5629b269e0906db1c925cc621e88ff05d27",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 79,
+            "kind": "remove_cleanup"
+          }
+        ],
+        "exit_code": 1,
+        "timed_out": false,
+        "seconds": 0.036,
+        "stdout": "",
+        "stderr": "source.for:1601:12:\n\n  994 |         CALL VISCOUS(I,1,TAU_XX,TAU_XY,TAU_YY,Q_X,Q_Y)\n      |                                                           2\n......\n 1601 |         I=ELEM\n      |                   1\nError: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\nsource.for:1601:12: Error: (1)\nsource.for:1055:52: Error: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\nsource.for:1601:12: Error: (1)\nsource.for:1112:52: Error: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\nsource.for:1601:12: Error: (1)\nsource.for:1172:52: Error: Index variable ‘i’ redefined at (1) in procedure ‘viscous’ called from within DO loop at (2)\n"
+      },
+      "compatibility_build": {
+        "edits": [
+          {
+            "line": 74,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 75,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 76,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 77,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 78,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 79,
+            "kind": "remove_cleanup"
+          },
+          {
+            "line": 16,
+            "kind": "reorder_implicit",
+            "before_original_line": 11
+          },
+          {
+            "kind": "localize_viscous_loop_index",
+            "subroutine": "VISCOUS",
+            "variable": "I"
+          }
+        ],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.75,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "compatibility_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": 2,
+        "timed_out": false,
+        "seconds": 0.006,
+        "stdout": "",
+        "stderr": "At line 172 of file source.for (unit = 1, file = 'Node.DAT')\nFortran runtime error: End of file\n\nError termination. Backtrace:\n#0  0x7f990e623e59 in ???\n#1  0x7f990e624a71 in ???\n#2  0x7f990e6256dc in ???\n#3  0x7f990e8bb6c3 in ???\n#4  0x7f990e8b437e in ???\n#5  0x7f990e8b502f in ???\n#6  0x55afec9313eb in meshinput\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/21/source.for:172\n#7  0x55afec8ff343 in airfoil\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/21/source.for:85\n#8  0x55afec935271 in main\n\tat /home/runner/work/Ehsan-Roohi/Ehsan-Roohi/courses/cfd-2/work/ci-fortran/21/source.for:104\n"
+      },
+      "status": "runtime_failed",
+      "outputs": [
+        {
+          "file": "Node.DAT",
+          "bytes": 0
+        },
+        {
+          "file": "RES.DAT",
+          "bytes": 0
+        }
+      ]
+    },
+    {
+      "source": "projects/04-grid-generation/GRID generation.FOR",
+      "sha256": "c24e18ddfbfcf20e2d0df7dd004922e82bfef0e964ed0059789d2a9070d09fb9",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.166,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1",
+      "run": {
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.675,
+        "stdout": "",
+        "stderr": ""
+      },
+      "status": "completed",
+      "outputs": [
+        {
+          "file": "GRID1.plt",
+          "bytes": 91083
+        }
+      ]
+    },
+    {
+      "source": "projects/04-grid-generation/my-grid/LAST GRID.FOR",
+      "sha256": "7492cc736cc78b253f34865e60818ced9d8c97892e3f5a9faf7ab2536b128de3",
+      "format": "fixed",
+      "cleanup_only_build": {
+        "edits": [],
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 0.245,
+        "stdout": "",
+        "stderr": ""
+      },
+      "active_build": "cleanup_only_build",
+      "input_filename_aliases": [],
+      "staged_files": [],
+      "stdin": "1.0",
+      "run": {
+        "exit_code": 0,
+        "timed_out": false,
+        "seconds": 1.303,
+        "stdout": " ENTER THE RELAXATION FACTOR>\n   5.14239073E-05\n   6.96405768E-05\n   7.89314508E-05\n   8.44821334E-05\n   8.80509615E-05\n   9.04500484E-05\n   9.20817256E-05\n   9.31993127E-05\n   9.38922167E-05\n   9.43467021E-05\n   9.45553184E-05\n   9.46149230E-05\n   9.45255160E-05\n   9.43243504E-05\n   9.40635800E-05\n   9.37134027E-05\n   9.33185220E-05\n   9.33408737E-05\n   9.34153795E-05\n   9.33706760E-05\n   9.32663679E-05\n   9.31173563E-05\n   9.29534435E-05\n   9.27001238E-05\n   9.24319029E-05\n   9.21487808E-05\n  \n[Repetitive stdout omitted; full log is retained in the linked CI run.]\n6E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.04308128E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.04308128E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.19209290E-06\n   1.19209290E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.13248825E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.19209290E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.13248825E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   1.07288361E-06\n   1.01327896E-06\n   1.01327896E-06\n   9.83476639E-07\n",
+        "stderr": "",
+        "stdout_truncated": true
+      },
+      "status": "completed",
+      "outputs": [
+        {
+          "file": "ERROR.plt",
+          "bytes": 11754
+        },
+        {
+          "file": "GRID.plt",
+          "bytes": 21923
+        },
+        {
+          "file": "error.plt",
+          "bytes": 0
+        }
+      ]
+    }
+  ]
+}

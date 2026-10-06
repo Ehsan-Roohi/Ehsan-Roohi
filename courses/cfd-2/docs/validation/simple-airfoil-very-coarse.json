@@ -1,0 +1,966 @@
+{
+  "upstream_commit": "6a1d90684c9462aa48416894f147910ca20e238f",
+  "case": "airfoil",
+  "mesh": "data/meshes/very_coarse_CMesh_NACA_2412.msh",
+  "mesh_sha256": "d23741d1ebc5f11d4792e7100003f32b296aebee456fdf23689e17fc131ae790",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "gmsh": "4.15.2",
+    "matplotlib": "3.11.2"
+  },
+  "requested_iterations": 100,
+  "budget_seconds": 600.0,
+  "non_orthogonal_correctors": 1,
+  "mu": 1.79e-05,
+  "rho": 1.0,
+  "initial_conditions": {
+    "u": 34.25299304208188,
+    "v": 1.7951232991329733,
+    "p": 101325.0
+  },
+  "mesh_cells": 780,
+  "mesh_nodes": 918,
+  "minimum_cell_area": 0.008626872136520521,
+  "all_cell_areas_positive": true,
+  "source_hashes": {
+    "src/__main__.py": "375630be7ad55c3d9eabf6112fbaccbf4b899d64ba303b5d4fdd39d33c4cbb99",
+    "src/boundaries/__init__.py": "da16b0ed8671d279e9745144f0e411e0dd6d3718f42c8a70e5ac0b4bc1d70162",
+    "src/boundaries/boundaries.py": "56fd1be1e523fcf5c50b84acf772aeafaa5ad9d69386f83533fce754f27028de",
+    "src/boundaries/PressureOutlet.py": "2ecbe0e6c318eacee0c439addaee127b6d15505277f7f21abd2adfebac243586",
+    "src/boundaries/SlipWall.py": "c91af4c65cf2984cf36e07a4a41d5d72a1fb71eb399059a69d6d31d60f7e6b53",
+    "src/boundaries/VelocityInlet.py": "5b5b113ddd7a8ed2f1180ac82b672bf564f779718888a8eb16bcc2c7ad80f353",
+    "src/helpers.py": "7056c14efac8276008d6a8a1e0cc6574c55e4d89ae6d1299d088c02f196c6ec2",
+    "src/mesh.py": "e3a83414275bc6fa12e9961e0ecba2f982bffbb7d7a2d28a041aafa02ed18967",
+    "src/numerics/__init__.py": "1feb8b9fa1c05b497c58d442f54443ce7633efe3ea7e64e1374d416dde66990d",
+    "src/numerics/gradients.py": "adc53a26227a5aad9b848270e924bfeca1d61d87295ae3c2dfbe223784ecbf98",
+    "src/numerics/interpolations.py": "178d90c99e823826814c716e5fcaf4b5e35a9091d3b5cbfd7c4019e055bbd951",
+    "src/numerics/non_orthogonal_correction.py": "30711ecbe518d941c05eb80bf7225db6005996bf8ef9ea79410bc2763782f2a4",
+    "src/solution/__init__.py": "125034a3c20a236f4a035e767a6125c2f33a53b4b954b19b1df98284ddbcfec6",
+    "src/solution/discretize.py": "ad96b7277808c230af8fdb35e048eb12be30a4b8270525cf7a1c3ad742b7a234",
+    "src/solution/initialize.py": "85424c13f2cdbb3a389295477dbf76dbbddf3ebfa144bd8bb6440cdea10e2727",
+    "src/solution/SIMPLE.py": "f4282d65f42f88548288c66e719d88833a093f2fe4ba063fb9a7a648af82413a"
+  },
+  "status": "requested_iterations_completed",
+  "history": [
+    {
+      "iteration": 1,
+      "continuity_max": 0.665818109314305,
+      "continuity_L1": 7.065247988127722,
+      "continuity_net": -0.02568987544459095,
+      "maximum_velocity_change": 3.479941673275494,
+      "all_fields_finite": true,
+      "maximum_speed": 37.2684653237813
+    },
+    {
+      "iteration": 2,
+      "continuity_max": 0.45622757679469117,
+      "continuity_L1": 5.499732931580537,
+      "continuity_net": -0.022809187115991225,
+      "maximum_velocity_change": 1.9180502372554962,
+      "all_fields_finite": true,
+      "maximum_speed": 37.496658211028226
+    },
+    {
+      "iteration": 3,
+      "continuity_max": 0.2945271727339528,
+      "continuity_L1": 4.064931058926258,
+      "continuity_net": -0.012345786074849235,
+      "maximum_velocity_change": 1.5485989719199367,
+      "all_fields_finite": true,
+      "maximum_speed": 38.28597158918341
+    },
+    {
+      "iteration": 4,
+      "continuity_max": 0.18426825268376038,
+      "continuity_L1": 2.9305377176665344,
+      "continuity_net": -0.002674480537772028,
+      "maximum_velocity_change": 1.1614191679461783,
+      "all_fields_finite": true,
+      "maximum_speed": 38.88222718319584
+    },
+    {
+      "iteration": 5,
+      "continuity_max": 0.12356249851223548,
+      "continuity_L1": 2.1062989384278192,
+      "continuity_net": 0.003819199095320344,
+      "maximum_velocity_change": 0.9241065039844685,
+      "all_fields_finite": true,
+      "maximum_speed": 39.24932437392964
+    },
+    {
+      "iteration": 6,
+      "continuity_max": 0.10380321310684659,
+      "continuity_L1": 1.5454309776172312,
+      "continuity_net": 0.007258900775828227,
+      "maximum_velocity_change": 0.6661375976003256,
+      "all_fields_finite": true,
+      "maximum_speed": 39.48194484921742
+    },
+    {
+      "iteration": 7,
+      "continuity_max": 0.1146236227377681,
+      "continuity_L1": 1.3546331636505542,
+      "continuity_net": 0.008532710023789707,
+      "maximum_velocity_change": 0.5677105772890663,
+      "all_fields_finite": true,
+      "maximum_speed": 39.63981996135999
+    },
+    {
+      "iteration": 8,
+      "continuity_max": 0.11454428111507986,
+      "continuity_L1": 1.3156779204408133,
+      "continuity_net": 0.008522183858576744,
+      "maximum_velocity_change": 0.44263254803169616,
+      "all_fields_finite": true,
+      "maximum_speed": 39.754312890751144
+    },
+    {
+      "iteration": 9,
+      "continuity_max": 0.10876786580220826,
+      "continuity_L1": 1.3153531563451442,
+      "continuity_net": 0.007857878292764325,
+      "maximum_velocity_change": 0.399328041716565,
+      "all_fields_finite": true,
+      "maximum_speed": 39.83808424253784
+    },
+    {
+      "iteration": 10,
+      "continuity_max": 0.10071255426376827,
+      "continuity_L1": 1.310814400245435,
+      "continuity_net": 0.006920329658009851,
+      "maximum_velocity_change": 0.32933809918013424,
+      "all_fields_finite": true,
+      "maximum_speed": 39.89431735106195
+    },
+    {
+      "iteration": 11,
+      "continuity_max": 0.09214021143680534,
+      "continuity_L1": 1.295653636647963,
+      "continuity_net": 0.0059158678496185405,
+      "maximum_velocity_change": 0.2987584886152632,
+      "all_fields_finite": true,
+      "maximum_speed": 39.92391433084118
+    },
+    {
+      "iteration": 12,
+      "continuity_max": 0.08375492730906631,
+      "continuity_L1": 1.2670701657171894,
+      "continuity_net": 0.00494979426313371,
+      "maximum_velocity_change": 0.2904893428360076,
+      "all_fields_finite": true,
+      "maximum_speed": 39.949414505817934
+    },
+    {
+      "iteration": 13,
+      "continuity_max": 0.07576871650296636,
+      "continuity_L1": 1.2374121383155616,
+      "continuity_net": 0.004073821389881396,
+      "maximum_velocity_change": 0.2904674206678095,
+      "all_fields_finite": true,
+      "maximum_speed": 39.978118559394055
+    },
+    {
+      "iteration": 14,
+      "continuity_max": 0.06824144797019792,
+      "continuity_L1": 1.1945201542833317,
+      "continuity_net": 0.0033105951723246332,
+      "maximum_velocity_change": 0.28619367483215186,
+      "all_fields_finite": true,
+      "maximum_speed": 39.986027903049035
+    },
+    {
+      "iteration": 15,
+      "continuity_max": 0.06122082500483528,
+      "continuity_L1": 1.145713252780113,
+      "continuity_net": 0.0026654332882073764,
+      "maximum_velocity_change": 0.27762936642488967,
+      "all_fields_finite": true,
+      "maximum_speed": 39.978115800217566
+    },
+    {
+      "iteration": 16,
+      "continuity_max": 0.05476634330298133,
+      "continuity_L1": 1.0926170770899328,
+      "continuity_net": 0.0021328819973096685,
+      "maximum_velocity_change": 0.26500184881581035,
+      "all_fields_finite": true,
+      "maximum_speed": 39.960289691264194
+    },
+    {
+      "iteration": 17,
+      "continuity_max": 0.04892824345410095,
+      "continuity_L1": 1.0370415599294296,
+      "continuity_net": 0.001701392472419537,
+      "maximum_velocity_change": 0.2487610825480715,
+      "all_fields_finite": true,
+      "maximum_speed": 39.938467665419736
+    },
+    {
+      "iteration": 18,
+      "continuity_max": 0.04372338475647225,
+      "continuity_L1": 0.9820141490135507,
+      "continuity_net": 0.0013569272152045495,
+      "maximum_velocity_change": 0.22947575408518972,
+      "all_fields_finite": true,
+      "maximum_speed": 39.91750464348647
+    },
+    {
+      "iteration": 19,
+      "continuity_max": 0.03912549372671827,
+      "continuity_L1": 0.9270988341400322,
+      "continuity_net": 0.0010853527952001604,
+      "maximum_velocity_change": 0.2077433110489082,
+      "all_fields_finite": true,
+      "maximum_speed": 39.900686949187666
+    },
+    {
+      "iteration": 20,
+      "continuity_max": 0.0350718022441344,
+      "continuity_L1": 0.8748355895315845,
+      "continuity_net": 0.000873686663948936,
+      "maximum_velocity_change": 0.19469551830073328,
+      "all_fields_finite": true,
+      "maximum_speed": 39.88977006518931
+    },
+    {
+      "iteration": 21,
+      "continuity_max": 0.03147996205188866,
+      "continuity_L1": 0.8245582706710508,
+      "continuity_net": 0.0007105319436517821,
+      "maximum_velocity_change": 0.18575840777338826,
+      "all_fields_finite": true,
+      "maximum_speed": 39.885324794043854
+    },
+    {
+      "iteration": 22,
+      "continuity_max": 0.028266633987590863,
+      "continuity_L1": 0.7756928339695353,
+      "continuity_net": 0.0005860990109546917,
+      "maximum_velocity_change": 0.17794946331455463,
+      "all_fields_finite": true,
+      "maximum_speed": 39.887161326115844
+    },
+    {
+      "iteration": 23,
+      "continuity_max": 0.025361021355360093,
+      "continuity_L1": 0.7300404851067411,
+      "continuity_net": 0.0004920950163546621,
+      "maximum_velocity_change": 0.16690040220797187,
+      "all_fields_finite": true,
+      "maximum_speed": 39.894683961994325
+    },
+    {
+      "iteration": 24,
+      "continuity_max": 0.022710524022197788,
+      "continuity_L1": 0.6865122109888424,
+      "continuity_net": 0.00042159934358209847,
+      "maximum_velocity_change": 0.16098083245703165,
+      "all_fields_finite": true,
+      "maximum_speed": 39.914815852891586
+    },
+    {
+      "iteration": 25,
+      "continuity_max": 0.020279271771552233,
+      "continuity_L1": 0.646412383255343,
+      "continuity_net": 0.0003689413117199912,
+      "maximum_velocity_change": 0.1536754695650835,
+      "all_fields_finite": true,
+      "maximum_speed": 39.94559106039954
+    },
+    {
+      "iteration": 26,
+      "continuity_max": 0.018038981294907462,
+      "continuity_L1": 0.6092934091699371,
+      "continuity_net": 0.0003295391256655407,
+      "maximum_velocity_change": 0.1432973665170998,
+      "all_fields_finite": true,
+      "maximum_speed": 39.97828784637389
+    },
+    {
+      "iteration": 27,
+      "continuity_max": 0.015958402802886778,
+      "continuity_L1": 0.5764200523230114,
+      "continuity_net": 0.0002998511449509682,
+      "maximum_velocity_change": 0.1385919812845735,
+      "all_fields_finite": true,
+      "maximum_speed": 40.012359512973745
+    },
+    {
+      "iteration": 28,
+      "continuity_max": 0.014034316120303116,
+      "continuity_L1": 0.5471427838177405,
+      "continuity_net": 0.00027711302658674913,
+      "maximum_velocity_change": 0.13158107615833003,
+      "all_fields_finite": true,
+      "maximum_speed": 40.04734556273783
+    },
+    {
+      "iteration": 29,
+      "continuity_max": 0.012257915954531032,
+      "continuity_L1": 0.5206135170862981,
+      "continuity_net": 0.0002592026140590467,
+      "maximum_velocity_change": 0.1223678499017673,
+      "all_fields_finite": true,
+      "maximum_speed": 40.082874265787524
+    },
+    {
+      "iteration": 30,
+      "continuity_max": 0.010619724584703415,
+      "continuity_L1": 0.4976035648242816,
+      "continuity_net": 0.0002445027985353218,
+      "maximum_velocity_change": 0.1185076326065655,
+      "all_fields_finite": true,
+      "maximum_speed": 40.11865553773911
+    },
+    {
+      "iteration": 31,
+      "continuity_max": 0.00911403571759594,
+      "continuity_L1": 0.47912967023933534,
+      "continuity_net": 0.00023177087312926253,
+      "maximum_velocity_change": 0.11170772276163632,
+      "all_fields_finite": true,
+      "maximum_speed": 40.154468097033934
+    },
+    {
+      "iteration": 32,
+      "continuity_max": 0.007740734334772546,
+      "continuity_L1": 0.46324324266088857,
+      "continuity_net": 0.0002200093120963819,
+      "maximum_velocity_change": 0.10444112577926035,
+      "all_fields_finite": true,
+      "maximum_speed": 40.190144990936844
+    },
+    {
+      "iteration": 33,
+      "continuity_max": 0.007286692299386388,
+      "continuity_L1": 0.45018407456837306,
+      "continuity_net": 0.00020827301218959322,
+      "maximum_velocity_change": 0.10044729703903243,
+      "all_fields_finite": true,
+      "maximum_speed": 40.22555951773618
+    },
+    {
+      "iteration": 34,
+      "continuity_max": 0.00699754251933458,
+      "continuity_L1": 0.44003110496999065,
+      "continuity_net": 0.00019575537245414276,
+      "maximum_velocity_change": 0.09386154391897605,
+      "all_fields_finite": true,
+      "maximum_speed": 40.260617280896376
+    },
+    {
+      "iteration": 35,
+      "continuity_max": 0.006734557220167581,
+      "continuity_L1": 0.4322459215904572,
+      "continuity_net": 0.00018154789219934978,
+      "maximum_velocity_change": 0.08819352160985972,
+      "all_fields_finite": true,
+      "maximum_speed": 40.29524631295486
+    },
+    {
+      "iteration": 36,
+      "continuity_max": 0.006494450901260329,
+      "continuity_L1": 0.42760840880255213,
+      "continuity_net": 0.00016460257955484663,
+      "maximum_velocity_change": 0.08409032868557631,
+      "all_fields_finite": true,
+      "maximum_speed": 40.329391463064695
+    },
+    {
+      "iteration": 37,
+      "continuity_max": 0.006274363451106786,
+      "continuity_L1": 0.4250551416890742,
+      "continuity_net": 0.00014380969925554578,
+      "maximum_velocity_change": 0.07777864542058666,
+      "all_fields_finite": true,
+      "maximum_speed": 40.36301060880565
+    },
+    {
+      "iteration": 38,
+      "continuity_max": 0.006071824966499939,
+      "continuity_L1": 0.42388649283760715,
+      "continuity_net": 0.0001181259871169179,
+      "maximum_velocity_change": 0.07343207970185972,
+      "all_fields_finite": true,
+      "maximum_speed": 40.39607175869847
+    },
+    {
+      "iteration": 39,
+      "continuity_max": 0.005884708167481989,
+      "continuity_L1": 0.42389928678786115,
+      "continuity_net": 8.675036859396093e-05,
+      "maximum_velocity_change": 0.06928925194265645,
+      "all_fields_finite": true,
+      "maximum_speed": 40.42855092798449
+    },
+    {
+      "iteration": 40,
+      "continuity_max": 0.005711176803930407,
+      "continuity_L1": 0.42429723675476305,
+      "continuity_net": 4.93190584549448e-05,
+      "maximum_velocity_change": 0.0651039420111914,
+      "all_fields_finite": true,
+      "maximum_speed": 40.460430572015945
+    },
+    {
+      "iteration": 41,
+      "continuity_max": 0.0055496368620841134,
+      "continuity_L1": 0.4253394684584892,
+      "continuity_net": 6.091150398936096e-06,
+      "maximum_velocity_change": 0.06286269075614115,
+      "all_fields_finite": true,
+      "maximum_speed": 40.491698422814444
+    },
+    {
+      "iteration": 42,
+      "continuity_max": 0.005398694351743579,
+      "continuity_L1": 0.4260238559075072,
+      "continuity_net": -4.191700626053618e-05,
+      "maximum_velocity_change": 0.06193162103466676,
+      "all_fields_finite": true,
+      "maximum_speed": 40.52234661777647
+    },
+    {
+      "iteration": 43,
+      "continuity_max": 0.005257120745145727,
+      "continuity_L1": 0.42623285883697737,
+      "continuity_net": -9.28843868939766e-05,
+      "maximum_velocity_change": 0.06080521373422698,
+      "all_fields_finite": true,
+      "maximum_speed": 40.552371029575916
+    },
+    {
+      "iteration": 44,
+      "continuity_max": 0.005123999239681247,
+      "continuity_L1": 0.4255210278466301,
+      "continuity_net": -0.00014424153454808963,
+      "maximum_velocity_change": 0.060155178001693344,
+      "all_fields_finite": true,
+      "maximum_speed": 40.58177491243507
+    },
+    {
+      "iteration": 45,
+      "continuity_max": 0.00499807779574013,
+      "continuity_L1": 0.424353193402109,
+      "continuity_net": -0.0001928496325273102,
+      "maximum_velocity_change": 0.05987993221774701,
+      "all_fields_finite": true,
+      "maximum_speed": 40.610554152544466
+    },
+    {
+      "iteration": 46,
+      "continuity_max": 0.004878486290130639,
+      "continuity_L1": 0.42204352214001606,
+      "continuity_net": -0.00023526027003739625,
+      "maximum_velocity_change": 0.05895555103920458,
+      "all_fields_finite": true,
+      "maximum_speed": 40.63871150488575
+    },
+    {
+      "iteration": 47,
+      "continuity_max": 0.004764579347458664,
+      "continuity_L1": 0.41854155450096003,
+      "continuity_net": -0.00026803925251321983,
+      "maximum_velocity_change": 0.05829021713292093,
+      "all_fields_finite": true,
+      "maximum_speed": 40.666255546439224
+    },
+    {
+      "iteration": 48,
+      "continuity_max": 0.004655663986377512,
+      "continuity_L1": 0.41406145980166403,
+      "continuity_net": -0.000288121110602977,
+      "maximum_velocity_change": 0.057335250404584315,
+      "all_fields_finite": true,
+      "maximum_speed": 40.693194700040834
+    },
+    {
+      "iteration": 49,
+      "continuity_max": 0.0045510690102785745,
+      "continuity_L1": 0.40865224515847565,
+      "continuity_net": -0.00029310092845971636,
+      "maximum_velocity_change": 0.05590650374615791,
+      "all_fields_finite": true,
+      "maximum_speed": 40.71953762225073
+    },
+    {
+      "iteration": 50,
+      "continuity_max": 0.004450226252564342,
+      "continuity_L1": 0.40224495118993037,
+      "continuity_net": -0.0002814895013987014,
+      "maximum_velocity_change": 0.05499174110864402,
+      "all_fields_finite": true,
+      "maximum_speed": 40.74529399624856
+    },
+    {
+      "iteration": 51,
+      "continuity_max": 0.004352630781168543,
+      "continuity_L1": 0.39555593428323044,
+      "continuity_net": -0.0002528804749566231,
+      "maximum_velocity_change": 0.053449792743293756,
+      "all_fields_finite": true,
+      "maximum_speed": 40.770473852173716
+    },
+    {
+      "iteration": 52,
+      "continuity_max": 0.0042764088832250025,
+      "continuity_L1": 0.3883403804863224,
+      "continuity_net": -0.00020797310457047052,
+      "maximum_velocity_change": 0.05183894509620757,
+      "all_fields_finite": true,
+      "maximum_speed": 40.79508736144515
+    },
+    {
+      "iteration": 53,
+      "continuity_max": 0.00421628767009441,
+      "continuity_L1": 0.3832383878220589,
+      "continuity_net": -0.00014849311346566696,
+      "maximum_velocity_change": 0.05040499314441149,
+      "all_fields_finite": true,
+      "maximum_speed": 40.819144622387995
+    },
+    {
+      "iteration": 54,
+      "continuity_max": 0.004149908329186047,
+      "continuity_L1": 0.3827959915296801,
+      "continuity_net": -7.702312317729547e-05,
+      "maximum_velocity_change": 0.048390844493447105,
+      "all_fields_finite": true,
+      "maximum_speed": 40.842655595735906
+    },
+    {
+      "iteration": 55,
+      "continuity_max": 0.004079307315204339,
+      "continuity_L1": 0.3845532237127426,
+      "continuity_net": 3.2314371315941837e-06,
+      "maximum_velocity_change": 0.046591273408061795,
+      "all_fields_finite": true,
+      "maximum_speed": 40.86563007371859
+    },
+    {
+      "iteration": 56,
+      "continuity_max": 0.004006151128062463,
+      "continuity_L1": 0.38617101215342836,
+      "continuity_net": 8.871020149286112e-05,
+      "maximum_velocity_change": 0.04474933080108201,
+      "all_fields_finite": true,
+      "maximum_speed": 40.88807762973254
+    },
+    {
+      "iteration": 57,
+      "continuity_max": 0.00393174631596338,
+      "continuity_L1": 0.3868479388388253,
+      "continuity_net": 0.0001757689292075995,
+      "maximum_velocity_change": 0.04239899129625968,
+      "all_fields_finite": true,
+      "maximum_speed": 40.91000755132298
+    },
+    {
+      "iteration": 58,
+      "continuity_max": 0.003857059371449978,
+      "continuity_L1": 0.38638276244220826,
+      "continuity_net": 0.0002609281043914301,
+      "maximum_velocity_change": 0.040431605869400755,
+      "all_fields_finite": true,
+      "maximum_speed": 40.93142877866625
+    },
+    {
+      "iteration": 59,
+      "continuity_max": 0.003782762727123412,
+      "continuity_L1": 0.38512671244350827,
+      "continuity_net": 0.00034107582478334376,
+      "maximum_velocity_change": 0.03830892067750824,
+      "all_fields_finite": true,
+      "maximum_speed": 40.95234987288282
+    },
+    {
+      "iteration": 60,
+      "continuity_max": 0.003709296815522123,
+      "continuity_L1": 0.38266843340674705,
+      "continuity_net": 0.0004136183674018166,
+      "maximum_velocity_change": 0.035766325830913104,
+      "all_fields_finite": true,
+      "maximum_speed": 40.97277901065982
+    },
+    {
+      "iteration": 61,
+      "continuity_max": 0.0036369320451834497,
+      "continuity_L1": 0.37912582778920084,
+      "continuity_net": 0.0004765706977399283,
+      "maximum_velocity_change": 0.03447696330647432,
+      "all_fields_finite": true,
+      "maximum_speed": 40.992724001677544
+    },
+    {
+      "iteration": 62,
+      "continuity_max": 0.0037027610799853505,
+      "continuity_L1": 0.3743542650184989,
+      "continuity_net": 0.0005285889408662243,
+      "maximum_velocity_change": 0.03422543602054162,
+      "all_fields_finite": true,
+      "maximum_speed": 41.01219232021026
+    },
+    {
+      "iteration": 63,
+      "continuity_max": 0.00381887929905389,
+      "continuity_L1": 0.36845802467123423,
+      "continuity_net": 0.0005689529680542888,
+      "maximum_velocity_change": 0.03377839525220594,
+      "all_fields_finite": true,
+      "maximum_speed": 41.03119114247683
+    },
+    {
+      "iteration": 64,
+      "continuity_max": 0.0038991328388675583,
+      "continuity_L1": 0.3614966367103022,
+      "continuity_net": 0.0005975099370449234,
+      "maximum_velocity_change": 0.0335259078721748,
+      "all_fields_finite": true,
+      "maximum_speed": 41.04972738539869
+    },
+    {
+      "iteration": 65,
+      "continuity_max": 0.003944049517638604,
+      "continuity_L1": 0.3535948768485375,
+      "continuity_net": 0.0006145912763723242,
+      "maximum_velocity_change": 0.032991310725904555,
+      "all_fields_finite": true,
+      "maximum_speed": 41.06780774505862
+    },
+    {
+      "iteration": 66,
+      "continuity_max": 0.003955059653996784,
+      "continuity_L1": 0.34486532439772094,
+      "continuity_net": 0.0006209166979818841,
+      "maximum_velocity_change": 0.03257007604344864,
+      "all_fields_finite": true,
+      "maximum_speed": 41.08543873375331
+    },
+    {
+      "iteration": 67,
+      "continuity_max": 0.003934372415027809,
+      "continuity_L1": 0.3358151471258798,
+      "continuity_net": 0.0006174920367889394,
+      "maximum_velocity_change": 0.03201902803973411,
+      "all_fields_finite": true,
+      "maximum_speed": 41.102626720227796
+    },
+    {
+      "iteration": 68,
+      "continuity_max": 0.00388482624233788,
+      "continuity_L1": 0.3260970524000474,
+      "continuity_net": 0.0006055138193122012,
+      "maximum_velocity_change": 0.03131928612814505,
+      "all_fields_finite": true,
+      "maximum_speed": 41.11937795908867
+    },
+    {
+      "iteration": 69,
+      "continuity_max": 0.0038097239414902617,
+      "continuity_L1": 0.31586104605855914,
+      "continuity_net": 0.000586288960762646,
+      "maximum_velocity_change": 0.030727346019659763,
+      "all_fields_finite": true,
+      "maximum_speed": 41.135698624589544
+    },
+    {
+      "iteration": 70,
+      "continuity_max": 0.003712662802971778,
+      "continuity_L1": 0.30532710747332437,
+      "continuity_net": 0.0005611654513448974,
+      "maximum_velocity_change": 0.029928132479241754,
+      "all_fields_finite": true,
+      "maximum_speed": 41.15159484096344
+    },
+    {
+      "iteration": 71,
+      "continuity_max": 0.0035973693343152036,
+      "continuity_L1": 0.2945413422035511,
+      "continuity_net": 0.0005314780993931401,
+      "maximum_velocity_change": 0.029081916473053582,
+      "all_fields_finite": true,
+      "maximum_speed": 41.16707270807406
+    },
+    {
+      "iteration": 72,
+      "continuity_max": 0.0034675467805236337,
+      "continuity_L1": 0.283628379545674,
+      "continuity_net": 0.0004985080018913637,
+      "maximum_velocity_change": 0.02825377992102318,
+      "all_fields_finite": true,
+      "maximum_speed": 41.182138323521215
+    },
+    {
+      "iteration": 73,
+      "continuity_max": 0.003326741858632687,
+      "continuity_L1": 0.2726789613389573,
+      "continuity_net": 0.00046345339561186505,
+      "maximum_velocity_change": 0.027272456137417578,
+      "all_fields_finite": true,
+      "maximum_speed": 41.19679780121295
+    },
+    {
+      "iteration": 74,
+      "continuity_max": 0.003178235167958121,
+      "continuity_L1": 0.2618342789127847,
+      "continuity_net": 0.0004274092685137383,
+      "maximum_velocity_change": 0.02619353964333726,
+      "all_fields_finite": true,
+      "maximum_speed": 41.21105728672704
+    },
+    {
+      "iteration": 75,
+      "continuity_max": 0.003024957820059626,
+      "continuity_L1": 0.25113684213508514,
+      "continuity_net": 0.0003913533551975128,
+      "maximum_velocity_change": 0.025206367253687745,
+      "all_fields_finite": true,
+      "maximum_speed": 41.22492296987706
+    },
+    {
+      "iteration": 76,
+      "continuity_max": 0.0028694350377236333,
+      "continuity_L1": 0.2407315196643238,
+      "continuity_net": 0.00035613706243782365,
+      "maximum_velocity_change": 0.02422986378612535,
+      "all_fields_finite": true,
+      "maximum_speed": 41.23840109426983
+    },
+    {
+      "iteration": 77,
+      "continuity_max": 0.002713755921533334,
+      "continuity_L1": 0.2305955273434945,
+      "continuity_net": 0.00032247844780380246,
+      "maximum_velocity_change": 0.023942063028954408,
+      "all_fields_finite": true,
+      "maximum_speed": 41.25149796573411
+    },
+    {
+      "iteration": 78,
+      "continuity_max": 0.0025803583241827965,
+      "continuity_L1": 0.22077694393544545,
+      "continuity_net": 0.00029095988501945695,
+      "maximum_velocity_change": 0.023563509843086194,
+      "all_fields_finite": true,
+      "maximum_speed": 41.26421995675979
+    },
+    {
+      "iteration": 79,
+      "continuity_max": 0.0025254042185727243,
+      "continuity_L1": 0.21137692387476303,
+      "continuity_net": 0.00026202763169297805,
+      "maximum_velocity_change": 0.02329698591013596,
+      "all_fields_finite": true,
+      "maximum_speed": 41.27657350905346
+    },
+    {
+      "iteration": 80,
+      "continuity_max": 0.0024708863790712243,
+      "continuity_L1": 0.2023178100267849,
+      "continuity_net": 0.00023599431016755094,
+      "maximum_velocity_change": 0.022899040195675013,
+      "all_fields_finite": true,
+      "maximum_speed": 41.288565133792275
+    },
+    {
+      "iteration": 81,
+      "continuity_max": 0.0024167658143952053,
+      "continuity_L1": 0.1937374903839042,
+      "continuity_net": 0.00021304448610008717,
+      "maximum_velocity_change": 0.02285224609511971,
+      "all_fields_finite": true,
+      "maximum_speed": 41.3002014099339
+    },
+    {
+      "iteration": 82,
+      "continuity_max": 0.0023630155742537795,
+      "continuity_L1": 0.18554039968039354,
+      "continuity_net": 0.00019324340190112876,
+      "maximum_velocity_change": 0.022722503622134127,
+      "all_fields_finite": true,
+      "maximum_speed": 41.31148898091969
+    },
+    {
+      "iteration": 83,
+      "continuity_max": 0.002309617752354498,
+      "continuity_L1": 0.17774482544248094,
+      "continuity_net": 0.00017654871328681037,
+      "maximum_velocity_change": 0.022776936994574726,
+      "all_fields_finite": true,
+      "maximum_speed": 41.322434550104745
+    },
+    {
+      "iteration": 84,
+      "continuity_max": 0.002256559872393815,
+      "continuity_L1": 0.17059254631112242,
+      "continuity_net": 0.00016282481751742832,
+      "maximum_velocity_change": 0.022740339536419185,
+      "all_fields_finite": true,
+      "maximum_speed": 41.33304487520644
+    },
+    {
+      "iteration": 85,
+      "continuity_max": 0.002203832805966144,
+      "continuity_L1": 0.163892336885551,
+      "continuity_net": 0.000151859152261604,
+      "maximum_velocity_change": 0.02256310670285444,
+      "all_fields_finite": true,
+      "maximum_speed": 41.34332676199476
+    },
+    {
+      "iteration": 86,
+      "continuity_max": 0.0021514308548642447,
+      "continuity_L1": 0.15753323687371174,
+      "continuity_net": 0.00014337966747503955,
+      "maximum_velocity_change": 0.02225852572500031,
+      "all_fields_finite": true,
+      "maximum_speed": 41.35328705740587
+    },
+    {
+      "iteration": 87,
+      "continuity_max": 0.0020993531348336703,
+      "continuity_L1": 0.15143548801494866,
+      "continuity_net": 0.00013707260546375836,
+      "maximum_velocity_change": 0.021840980284437705,
+      "all_fields_finite": true,
+      "maximum_speed": 41.36293264221801
+    },
+    {
+      "iteration": 88,
+      "continuity_max": 0.0020476049249529282,
+      "continuity_L1": 0.14568384817010488,
+      "continuity_net": 0.00013259971680201852,
+      "maximum_velocity_change": 0.021325548241819092,
+      "all_fields_finite": true,
+      "maximum_speed": 41.3722704235013
+    },
+    {
+      "iteration": 89,
+      "continuity_max": 0.0019961981149139163,
+      "continuity_L1": 0.14020407655082812,
+      "continuity_net": 0.00012961422805704169,
+      "maximum_velocity_change": 0.02072760886569114,
+      "all_fields_finite": true,
+      "maximum_speed": 41.38130732660223
+    },
+    {
+      "iteration": 90,
+      "continuity_max": 0.0019451506600631774,
+      "continuity_L1": 0.1348966091725026,
+      "continuity_net": 0.00012777479527042567,
+      "maximum_velocity_change": 0.020062473453741347,
+      "all_fields_finite": true,
+      "maximum_speed": 41.39005028733963
+    },
+    {
+      "iteration": 91,
+      "continuity_max": 0.0018944854099416375,
+      "continuity_L1": 0.12981104108710562,
+      "continuity_net": 0.00012675714996721304,
+      "maximum_velocity_change": 0.01934505031530165,
+      "all_fields_finite": true,
+      "maximum_speed": 41.39850624408899
+    },
+    {
+      "iteration": 92,
+      "continuity_max": 0.0018442288307367605,
+      "continuity_L1": 0.12497986460946989,
+      "continuity_net": 0.00012626320762018205,
+      "maximum_velocity_change": 0.018589552389435937,
+      "all_fields_finite": true,
+      "maximum_speed": 41.40668212985817
+    },
+    {
+      "iteration": 93,
+      "continuity_max": 0.0017944099280011727,
+      "continuity_L1": 0.12036065269486682,
+      "continuity_net": 0.0001260275820635778,
+      "maximum_velocity_change": 0.017809253175279594,
+      "all_fields_finite": true,
+      "maximum_speed": 41.414584864473326
+    },
+    {
+      "iteration": 94,
+      "continuity_max": 0.0017450594673071862,
+      "continuity_L1": 0.11616598183966743,
+      "continuity_net": 0.00012582163313343362,
+      "maximum_velocity_change": 0.017016294005891552,
+      "all_fields_finite": true,
+      "maximum_speed": 41.42222134690693
+    },
+    {
+      "iteration": 95,
+      "continuity_max": 0.0016962094550851958,
+      "continuity_L1": 0.1123115020296122,
+      "continuity_net": 0.00012545530181269117,
+      "maximum_velocity_change": 0.016221543470663846,
+      "all_fields_finite": true,
+      "maximum_speed": 41.42959844777769
+    },
+    {
+      "iteration": 96,
+      "continuity_max": 0.0016478927543781552,
+      "continuity_L1": 0.10903380289656697,
+      "continuity_net": 0.00012477706806426556,
+      "maximum_velocity_change": 0.015434507831443511,
+      "all_fields_finite": true,
+      "maximum_speed": 41.436723002041255
+    },
+    {
+      "iteration": 97,
+      "continuity_max": 0.0016001427030678528,
+      "continuity_L1": 0.10646040399062613,
+      "continuity_net": 0.00012367239985060664,
+      "maximum_velocity_change": 0.014663289596782647,
+      "all_fields_finite": true,
+      "maximum_speed": 41.44360180190306
+    },
+    {
+      "iteration": 98,
+      "continuity_max": 0.0015529926694171081,
+      "continuity_L1": 0.1044539473735229,
+      "continuity_net": 0.00012206106880275226,
+      "maximum_velocity_change": 0.013914589922443099,
+      "all_fields_finite": true,
+      "maximum_speed": 41.45024158994426
+    },
+    {
+      "iteration": 99,
+      "continuity_max": 0.0015064755701050814,
+      "continuity_L1": 0.10272004220290651,
+      "continuity_net": 0.00011989369366306388,
+      "maximum_velocity_change": 0.013193749559505363,
+      "all_fields_finite": true,
+      "maximum_speed": 41.45664905249866
+    },
+    {
+      "iteration": 100,
+      "continuity_max": 0.0014606234162384268,
+      "continuity_L1": 0.10123970471409915,
+      "continuity_net": 0.00011714782409491271,
+      "maximum_velocity_change": 0.012504822043176489,
+      "all_fields_finite": true,
+      "maximum_speed": 41.46283081327509
+    }
+  ],
+  "warnings": [],
+  "completed_iterations": 100,
+  "all_fields_finite": true,
+  "field_ranges": {
+    "u": [
+      30.92752992559875,
+      40.86619548942974
+    ],
+    "v": [
+      -3.481963815527787,
+      9.37668607317947
+    ],
+    "p": [
+      100983.19559544044,
+      101461.80194055977
+    ]
+  },
+  "upstream_checkpoint_saved": true,
+  "elapsed_seconds": 369.719
+}
