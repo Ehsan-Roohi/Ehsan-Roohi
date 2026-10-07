@@ -12,7 +12,7 @@ The runnable default is **HLLC/CWENO3**, which reached the residual gate on all 
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb)
 
-**[One self-contained notebook](Conical_Flow_Modern_2026.ipynb)** embeds the source modules, all 11 Euler fluxes, finite-volume and viscous choices, and an optional inviscid DG companion. The default example runs directly on a CPU. No GitHub download, credentials or external CFD package is needed inside the notebook.
+**[One Colab notebook](Conical_Flow_Modern_2026.ipynb)** displays all 11 fluxes in four physical cases, six reconstruction choices, higher-order viscous/grid comparisons and DG results. Setup is collapsed and the large encoded source block has been removed. A small public source/data package is downloaded without credentials. Recorded runs are displayed by default; an optional fresh comparison selects all 11 fluxes by default.
 
 [Published result report with figures and acceptance tables](RESULTS.md) · [DG companion and its limits](DG.md) · [Download source, results and vector figures](../../downloads/conical-modern-2026.zip) · [Notebook execution evidence](colab-validation.json)
 

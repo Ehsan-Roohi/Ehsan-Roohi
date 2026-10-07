@@ -6,4 +6,4 @@ The [AUSM and viscous extension](conical/results-v2/report.html) adds AUSM, AUSM
 
 The historical Fortran archive is preserved. Euler-airfoil and viscous-airfoil Python migrations have not yet been implemented. No external CFD solver performs the computations in this module.
 
-[Run the self-contained Colab notebook](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Published results](conical/RESULTS.md) · [Optional DG companion](conical/DG.md) · [Download code and raw data](../downloads/conical-modern-2026.zip).
+[Run the all-methods Colab notebook](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Published results](conical/RESULTS.md) · [Optional DG companion](conical/DG.md) · [Download code and raw data](../downloads/conical-modern-2026.zip).

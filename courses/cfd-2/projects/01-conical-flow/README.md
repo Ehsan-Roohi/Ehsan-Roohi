@@ -30,7 +30,7 @@ These findings are recorded in the [validation report](../../docs/validation/REA
 
 [Open the complete code in Google Colab](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Published results](../../modern-python/conical/RESULTS.md) · [Source and raw-result ZIP](../../downloads/conical-modern-2026.zip)
 
-The single notebook includes 11 selectable face fluxes, classical and high-order finite-volume reconstruction, the local-station viscous model and an optional modal DG companion. It embeds the source, so students can run and modify the algorithms themselves. The DG companion is independently verified on smooth problems, but its degree-one/two cone shock runs are still exploratory; their failures are documented.
+The single notebook includes 11 selectable face fluxes, classical and high-order finite-volume reconstruction, the local-station viscous model and an optional modal DG companion. It loads the source and executed study data, so students can inspect, run and modify the algorithms themselves. The DG companion is independently verified on smooth problems, but its degree-one/two cone shock runs are still exploratory; their failures are documented.
 
 ## Modern Python implementation and measured results
 

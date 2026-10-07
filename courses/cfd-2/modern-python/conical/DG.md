@@ -41,7 +41,7 @@ python dg_study.py
 python dg.py --degree 2 --flux hllc --cells 40 --steps 8000 --output results-dg/my-run
 ```
 
-The [single Colab notebook](Conical_Flow_Modern_2026.ipynb) embeds this module and lets students select `Physics = dg-inviscid`. It also retains all finite-volume and viscous choices.
+The [single Colab notebook](Conical_Flow_Modern_2026.ipynb) includes this module and lets students select `Physics = dg-inviscid`. It also retains all finite-volume and viscous choices.
 
 ## Primary references
 
