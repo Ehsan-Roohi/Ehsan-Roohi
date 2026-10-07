@@ -1,0 +1,49 @@
+{
+  "fv_degree_zero_interior_wall_error": 0.0,
+  "integrated_mean_balance_error": 1.1102230246251565e-16,
+  "limiter_mean_preservation_error": 0.0,
+  "limited_samples_positive": true,
+  "periodic_advection_order": {
+    "1": [
+      {
+        "cells": 12,
+        "l2_error": 0.011525687346312286,
+        "order": null
+      },
+      {
+        "cells": 24,
+        "l2_error": 0.0029323968075632223,
+        "order": 1.9747005446985877
+      },
+      {
+        "cells": 48,
+        "l2_error": 0.0007363089531372881,
+        "order": 1.9936971908654124
+      }
+    ],
+    "2": [
+      {
+        "cells": 12,
+        "l2_error": 0.0004914929793617017,
+        "order": null
+      },
+      {
+        "cells": 24,
+        "l2_error": 6.189724436914447e-05,
+        "order": 2.989223720807309
+      },
+      {
+        "cells": 48,
+        "l2_error": 7.7385446585951e-06,
+        "order": 2.9997410048495814
+      }
+    ]
+  },
+  "linear_fr_radau_dg_equivalence_error": {
+    "0": 0.0,
+    "1": 8.881784197001252e-16,
+    "2": 4.440892098500626e-15
+  },
+  "scope": "Linear smooth time-dependent tests establish DG order; no high-order shock or viscous DG claim.",
+  "passed": true
+}

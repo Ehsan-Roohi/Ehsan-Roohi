@@ -1,0 +1,384 @@
+{
+  "passed": true,
+  "recorded_runs_checked": 42,
+  "checks": [
+    {
+      "file": "m2.35-n60-roe-first",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n60-vanleer-first",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n60-hllc-first",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n60-hllc-muscl",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n60-hllc-cweno3",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n60-hllc-cweno5",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n120-roe-first",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n120-vanleer-first",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n120-hllc-first",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n120-hllc-muscl",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n120-hllc-cweno3",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n120-hllc-cweno5",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-roe-first",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-vanleer-first",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-hllc-first",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-hllc-muscl",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-hllc-cweno3",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-hllc-cweno5",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-roe-first",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-vanleer-first",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-hllc-first",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-hllc-muscl",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-hllc-cweno3",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-hllc-cweno5",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-roe-first",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-vanleer-first",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-hllc-first",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-hllc-muscl",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-hllc-cweno3",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-hllc-cweno5",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-roe-first",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-vanleer-first",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-hllc-first",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-hllc-muscl",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-hllc-cweno3",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-hllc-cweno5",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-hllc-muscl-cfl015-continuation",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m2.35-n240-hllc-cweno5-cfl015-continuation",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n60-hllc-muscl-cfl015-continuation",
+      "finite_positive": true,
+      "csv_shape": [
+        60,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n120-hllc-muscl-cfl015-continuation",
+      "finite_positive": true,
+      "csv_shape": [
+        120,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-hllc-muscl-cfl015-continuation",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    },
+    {
+      "file": "m7.95-n240-hllc-cweno5-cfl015-continuation",
+      "finite_positive": true,
+      "csv_shape": [
+        240,
+        7
+      ],
+      "convergence_label_consistent": true
+    }
+  ]
+}

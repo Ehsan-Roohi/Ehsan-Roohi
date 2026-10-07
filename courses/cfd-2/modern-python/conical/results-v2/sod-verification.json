@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "reference": "Exact ideal-gas Riemann solution by pressure bisection",
+  "star_pressure": 0.3031301780506468,
+  "star_velocity": 0.9274526200489499,
+  "runs": [
+    {
+      "flux": "roe",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 348,
+      "rejected": 0,
+      "density_l1": 0.003892314196323241,
+      "pressure_l1": 0.0029734996027231874,
+      "min_density": 0.12499424105855468,
+      "min_pressure": 0.09999355029469949
+    },
+    {
+      "flux": "hllc",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 348,
+      "rejected": 0,
+      "density_l1": 0.003991836662633036,
+      "pressure_l1": 0.0030756820797327943,
+      "min_density": 0.12499424273825491,
+      "min_pressure": 0.09999355200356722
+    },
+    {
+      "flux": "ausm",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 350,
+      "rejected": 0,
+      "density_l1": 0.003940435683826608,
+      "pressure_l1": 0.0030360493476843144,
+      "min_density": 0.12499962437149767,
+      "min_pressure": 0.09999957929573487
+    },
+    {
+      "flux": "ausm-plus",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 349,
+      "rejected": 0,
+      "density_l1": 0.003832712193353903,
+      "pressure_l1": 0.0029117944483682467,
+      "min_density": 0.12499976197979225,
+      "min_pressure": 0.0999997334173523
+    },
+    {
+      "flux": "ausm-up",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 348,
+      "rejected": 0,
+      "density_l1": 0.005568376482781043,
+      "pressure_l1": 0.004878270091946547,
+      "min_density": 0.12497295064337402,
+      "min_pressure": 0.09996970618377529
+    },
+    {
+      "flux": "ausm-up2",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 348,
+      "rejected": 0,
+      "density_l1": 0.005310398838986102,
+      "pressure_l1": 0.004587443261069596,
+      "min_density": 0.12497443827100355,
+      "min_pressure": 0.09997137225353711
+    },
+    {
+      "flux": "slau2",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 349,
+      "rejected": 0,
+      "density_l1": 0.0036825356154290534,
+      "pressure_l1": 0.002728953497668585,
+      "min_density": 0.12499211121274827,
+      "min_pressure": 0.09999116461531533
+    },
+    {
+      "flux": "ec-lf",
+      "cells": 200,
+      "time": 0.2,
+      "steps": 348,
+      "rejected": 0,
+      "density_l1": 0.004749116673280801,
+      "pressure_l1": 0.003570919533008159,
+      "min_density": 0.12499319070492854,
+      "min_pressure": 0.09999352621912776
+    }
+  ]
+}

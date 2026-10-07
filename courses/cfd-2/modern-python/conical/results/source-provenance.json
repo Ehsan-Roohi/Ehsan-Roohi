@@ -1,0 +1,29 @@
+{
+  "study_execution_source_sha256": {
+    "flux.py": "4e14b59c341454a0354e7e65157836054e9858174c0ac8158a9ef054e863b137",
+    "plot_fields.py": "b37970a506465ed0b0fce25f4fb65a3d9aa93ae2a8694126d45b70fd3ecf96f9",
+    "reconstruction.py": "6c516d1735687e1203c4b93afabf3f2e4b3d1eb2a5044ce4c9a8c90f95f176e1",
+    "reference.py": "8af5104d67fed721828ccad1aa47d383e1818d70b4b0ebc5ea04c6b2376a697e",
+    "render_report.py": "6f068d15f493bdd7e51d1267c021da13e029925237c16d83cb69399ad0a29561",
+    "solver.py": "257350788c69c474d4c97e5e47d658343c4b085bbf194fd686948627f03b8d37",
+    "stability_check.py": "0ee985323edf5a27a5e166410383e5d4383f045a28b691d78853e5e8d5aefc30",
+    "state.py": "9172ed21e4cac3e60bd10cdd9c402da588259294e3ec230e6c3c573adfaa95b3",
+    "study.py": "0d26943ef40642e5026b7b8ddb0611e9387b87e389e821734e3f78628f604408",
+    "verify.py": "4ccfd84b20e258022f7579d991a135719dddd89c3ede943bd37aae0e046c7587"
+  },
+  "delivered_source_sha256": {
+    "flux.py": "4e14b59c341454a0354e7e65157836054e9858174c0ac8158a9ef054e863b137",
+    "package_results.py": "e30d5f0b21d7e78131915ce824740314dbe2fb2ebcd854ce464e6ee6ba01be2a",
+    "plot_fields.py": "da35a8d70d2227e90e00779b388c04bf063c8b92908054271242f34d6b862bab",
+    "reconstruction.py": "6c516d1735687e1203c4b93afabf3f2e4b3d1eb2a5044ce4c9a8c90f95f176e1",
+    "reference.py": "8af5104d67fed721828ccad1aa47d383e1818d70b4b0ebc5ea04c6b2376a697e",
+    "render_report.py": "1bca47cfa6b190e691f953c43b9e5fdde051de9e7b18dbc0e6a2470ab4e1967b",
+    "solver.py": "7a555aa4bdc9a7d8af9d9bdcaac02e687a33921257a15333dca753b41d167c52",
+    "stability_check.py": "32eb885149589e5b78fb58c331864df53b57d3b251f7e4d922467e18a4e84e5f",
+    "state.py": "9172ed21e4cac3e60bd10cdd9c402da588259294e3ec230e6c3c573adfaa95b3",
+    "study.py": "0d26943ef40642e5026b7b8ddb0611e9387b87e389e821734e3f78628f604408",
+    "verify.py": "4ccfd84b20e258022f7579d991a135719dddd89c3ede943bd37aae0e046c7587"
+  },
+  "post_study_changes": "Solver defaults changed to the tested HLLC/CWENO3 combination and 40000 steps; mathematical implementations and explicitly configured common-study runs are unchanged. Report annotations/figures and supplementary diagnostic/packaging utilities were finalized afterward.",
+  "supplementary_budget_note": "Additional iterations are explicit per continuation: one completed 57600-step diagnostic is preserved; other completed stability diagnostics use 10000 additional steps. Intermediate interrupted attempts are not accepted numerical results."
+}

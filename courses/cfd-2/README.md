@@ -26,11 +26,23 @@ Counts describe the selected archive, not every duplicate or executable in the o
 
 ## Execution and correctness
 
-**Current result: not fully numerically validated.** All 23 Fortran files compile with documented working-copy adaptations; both grid generators run, while the course flow attempts expose runtime defects. SIMPLE passes a uniform-flow test and produces finite airfoil diagnostics.
+**Legacy archive: not fully numerically validated.** All 23 Fortran files compile with documented working-copy adaptations; both grid generators run, while the course flow attempts expose runtime defects. SIMPLE passes a uniform-flow test and produces finite airfoil diagnostics.
 
 Read the [execution and validation report](docs/validation/README.md) before using numerical outputs. It separates compilation, runtime checks, exact-solution tests and physical validation. Failures and compatibility changes are documented. Original Fortran files remain byte-for-byte archival copies; experiments use separate working directories.
 
 The external [jyoun35/SIMPLE](https://github.com/jyoun35/SIMPLE) repository is an additional Python example for **incompressible** pressure-velocity coupling. It is distinct from the compressible course projects. The [English SIMPLE review](docs/SIMPLE-review.md) explains its algorithm, limitations, specific defects and executed diagnostics. Upstream source is downloaded only into a local validation checkout and is not republished here.
+
+## Project 1 Python modernization
+
+[**Run Project 1 in Google Colab**](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [**Read the published result report**](modern-python/conical/RESULTS.md) · [**Download code and results**](downloads/conical-modern-2026.zip)
+
+The 2026 edition adds AUSM/AUSM+/AUSM+-up/AUSM+-up2/SLAU2, an entropy-based flux, no-slip viscous walls, heat transfer and an optional high-order DG companion. All implemented numerical methods are inspectable Python code. The report states the convergence and physical-validation limits of each study.
+
+The [new modular Python solver](modern-python/conical/README.md) implements the inviscid conical equations on a common finite-volume core, with Roe, Van Leer, HLLC and additional flux choices; piecewise-constant, MUSCL, CWENO3 and CWENO5 reconstruction; and SSPRK3 pseudo-time stepping. Students can inspect and modify the numerical algorithms directly using Python and NumPy.
+
+The [measured comparison report](modern-python/conical/results/report.html) compares six method combinations at Mach 2.35 and 7.95 on three grids, against an independently checked Taylor–Maccoll solution. Raw fields, convergence histories and run metadata accompany the figures. Smooth spatial-operator checks establish third- and fifth-order CWENO behavior; shock and wall errors are reported separately.
+
+The Python edition is a corrected independent continuation of the archived mathematical model. It now includes a verified local-station viscous extension; full axisymmetric viscous-cone validation and Projects 2–3 remain outside its validated scope. Original archive files are preserved unchanged.
 
 ## Lectures and study sequence
 

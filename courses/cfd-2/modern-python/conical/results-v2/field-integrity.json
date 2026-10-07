@@ -1,0 +1,576 @@
+{
+  "checked_runs": 114,
+  "all_passed": true,
+  "runs": [
+    {
+      "file": "adiabatic-m7.95-n60-ausm-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-ausm-plus-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-ausm-up-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-ausm-up2-cweno3-char-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-ausm-up2-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-ec-lf-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-hllc-cweno3-char-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-hllc-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-roe-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "adiabatic-m7.95-n60-slau2-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "continued-fv2-steady-adiabatic-m7.95-n120-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "continued-fv2-steady-adiabatic-m7.95-n60-ausm-plus-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "continued-fv2-steady-adiabatic-m7.95-n60-ec-lf-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "continued-fv2-steady-adiabatic-m7.95-n60-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "continued-fv2-steady-isothermal-m7.95-n120-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "continued-fv2-steady-isothermal-m7.95-n120-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-ausm-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-ausm-plus-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-ausm-up-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-ausm-up2-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-ec-lf-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-hllc-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-roe-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m2.35-n60-slau2-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n120-ausm-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n120-ausm-plus-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n120-ausm-up-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n120-ausm-up2-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n120-ec-lf-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n120-hllc-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n120-roe-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n120-slau2-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n60-ausm-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n60-ausm-plus-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n60-ausm-up-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n60-ausm-up2-cweno3-char.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n60-ausm-up2-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n60-ec-lf-cweno3-char.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n60-ec-lf-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "euler-m7.95-n60-hllc-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n60-roe-cweno3.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n60-slau2-cweno3-char.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "euler-m7.95-n60-slau2-cweno3.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n120-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n120-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n120-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n120-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n240-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n240-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n240-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n240-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-ausm-plus-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-ausm-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-ausm-up-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-ec-lf-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-roe-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-adiabatic-m7.95-n60-slau2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n120-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n120-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n120-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n120-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n240-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n240-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n240-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n240-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-ausm-plus-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-ausm-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-ausm-up-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-ec-lf-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-roe-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "fv2-steady-isothermal-m7.95-n60-slau2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "isothermal-m7.95-n60-ausm-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "isothermal-m7.95-n60-hllc-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "isothermal-m7.95-n60-roe-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "mesh-continued-fv2-steady-adiabatic-m7.95-n240-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "mesh-continued-fv2-steady-adiabatic-m7.95-n240-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "mesh-continued-fv2-steady-adiabatic-m7.95-n240-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "mesh-continued-fv2-steady-adiabatic-m7.95-n240-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "mesh-continued-fv2-steady-isothermal-m7.95-n240-ausm-up2-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "mesh-continued-fv2-steady-isothermal-m7.95-n240-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "mesh-continued-fv2-steady-isothermal-m7.95-n240-hllc-cweno5-char-g4.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "mesh-continued-fv2-steady-isothermal-m7.95-n240-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "newton-pilot.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "pilot-minmod.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "pilot-primitive.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "pilot-viscous.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "seed-isothermal-relaxation.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "seed-isothermal.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-ausm-plus-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-ausm-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-ausm-up-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-ec-lf-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-roe-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-adiabatic-m7.95-n60-slau2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-ausm-plus-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-ausm-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-ausm-up-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-ausm-up2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-ec-lf-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-hllc-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-roe-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "steady-isothermal-m7.95-n60-slau2-primitive-minmod-g2.npz",
+      "positive_finite": true,
+      "converged": false
+    },
+    {
+      "file": "warm-adiabatic.npz",
+      "positive_finite": true,
+      "converged": true
+    },
+    {
+      "file": "warm-isothermal.npz",
+      "positive_finite": true,
+      "converged": false
+    }
+  ]
+}

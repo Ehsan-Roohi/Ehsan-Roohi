@@ -1,0 +1,35 @@
+{
+  "all_passed": true,
+  "runs": [
+    {
+      "file": "cone-m2.35-n40-ausm-up2-p0.json",
+      "converged": true,
+      "positive_finite": true
+    },
+    {
+      "file": "cone-m2.35-n40-ausm-up2-p1.json",
+      "converged": false,
+      "positive_finite": true
+    },
+    {
+      "file": "cone-m2.35-n40-ausm-up2-p2.json",
+      "converged": false,
+      "positive_finite": true
+    },
+    {
+      "file": "cone-m2.35-n40-hllc-p0.json",
+      "converged": true,
+      "positive_finite": true
+    },
+    {
+      "file": "cone-m2.35-n40-hllc-p1.json",
+      "converged": false,
+      "positive_finite": true
+    },
+    {
+      "file": "cone-m2.35-n40-hllc-p2.json",
+      "converged": false,
+      "positive_finite": true
+    }
+  ]
+}

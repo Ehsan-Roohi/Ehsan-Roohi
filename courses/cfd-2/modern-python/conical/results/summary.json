@@ -1,0 +1,10 @@
+{
+  "runs": 36,
+  "converged": 30,
+  "finest_cells": 240,
+  "max_balance_roundoff": 7.771561172376096e-16,
+  "min_density": 0.9855568769611263,
+  "min_pressure": 0.010947712299796073,
+  "lower_cfl_continuations": 6,
+  "lower_cfl_converged": 0
+}

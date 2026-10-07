@@ -1,0 +1,272 @@
+{
+  "passed": true,
+  "flux_properties": {
+    "roe": {
+      "equal_state": 0.0,
+      "orientation": 0.0
+    },
+    "vanleer": {
+      "equal_state": 7.105427357601002e-15,
+      "orientation": 0.0
+    },
+    "hllc": {
+      "equal_state": 3.552713678800501e-15,
+      "orientation": 7.105427357601002e-15
+    },
+    "hlle": {
+      "equal_state": 3.552713678800501e-15,
+      "orientation": 0.0
+    },
+    "rusanov": {
+      "equal_state": 0.0,
+      "orientation": 0.0
+    },
+    "ausm": {
+      "equal_state": 7.105427357601002e-15,
+      "orientation": 0.0
+    },
+    "ausm-plus": {
+      "equal_state": 1.0658141036401503e-14,
+      "orientation": 0.0
+    },
+    "ausm-up": {
+      "equal_state": 1.0658141036401503e-14,
+      "orientation": 8.881784197001252e-16
+    },
+    "ausm-up2": {
+      "equal_state": 1.0658141036401503e-14,
+      "orientation": 0.0
+    },
+    "slau2": {
+      "equal_state": 3.552713678800501e-15,
+      "orientation": 0.0
+    },
+    "ec-lf": {
+      "equal_state": 7.105427357601002e-15,
+      "orientation": 0.0
+    }
+  },
+  "face_entropy": {
+    "identity_max_error": 1.9539925233402755e-14,
+    "largest_dissipative_face_production": -0.5362327603680037
+  },
+  "constitutive": {
+    "uniform_cartesian_velocity_stress": 7.04903507698512e-22,
+    "stress_trace": 1.2705494208814505e-21,
+    "sutherland_normalization": 0.0,
+    "reynolds_scaling": 0.0,
+    "prandtl_heat_scaling": 0.0
+  },
+  "fv_diffusion_rates": {
+    "2": [
+      {
+        "cells": 24,
+        "l2_error": 0.010365591363017908,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 0.002506329550821311,
+        "order": 2.048154396884421
+      },
+      {
+        "cells": 96,
+        "l2_error": 0.0006184178723832546,
+        "order": 2.0189222042760195
+      },
+      {
+        "cells": 192,
+        "l2_error": 0.00015382475835094137,
+        "order": 2.0072942878437825
+      }
+    ],
+    "4": [
+      {
+        "cells": 24,
+        "l2_error": 7.136467335806263e-05,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 4.72722266897952e-06,
+        "order": 3.916145366623384
+      },
+      {
+        "cells": 96,
+        "l2_error": 3.0124322131866465e-07,
+        "order": 3.971992139570933
+      },
+      {
+        "cells": 192,
+        "l2_error": 1.8955066321363752e-08,
+        "order": 3.9902733682383316
+      }
+    ]
+  },
+  "smooth_viscous_angular_operator": {
+    "2": [
+      {
+        "cells": 24,
+        "l2_error": 2.883474462934838e-09,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 7.021092057441927e-10,
+        "order": 2.03804089621512
+      },
+      {
+        "cells": 96,
+        "l2_error": 1.7554613539059993e-10,
+        "order": 1.9998452081530076
+      },
+      {
+        "cells": 192,
+        "l2_error": 4.405233288834741e-11,
+        "order": 1.994559908579635
+      }
+    ],
+    "4": [
+      {
+        "cells": 24,
+        "l2_error": 1.0053624694532645e-11,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 1.0435863870222258e-12,
+        "order": 3.2680938034351796
+      },
+      {
+        "cells": 96,
+        "l2_error": 8.184422427592055e-14,
+        "order": 3.6725256103423214
+      },
+      {
+        "cells": 192,
+        "l2_error": 5.683111781586696e-15,
+        "order": 3.848127612438231
+      }
+    ]
+  },
+  "nonuniform_cweno_rates": {
+    "cweno3": [
+      {
+        "cells": 24,
+        "l2_error": 4.8958710715371694e-05,
+        "average_error": 4.440892098500626e-16,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 6.694585616871438e-06,
+        "average_error": 6.661338147750939e-16,
+        "order": 2.8704989032957795
+      },
+      {
+        "cells": 96,
+        "l2_error": 8.770196197772528e-07,
+        "average_error": 4.440892098500626e-16,
+        "order": 2.93231373538886
+      },
+      {
+        "cells": 192,
+        "l2_error": 1.1229242870887595e-07,
+        "average_error": 6.661338147750939e-16,
+        "order": 2.9653484598775606
+      }
+    ],
+    "cweno5": [
+      {
+        "cells": 24,
+        "l2_error": 1.4699924446935193e-07,
+        "average_error": 1.9984014443252818e-15,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 5.954373734962191e-09,
+        "average_error": 3.552713678800501e-15,
+        "order": 4.6257151525703435
+      },
+      {
+        "cells": 96,
+        "l2_error": 2.124850497067356e-10,
+        "average_error": 2.886579864025407e-15,
+        "order": 4.808516534316838
+      },
+      {
+        "cells": 192,
+        "l2_error": 7.120874249400381e-12,
+        "average_error": 2.6645352591003757e-15,
+        "order": 4.899163151903432
+      }
+    ]
+  },
+  "couette_heating": {
+    "shear_error": 1.8648277366750676e-17,
+    "heat_into_lower_wall": -0.000499999999999999,
+    "heat_into_upper_wall": -0.0005000000000000055,
+    "energy_residual_max": 7.557053758551511e-15
+  },
+  "additional_reconstruction_conservation": {
+    "cweno3-char": {
+      "average_error": 6.661338147750939e-16
+    },
+    "cweno5-char": {
+      "average_error": 2.4424906541753444e-15
+    },
+    "primitive-minmod": {
+      "average_error": 2.220446049250313e-16
+    }
+  },
+  "characteristic_euler_operator_rates": {
+    "cweno3-char": [
+      {
+        "cells": 24,
+        "l2_error": 1.730140006610971e-05,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 2.3003549867161575e-06,
+        "order": 2.9109603709272385
+      },
+      {
+        "cells": 96,
+        "l2_error": 2.954877963399906e-07,
+        "order": 2.960686059126556
+      },
+      {
+        "cells": 192,
+        "l2_error": 3.740055185868519e-08,
+        "order": 2.981967085389206
+      }
+    ],
+    "cweno5-char": [
+      {
+        "cells": 24,
+        "l2_error": 1.2955879595677112e-07,
+        "order": null
+      },
+      {
+        "cells": 48,
+        "l2_error": 5.057801845249325e-09,
+        "order": 4.678952639375975
+      },
+      {
+        "cells": 96,
+        "l2_error": 1.766178121174209e-10,
+        "order": 4.83980776319254
+      },
+      {
+        "cells": 192,
+        "l2_error": 5.834078175626421e-12,
+        "order": 4.919982319390729
+      }
+    ]
+  },
+  "colored_vs_brute_jacobian_max_error": 0.0,
+  "quadratic_fv_wall_fit_error": 8.881784197001252e-16,
+  "scope": "Smooth interior diffusion order; wall closure remains second order. No global high-order entropy theorem."
+}

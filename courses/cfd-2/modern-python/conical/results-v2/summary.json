@@ -1,0 +1,11 @@
+{
+  "euler_runs": 24,
+  "euler_converged": 14,
+  "viscous_effective_runs": 36,
+  "viscous_converged": 29,
+  "high_order_runs": 12,
+  "high_order_converged": 9,
+  "verification_passed": true,
+  "primary_viscous_runs": 16,
+  "primary_viscous_converged": 16
+}

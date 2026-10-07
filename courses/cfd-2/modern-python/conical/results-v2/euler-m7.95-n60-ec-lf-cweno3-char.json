@@ -1,0 +1,36 @@
+{
+  "config": {
+    "mach": 7.95,
+    "cone_deg": 10,
+    "outer_deg": 22,
+    "cells": 60,
+    "gamma": 1.4,
+    "flux": "ec-lf",
+    "reconstruction": "cweno3-char",
+    "cfl": 0.35,
+    "tolerance": 2e-08,
+    "max_steps": 20000,
+    "boundary": "wall",
+    "balance_freestream": false
+  },
+  "converged": true,
+  "iterations": 4100,
+  "residual_rms_max_equation": 1.8535925682428165e-08,
+  "elapsed_seconds": 31.402774399961345,
+  "wall_pressure_ratio": 3.993367038224657,
+  "wall_mach": 6.163464580653812,
+  "min_density": 0.99946393060345,
+  "min_pressure": 0.011292685495209362,
+  "discrete_balance_roundoff": 2.220446049250313e-16,
+  "events": {
+    "reconstruction_limited_cells": 0,
+    "rejected_steps": 0,
+    "rhs_evaluations": 12300
+  },
+  "wall_pressure_error_percent": 0.9591551246160734,
+  "wall_mach_error_percent": 0.3133629886236,
+  "pressure_ratio_l1": 0.04609782611239486,
+  "smooth_pressure_ratio_l1": 0.007978108210181523,
+  "shock_angle_deg": 13.054681789602784,
+  "shock_angle_error_deg": 0.045820941401563786
+}

@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "default_notebook_cells": [
+    {
+      "cell": 1,
+      "passed": true,
+      "seconds": 0.004507799982093275
+    },
+    {
+      "cell": 2,
+      "passed": true,
+      "seconds": 1.6344564000610262
+    },
+    {
+      "cell": 4,
+      "passed": true,
+      "seconds": 0.20960729999933392
+    },
+    {
+      "cell": 6,
+      "passed": true,
+      "seconds": 22.737613100092858
+    },
+    {
+      "cell": 8,
+      "passed": true,
+      "seconds": 18.19990530004725
+    },
+    {
+      "cell": 10,
+      "passed": true,
+      "seconds": 0.24551140004768968
+    }
+  ],
+  "default_run_converged": true,
+  "all_flux_smoke": [
+    {
+      "flux": "roe",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "vanleer",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "hllc",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "hlle",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "rusanov",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "ausm",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "ausm-plus",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "ausm-up",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "ausm-up2",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": true
+    },
+    {
+      "flux": "slau2",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    },
+    {
+      "flux": "ec-lf",
+      "euler_dispatch_positive": true,
+      "viscous_dispatch_positive": true,
+      "viscous_accepted": false
+    }
+  ],
+  "executed_on": "Local Python CPU; Google Colab runtime was not remotely executed",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.3",
+  "matplotlib": "3.11.2"
+}

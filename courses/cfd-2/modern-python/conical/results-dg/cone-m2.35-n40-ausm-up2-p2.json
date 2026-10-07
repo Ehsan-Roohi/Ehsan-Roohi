@@ -1,0 +1,41 @@
+{
+  "config": {
+    "mach": 2.35,
+    "cone_deg": 10,
+    "outer_deg": 45,
+    "cells": 40,
+    "gamma": 1.4,
+    "flux": "ausm-up2",
+    "reconstruction": "modal-dg",
+    "cfl": 0.25,
+    "tolerance": 2e-08,
+    "max_steps": 8000,
+    "boundary": "wall",
+    "balance_freestream": false,
+    "degree": 2,
+    "tvb": 10
+  },
+  "converged": false,
+  "iterations": 8000,
+  "residual_rms_max_equation": 0.10641838601889776,
+  "elapsed_seconds": 32.52915539999958,
+  "wall_pressure_ratio": 1.373864883660795,
+  "wall_mach": 2.1499008315532735,
+  "min_density": 0.999999999377068,
+  "min_pressure": 0.12934100747388655,
+  "discrete_balance_roundoff": 1.1102230246251565e-16,
+  "events": {
+    "slope_limited_cells": 39587,
+    "positivity_scaled_cells": 0,
+    "rejected_steps": 0
+  },
+  "explicit_20_step_max_state_drift": null,
+  "scope": "Inviscid angular modal RKDG companion; not viscous or 2-D unstructured DG",
+  "modal_coefficients": "stored separately in modal NPZ",
+  "wall_pressure_error_percent": 0.00520281569853509,
+  "wall_mach_error_percent": 0.14300001189448963,
+  "pressure_ratio_l1": 0.0021089437374267857,
+  "smooth_pressure_ratio_l1": 0.0002286954846825659,
+  "shock_angle_deg": 26.623578842817597,
+  "shock_angle_error_deg": 0.11313887611273543
+}

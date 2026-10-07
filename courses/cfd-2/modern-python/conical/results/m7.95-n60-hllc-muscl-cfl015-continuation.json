@@ -1,0 +1,41 @@
+{
+  "config": {
+    "mach": 7.95,
+    "cone_deg": 10,
+    "outer_deg": 22,
+    "cells": 60,
+    "gamma": 1.4,
+    "flux": "hllc",
+    "reconstruction": "muscl",
+    "cfl": 0.15,
+    "tolerance": 2e-08,
+    "max_steps": 10000,
+    "boundary": "wall",
+    "balance_freestream": false
+  },
+  "converged": false,
+  "iterations": 10000,
+  "residual_rms_max_equation": 0.7797583116663076,
+  "elapsed_seconds": 13.213687300099991,
+  "wall_pressure_ratio": 4.005147924807254,
+  "wall_mach": 6.171521217863358,
+  "min_density": 0.9875599137437561,
+  "min_pressure": 0.011047191413237598,
+  "discrete_balance_roundoff": 1.1102230246251565e-16,
+  "events": {
+    "reconstruction_limited_cells": 0,
+    "rejected_steps": 0,
+    "rhs_evaluations": 30000
+  },
+  "wall_pressure_error_percent": 0.6669733768946751,
+  "wall_mach_error_percent": 0.18305655812000943,
+  "pressure_ratio_l1": 0.022247198043636767,
+  "smooth_pressure_ratio_l1": 0.008370084193705128,
+  "shock_angle_deg": 13.014783904103313,
+  "shock_angle_error_deg": 0.005923055902092855,
+  "parent_run": "m7.95-n60-hllc-muscl",
+  "initialization": "saved final cell averages of the common-CFL run",
+  "parent_iterations": 8400,
+  "parent_elapsed_seconds": 10.312570400070399,
+  "initial_residual": 0.8165348897021905
+}

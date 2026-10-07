@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "decimal_run_filename_regression": true,
+  "property_errors": {
+    "state_roundtrip": 4.440892098500626e-16,
+    "roe_equal_state_flux": 0.0,
+    "vanleer_equal_state_flux": 1.7763568394002505e-15,
+    "hllc_equal_state_flux": 1.7763568394002505e-15,
+    "hlle_equal_state_flux": 3.552713678800501e-15,
+    "rusanov_equal_state_flux": 0.0,
+    "first_cell_average_preservation": 0.0,
+    "muscl_cell_average_preservation": 0.0,
+    "cweno3_cell_average_preservation": 2.220446049250313e-16,
+    "cweno5_cell_average_preservation": 1.1102230246251565e-15,
+    "optional_equilibrium_subtraction": 0.0
+  },
+  "scalar_fv_spatial_operator": {
+    "first": [
+      {
+        "cells": 20,
+        "l2_error": 0.022062588753696787,
+        "observed_order": null
+      },
+      {
+        "cells": 40,
+        "l2_error": 0.011088188875942278,
+        "observed_order": 0.9925783444600311
+      },
+      {
+        "cells": 80,
+        "l2_error": 0.0055512251050512775,
+        "observed_order": 0.9981456362007085
+      },
+      {
+        "cells": 160,
+        "l2_error": 0.0027765044760360365,
+        "observed_order": 0.9995364745988772
+      }
+    ],
+    "muscl": [
+      {
+        "cells": 20,
+        "l2_error": 0.011938037047588506,
+        "observed_order": null
+      },
+      {
+        "cells": 40,
+        "l2_error": 0.004285563880692236,
+        "observed_order": 1.4780086889498665
+      },
+      {
+        "cells": 80,
+        "l2_error": 0.0015203245390402994,
+        "observed_order": 1.4951057177417226
+      },
+      {
+        "cells": 160,
+        "l2_error": 0.0005378257231646035,
+        "observed_order": 1.4991686609638721
+      }
+    ],
+    "cweno3": [
+      {
+        "cells": 20,
+        "l2_error": 0.00037334827447571155,
+        "observed_order": null
+      },
+      {
+        "cells": 40,
+        "l2_error": 4.713539095523621e-05,
+        "observed_order": 2.985639463871922
+      },
+      {
+        "cells": 80,
+        "l2_error": 5.908728109918228e-06,
+        "observed_order": 2.995891174337746
+      },
+      {
+        "cells": 160,
+        "l2_error": 7.392649579786651e-07,
+        "observed_order": 2.998684180194438
+      }
+    ],
+    "cweno5": [
+      {
+        "cells": 20,
+        "l2_error": 7.708772004231189e-06,
+        "observed_order": null
+      },
+      {
+        "cells": 40,
+        "l2_error": 2.513671715666016e-07,
+        "observed_order": 4.938632907411053
+      },
+      {
+        "cells": 80,
+        "l2_error": 7.974903066558543e-09,
+        "observed_order": 4.978185453249217
+      },
+      {
+        "cells": 160,
+        "l2_error": 2.506568598827015e-10,
+        "observed_order": 4.9916813603895225
+      }
+    ]
+  },
+  "taylor_maccoll_checks": [
+    {
+      "mach": 2.35,
+      "shock_angle_deg": 26.736717718930333,
+      "wall_pressure_ratio": 1.373936367037787,
+      "wall_mach": 2.146830863163595,
+      "ode_step_refinement_pressure_difference": 3.3661962106634746e-13,
+      "shock_rankine_hugoniot_flux_error": 0.0,
+      "wall_normal_velocity": -2.170626959424604e-15
+    },
+    {
+      "mach": 7.95,
+      "shock_angle_deg": 13.00886084820122,
+      "wall_pressure_ratio": 4.032040561900726,
+      "wall_mach": 6.182839310699616,
+      "ode_step_refinement_pressure_difference": 6.235012506294879e-13,
+      "shock_rankine_hugoniot_flux_error": 1.3877787807814457e-17,
+      "wall_normal_velocity": -4.555356742860783e-15
+    }
+  ],
+  "conical_uniform_residual_refinement": {
+    "first": [
+      {
+        "cells": 40,
+        "max_residual": 0.017028527178586605
+      },
+      {
+        "cells": 80,
+        "max_residual": 0.008478363954379842
+      },
+      {
+        "cells": 160,
+        "max_residual": 0.004228102232411102
+      }
+    ],
+    "muscl": [
+      {
+        "cells": 40,
+        "max_residual": 3.887090523913006e-05
+      },
+      {
+        "cells": 80,
+        "max_residual": 9.717641329398674e-06
+      },
+      {
+        "cells": 160,
+        "max_residual": 2.429404954762404e-06
+      }
+    ],
+    "cweno3": [
+      {
+        "cells": 40,
+        "max_residual": 1.047379039498253e-06
+      },
+      {
+        "cells": 80,
+        "max_residual": 1.307607087053242e-07
+      },
+      {
+        "cells": 160,
+        "max_residual": 1.6349512077518114e-08
+      }
+    ],
+    "cweno5": [
+      {
+        "cells": 40,
+        "max_residual": 1.5537138242649462e-10
+      },
+      {
+        "cells": 80,
+        "max_residual": 4.820699395224892e-12
+      },
+      {
+        "cells": 160,
+        "max_residual": 2.651212582804874e-13
+      }
+    ]
+  },
+  "limitations": [
+    "Spatial order measured on smooth scalar FV operator, not pointwise at cone shock.",
+    "SSPRK3 time order is three; the steady CWENO5 solver has nominal fifth-order spatial reconstruction.",
+    "Conical geometry has a finite discretization residual without optional equilibrium subtraction."
+  ]
+}
