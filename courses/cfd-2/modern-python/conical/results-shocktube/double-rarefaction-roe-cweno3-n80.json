@@ -1,0 +1,29 @@
+{
+  "config": {
+    "case": "double-rarefaction",
+    "cells": 80,
+    "flux": "roe",
+    "reconstruction": "cweno3",
+    "gamma": 1.4,
+    "cfl": 0.25,
+    "degree": -1,
+    "tvb": 0.0,
+    "max_steps": 100000
+  },
+  "completed": false,
+  "integrity_passed": false,
+  "termination": "Positivity recovery exhausted",
+  "time": 0.00274245273751106,
+  "steps": 10,
+  "elapsed_seconds": 0.2376235999399796,
+  "events": {
+    "rejected_steps": 78,
+    "reconstruction_limited_cells": 208
+  },
+  "conservation_budget_defect": 8.187894806610529e-16,
+  "min_density": 0.6036790422304769,
+  "min_pressure": 1.9110670542055172e-06,
+  "errors": {},
+  "reference_quadrature_change": 2.673244231480776e-08,
+  "scope": "Inviscid transient planar Euler; completion/integrity is not an accuracy certification"
+}

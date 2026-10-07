@@ -66,7 +66,11 @@ class ConicalSolver:
         pol = self.polynomials(u, uniform_boundary, record)
         left = evaluate(pol, .5)[:-1]
         right = evaluate(pol, -.5)[1:]
-        f = numerical_flux(c.flux, left, right, c.gamma, mach_ref=c.mach)
+        if c.flux=='jst':
+            from additional_fluxes import jst_flux
+            f=jst_flux(self.ghost(u,uniform_boundary),c.gamma)
+        else:
+            f = numerical_flux(c.flux, left, right, c.gamma, mach_ref=c.mach)
         if c.boundary == "wall" and not uniform_boundary:
             pwall = primitive(evaluate(pol[1:2], -.5), c.gamma)[0, 3]
             f[0] = [0, 0, pwall, 0]
@@ -157,8 +161,9 @@ if __name__ == "__main__":
     parser.add_argument("--mach", type=float, default=7.95)
     parser.add_argument("--cells", type=int, default=240)
     parser.add_argument("--outer", type=float, default=22)
-    parser.add_argument("--flux", choices=FLUXES, default="hllc")
-    parser.add_argument("--reconstruction", choices=["first", "muscl", "cweno3", "cweno5", "cweno3-char", "cweno5-char"], default="cweno3")
+    parser.add_argument("--flux", choices=[*FLUXES,'jst'], default="hllc")
+    from advanced_reconstruction import RECONSTRUCTIONS
+    parser.add_argument("--reconstruction", choices=RECONSTRUCTIONS, default="cweno3")
     parser.add_argument("--steps", type=int, default=40000)
     parser.add_argument("--output", default="results/single")
     args = parser.parse_args()

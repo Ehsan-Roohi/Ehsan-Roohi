@@ -1,3 +1,17 @@
+# Expanded cone comparison
+
+The latest notebook adds 46 executed cone cases to the earlier 68. [Full algorithm/source audit and all 46 gate results](ADDITIONAL_METHODS.md) document exact Godunov, uncorrected Roe, Steger–Warming, global LF, JST, ENO/WENO/TENO and MUSCL–THINC–BVD. The shared core now provides 15 pointwise fluxes and 20 reconstructions; JST remains a separate stencil scheme.
+
+[Open the latest Colab](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Separate shock-tube comparison](../shock-tube/README.md)
+
+![Expanded flux comparison](notebook-figures/expanded-m2.35-properties.png)
+
+![Expanded reconstruction convergence](notebook-figures/expanded-reconstruction-m2.35-convergence.png)
+
+The historical study below is retained with its original configurations and result counts.
+
+---
+
 # Project 1 — 2026 modernization: computed results
 
 [Open the all-methods Google Colab notebook](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Source and equations](README.md) · [Download complete source, raw fields and PNG/PDF figures](../../downloads/conical-modern-2026.zip)

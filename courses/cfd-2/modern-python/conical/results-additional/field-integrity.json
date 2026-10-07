@@ -1,0 +1,375 @@
+{
+  "passed": true,
+  "checked_runs": 46,
+  "steady_gate_reached": 31,
+  "runs": [
+    {
+      "name": "inviscid-m2.35-roe-nc-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "b99fa6fabb19b106b0c1093681b27a179fc5275b3cd72f6ae064d87ff0fd3290"
+    },
+    {
+      "name": "inviscid-m2.35-steger-warming-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "b72f3cb37b1de773eaf633c10dc366759e5c48334d00f0d3589f8422b4b4a120"
+    },
+    {
+      "name": "inviscid-m2.35-global-lf-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "990d39da50f59074e8dfbaf1d0bd937bd1e471201a3b0e0fce7ed217e10f9b87"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-vanleer-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "14c8915160c62f66255b4cdc06b76d6f9791d7c82d329766e5fdc7277312e1f7"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "96d79f0f52f93d0eae2d2a9d57da06380b4790b60bb94e5b7f3c7bb5c38a0281"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-vanalbada-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "931678508a1301345a6f41f1d94f4b9456cf049919833553fb76d3353bdb4390"
+    },
+    {
+      "name": "inviscid-m2.35-godunov-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "f34c77fc154cb0ea395491016441d874a4b78eb4ba7b2a5218b1ca808ba820c1"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-superbee-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "9782e6a12c15aaf935b0a250bad8a6f7680197adc5f6a3001565f892cf1b5c5b"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-eno2-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "049f64bbc1594f455ec8a4f28e296ebdd7215b7cabf833f2ca81f67dc0e997bd"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno3-js-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "4c43e6e659feb393664108d45e2c06ad3acc091c144b9a477acc1b5fef524ab9"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno3-z-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "6acc298cf15349dc5d888829d269df94fc12f7225de4f614e1f143f0d4a16a34"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno5-js-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "d75f45c91a3e722378c472b81d25750c1d09fb77a3558364b09d43d1f9ccb52c"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno5-z-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "0e90e84560cf7ff66988413691688ad4e959f41d70d76b6b087b8f83b8c1e81e"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno7-js-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "df4cbb67af91c14b9bccdc78eebbb39f80c9d353675e223510e8fe0afbf6ba88"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-teno5-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "991e0cd34972c21c2698f659feadd59a4148189096a94f3733473019b80954bc"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-teno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "3f4c4241e3cfb6d414afe236b720bea5f596791f24d70f228b81f78c5c22e194"
+    },
+    {
+      "name": "inviscid-m2.35-jst-first-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "78b6ec1117f4aa2e1b53409e6b4f1ebb90f213c38fc6b78ea4820a62673b6e13"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-thinc-bvd-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "9f943133386d2f3a71744eaa10c5327df8e6432c8874546c70aa4614510cdc2e"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-teno7-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "92efe3eed3e856a28a6d77393225f5e76d1bbe5f1cea13e2eda831117d0c053f"
+    },
+    {
+      "name": "inviscid-m7.95-roe-nc-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "5559ccc635bc17011907932d8715f36f198150fa094892560242ab3cd13ab0f6"
+    },
+    {
+      "name": "inviscid-m7.95-steger-warming-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "8d9614e451b2362cc68b9d2342a73304d5c245c2664564a1c7b5a14a023e48e7"
+    },
+    {
+      "name": "inviscid-m7.95-global-lf-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "2376511d3b5af689a23bc1921cd8965ec4d842b0874f0a2a1fbf94713c0ceae5"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "18914629621f59d99d4c67413c8ba93d1f9da5ec2ef974112ce8456a10619d81"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-vanleer-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "050fe95fc787c66e49aa60872e6b004b68c10c0e492e7041dd528d35d9202ad8"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-superbee-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "3d86fdceb8cc027e15034fd3d6bee3a48e69a8452651758c79324c968b2c8164"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-vanalbada-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "3d68619e568013613115b01eec2eaf34e001be8f2644a03127534e7b330b6e9f"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-eno2-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "4f94f8a17cab9b5fb032766f4a9909f0fa4f27720fab83419b9899df6bff09bd"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno3-js-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "798f2492b2417dd7d439a81987755331d028d95c1e16b1315ac5c0c9464fd74d"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno3-z-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "4e524a663ef2178a9405c1a48070b8880c63b54e449f1e9fdc4638555a78ea29"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno5-js-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "20f2f8a2a2559ba8d40f9d7170649334aeb30c657b4193de9880daa677ad0ae8"
+    },
+    {
+      "name": "inviscid-m7.95-godunov-cweno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "fd612b7d6133899046bb8dc0a26584ed4d7a13c1eadfbb293fe4e36acfb7c638"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno5-z-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "857ef63fdca4e4b049c75241baa42f29ec938b32829502080999523ae1a3608b"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno7-js-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "50479293d90a0357db288bce2e03292e31b834cc0d3632e3b2486a7973d32e7d"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-teno3-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "ab8d0187876fc41f05cd688a161da20670187acc4c4ce06ea967e5d926fe27c4"
+    },
+    {
+      "name": "inviscid-m7.95-jst-first-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "ba48b2d09de28dc059e738002db6146a01a5906d8bfa51c33d2dae93c06a7216"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-teno5-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "5b9d299b6ad6cf1d11638d77995149b3e8b828d595ecb68a06d31240a15f689f"
+    },
+    {
+      "name": "adiabatic-m7.95-roe-nc-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "beae5b55da8a83e9e545154c7c71553ab157d08e1850ad058f94203eacdec4c7"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-thinc-bvd-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "be83c1f178857ea45e630d3273842098bba6224d6c9fa55420928533d80413db"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-teno7-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": false,
+      "field_sha256": "56b6b4e46b4e13bf720b9d419b424950147ba6337f91ffed9d123d7550dc3bce"
+    },
+    {
+      "name": "adiabatic-m7.95-global-lf-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "d5b0052cefa6a621f13bbff2b93a3c7e57e3a3b85a37e7a81a7f8a33f833deae"
+    },
+    {
+      "name": "adiabatic-m7.95-godunov-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "7ca88be09d566ab101b0b042573f16923470f779386c7b7fc8aefeb6000da3da"
+    },
+    {
+      "name": "adiabatic-m7.95-steger-warming-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "edd3855efee5dbceaa0f4d8563c3e7c654f2be2ca6abb9e50ec76722c2a85071"
+    },
+    {
+      "name": "isothermal-m7.95-global-lf-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "2cc39447f7fa4e5b7fb9afd34dde23118aa8d57a8e17fb2ecd1e194fc3ee494e"
+    },
+    {
+      "name": "isothermal-m7.95-steger-warming-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "3317a75f872e0e815cc0cda7983a0a72dc3d93b9c6d76ee26688f67567245614"
+    },
+    {
+      "name": "isothermal-m7.95-roe-nc-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "6768a77810b97e3e8ba4a003cc86b3034aa77dd4acb4597c6e80624f945eedfa"
+    },
+    {
+      "name": "isothermal-m7.95-godunov-primitive-minmod-n60",
+      "positive_finite": true,
+      "conservative_means_admissible": true,
+      "finite_history": true,
+      "steady_gate_reached": true,
+      "field_sha256": "d0e17d2103e99b2a0264783dc9cb9a701896622414b565b402556f7d23f8d8a0"
+    }
+  ]
+}

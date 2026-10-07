@@ -7,3 +7,9 @@ The [AUSM and viscous extension](conical/results-v2/report.html) adds AUSM, AUSM
 The historical Fortran archive is preserved. Euler-airfoil and viscous-airfoil Python migrations have not yet been implemented. No external CFD solver performs the computations in this module.
 
 [Run the all-methods Colab notebook](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Published results](conical/RESULTS.md) · [Optional DG companion](conical/DG.md) · [Download code and raw data](../downloads/conical-modern-2026.zip).
+
+## Expanded flux/reconstruction and shock-tube comparison
+
+[Expanded cone algorithms](conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](shock-tube/README.md)
+
+15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 executed runs, including the full 300-combination Sod matrix and DG mesh studies. Failed cases remain visible.

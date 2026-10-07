@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "recorded_runs": 592,
+  "completed": 589,
+  "integrity_passed": 589,
+  "full_matrix_runs": 300,
+  "all_matrix_integrity_passed": true,
+  "fluxes": 15,
+  "reconstructions": 20,
+  "standalone_stencils": 1,
+  "dg_runs": 135,
+  "all_saved_fields_positive_finite": true,
+  "DG0_vs_first_order_FV_max_state_errors": {
+    "roe": 0.0,
+    "vanleer": 0.0,
+    "hllc": 0.0,
+    "hlle": 0.0,
+    "rusanov": 0.0,
+    "ausm": 0.0,
+    "ausm-plus": 0.0,
+    "ausm-up": 0.0,
+    "ausm-up2": 0.0,
+    "slau2": 0.0,
+    "ec-lf": 0.0,
+    "godunov": 0.0,
+    "roe-nc": 0.0,
+    "steger-warming": 0.0,
+    "global-lf": 0.0
+  },
+  "rendered_figures": 16,
+  "cells": [
+    {
+      "cell": 1,
+      "passed": true,
+      "figures": 0,
+      "seconds": 38.638890699949116
+    },
+    {
+      "cell": 3,
+      "passed": true,
+      "figures": 2,
+      "seconds": 154.4297654000111
+    },
+    {
+      "cell": 5,
+      "passed": true,
+      "figures": 1,
+      "seconds": 75.75944980001077
+    },
+    {
+      "cell": 7,
+      "passed": true,
+      "figures": 1,
+      "seconds": 52.823850900051184
+    },
+    {
+      "cell": 9,
+      "passed": true,
+      "figures": 5,
+      "seconds": 107.14101120003033
+    },
+    {
+      "cell": 11,
+      "passed": true,
+      "figures": 4,
+      "seconds": 59.58165290008765
+    },
+    {
+      "cell": 13,
+      "passed": true,
+      "figures": 3,
+      "seconds": 118.88601220003329
+    },
+    {
+      "cell": 15,
+      "passed": true,
+      "figures": 0,
+      "seconds": 0.001259300042875111
+    }
+  ],
+  "runtime_sha256": "89aaadabe6b112d3b82bb60a1e9e1a48aae9156b8c43a1442096407ab03ea04e",
+  "executed_on": "Local CPU; exact runtime ZIP supplied locally. Google runtime not remotely executed.",
+  "numpy": "2.5.3",
+  "matplotlib": "3.11.2",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

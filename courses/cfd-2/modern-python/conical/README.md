@@ -8,11 +8,17 @@ The runnable core uses Python and NumPy; Matplotlib generates scientific figures
 
 The runnable default is **HLLC/CWENO3**, which reached the residual gate on all six case/grid combinations in the common-CFL study. MUSCL-MC and CWENO5 remain available for comparison, but some shock-containing runs fail to reach a steady state; the report preserves those failures. Smooth fifth-order accuracy alone does not establish shock-case robustness.
 
+## Expanded algorithm and shock-tube edition
+
+The expanded shared core has **15 pointwise Euler fluxes**, **20 FV reconstructions**, and a standalone **JST** central stencil. [Algorithm inventory, sources, scope and executed cone gates](ADDITIONAL_METHODS.md) distinguish new methods from existing aliases and retained failed cases. The cone notebook includes **46 additional runs** alongside the original 68 recorded cases.
+
+A **[separate shock-tube Colab notebook](../shock-tube/README.md)** tests the same shared algorithms with exact transient Riemann references, full combination coverage, conservation budgets and mesh-error comparisons.
+
 ## Open the complete 2026 edition
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb)
 
-**[One Colab notebook](Conical_Flow_Modern_2026.ipynb)** displays all 11 fluxes in four physical cases, six reconstruction choices, higher-order viscous/grid comparisons and DG results. Setup is collapsed and the large encoded source block has been removed. A small public source/data package is downloaded without credentials. Recorded runs are displayed by default; an optional fresh comparison selects all 11 fluxes by default.
+**[One Colab notebook](Conical_Flow_Modern_2026.ipynb)** displays the original 68-case study and 46 additional cases. Expanded comparisons include all 15 pointwise fluxes in both Euler cases and both viscous thermal walls, separate inviscid JST curves, and the added FV reconstructions. The original six-reconstruction, higher-order viscous/grid and DG comparisons remain available. Setup is collapsed, with no encoded source block. Recorded runs display by default; an optional fresh comparison selects all 15 pointwise fluxes by default.
 
 [Published result report with figures and acceptance tables](RESULTS.md) · [DG companion and its limits](DG.md) · [Download source, results and vector figures](../../downloads/conical-modern-2026.zip) · [Notebook execution evidence](colab-validation.json)
 

@@ -73,3 +73,9 @@ The validation report gives dependencies, compiler options and the exact scope o
 - [Manifest](manifest.json): byte counts, SHA-256 hashes and original paths for 86 preserved originals.
 
 Original documents retain their authors' reuse terms; no blanket license is assigned to third-party material.
+
+## Expanded flux/reconstruction and shock-tube comparison
+
+[Expanded cone algorithms](modern-python/conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](modern-python/shock-tube/README.md)
+
+15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 executed runs, including the full 300-combination Sod matrix and DG mesh studies. Failed cases remain visible.

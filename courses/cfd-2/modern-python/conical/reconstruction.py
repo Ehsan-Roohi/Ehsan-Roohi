@@ -38,6 +38,9 @@ def operators(order):
 def coefficients(ext, kind, h, gamma=1.4):
     """Return polynomials for ext[2:-2]; physical cells have three ghosts."""
     center = ext[2:-2]
+    if kind.startswith(('weno','teno','eno2','muscl-')):
+        from advanced_reconstruction import reconstruct
+        return reconstruct(ext,kind,h,gamma)
     if kind == "first":
         return center[:, None, :].copy()
     if kind == "muscl":
@@ -76,6 +79,10 @@ def coefficients(ext, kind, h, gamma=1.4):
 
 
 def evaluate(c, s):
+    if hasattr(c,'polynomial'):
+        if np.ndim(s)==0 and s in (-.5,.5):
+            return c.left if s==-.5 else c.right
+        return evaluate(c.polynomial,s)
     if np.ndim(s) == 0:
         return np.einsum("nik,i->nk", c, np.array([s**i for i in range(c.shape[1])]))
     return np.einsum("nik,qi->nqk", c, np.stack([np.asarray(s)**i for i in range(c.shape[1])], axis=1))
@@ -86,6 +93,9 @@ def limit_admissibility(c, means, gamma, sample_points):
 
     This enforces the sampled reconstruction states, not a global positivity theorem.
     """
+    if hasattr(c,'polynomial'):
+        from advanced_reconstruction import limit_faces
+        return limit_faces(c,means,gamma,sample_points)
     from state import primitive
     values = evaluate(c, sample_points)
     bad = np.any((values[..., 0] <= 1e-12) | (primitive(values, gamma)[..., 3] <= 1e-12), axis=1)

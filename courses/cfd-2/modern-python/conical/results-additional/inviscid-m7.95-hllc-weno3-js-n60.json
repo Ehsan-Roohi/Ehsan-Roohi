@@ -1,0 +1,39 @@
+{
+  "config": {
+    "mach": 7.95,
+    "cone_deg": 10,
+    "outer_deg": 22,
+    "cells": 60,
+    "gamma": 1.4,
+    "flux": "hllc",
+    "reconstruction": "weno3-js",
+    "cfl": 0.25,
+    "tolerance": 2e-08,
+    "max_steps": 6000,
+    "boundary": "wall",
+    "balance_freestream": false
+  },
+  "converged": true,
+  "iterations": 3650,
+  "residual_rms_max_equation": 1.751902624589143e-08,
+  "elapsed_seconds": 17.457424100022763,
+  "wall_pressure_ratio": 4.019726118877045,
+  "wall_mach": 6.171706430657229,
+  "min_density": 0.9997971787100772,
+  "min_pressure": 0.011299144158557881,
+  "discrete_balance_roundoff": 1.6653345369377348e-16,
+  "events": {
+    "reconstruction_limited_cells": 0,
+    "rejected_steps": 0,
+    "rhs_evaluations": 10950
+  },
+  "wall_pressure_error_percent": 0.3054146612522346,
+  "wall_mach_error_percent": 0.18006096362751522,
+  "pressure_ratio_l1": 0.019929231271965383,
+  "smooth_pressure_ratio_l1": 0.002484777253520348,
+  "shock_angle_deg": 13.02319111082987,
+  "shock_angle_error_deg": 0.014330262628650559,
+  "initialization": "Configuration-matched published coarse solution; initializer only",
+  "initial_checkpoint_sha256": "f11094920844349c11d76070ce19aa4318edb6d8c0d0a34a93beafcd4ce98b9f",
+  "comparison_group": "new-reconstruction"
+}

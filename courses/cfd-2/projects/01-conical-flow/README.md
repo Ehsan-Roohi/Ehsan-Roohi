@@ -41,3 +41,9 @@ The new implementation migrates the inviscid angular model into separate state, 
 The report covers Mach 2.35 and the historical-style Mach 7.95 case, three grids and six flux/reconstruction combinations. It gives wall-pressure errors, shock-angle estimates, full-profile errors and computation time, and explicitly marks any run that exhausts its convergence budget. Original Fortran defects are documented in the migration guide.
 
 The [AUSM/viscous extension report](../../modern-python/conical/results-v2/report.html) adds five AUSM-family fluxes and an entropy-based comparison to both inviscid and viscous calculations. The [viscous migration guide](../../modern-python/conical/VISCOUS.md) derives the local radial-station model, audits the historical wall/source routines and explains the independent verification tests. The model now computes no-slip velocity, adiabatic/isothermal wall conditions, skin friction and heat flux. It is not a validated full axisymmetric cone solver or a certification of the archived viscous executable.
+
+## Expanded flux/reconstruction and shock-tube comparison
+
+[Expanded cone algorithms](../../modern-python/conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](../../modern-python/shock-tube/README.md)
+
+15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 executed runs, including the full 300-combination Sod matrix and DG mesh studies. Failed cases remain visible.

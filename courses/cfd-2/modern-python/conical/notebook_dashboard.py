@@ -8,8 +8,11 @@ from flux import FLUXES
 ROOT = Path(__file__).resolve().parent
 NAMES = dict(zip(FLUXES,['Roe','Van Leer','HLLC','HLLE','Rusanov','AUSM','AUSM+',
                        'AUSM+-up','AUSM+-up2','SLAU2','EC + LF']))
+NAMES.update({'godunov':'Godunov (exact)','roe-nc':'Roe (no entropy fix)',
+              'steger-warming':'Steger-Warming','global-lf':'Global LF','jst':'JST'})
 PALETTE = ['#334155','#ca8a04','#2563eb','#7c3aed','#be185d','#c2410c',
            '#0891b2','#dc2626','#047857','#65a30d','#ea580c']
+PALETTE += ['#0e7490','#a21caf','#854d0e','#475569','#15803d']
 
 
 def load_study():
@@ -30,6 +33,21 @@ def select(runs,group='flux',physics='inviscid',mach=None):
     return [r for r in runs if r['group']==group and
             (('thermal_wall' not in r['config']) if physics=='inviscid' else r['config'].get('thermal_wall')==physics) and
             (mach is None or r['config']['mach']==mach)]
+
+
+def load_extensions():
+    catalog=json.loads((ROOT/'results-additional/catalog.json').read_text(encoding='utf-8'))
+    runs=[]
+    for item in catalog['runs']:
+        if 'error' in item:
+            print('Failed extension:',item['name'],item['error'])
+            continue
+        row=json.loads((ROOT/'results-additional'/(item['name']+'.json')).read_text(encoding='utf-8'))
+        with np.load(ROOT/'results-additional'/(item['name']+'.npz')) as data:
+            row.update({k:data[k].copy() for k in ('theta','primitive','conserved_average','history')})
+        row['group']='reconstruction' if item['group']=='new-reconstruction' else 'flux'
+        runs.append(row)
+    return runs
 
 
 def table_html(runs):
@@ -71,7 +89,7 @@ def style():
 def label(row, group):
     c = row['config']
     if group=='reconstruction':
-        name = c['reconstruction'].upper().replace('MUSCL','MUSCL-MC')
+        name = 'MUSCL-MC' if c['reconstruction']=='muscl' else c['reconstruction'].upper()
     elif group=='dg':
         name = NAMES[c['flux']]+' / degree '+str(c['degree'])
     elif group=='viscous-high-order':
@@ -83,7 +101,7 @@ def label(row, group):
 
 def color(row,index,group):
     import matplotlib.pyplot as plt
-    return PALETTE[list(FLUXES).index(row['config']['flux'])] if group=='flux' else plt.cm.tab10(index%10)
+    return PALETTE[([*FLUXES,'jst']).index(row['config']['flux'])] if group=='flux' else plt.cm.turbo(.05+.9*index/max(index+1,20))
 
 
 def finish(fig,name,title,subtitle,runs,group):

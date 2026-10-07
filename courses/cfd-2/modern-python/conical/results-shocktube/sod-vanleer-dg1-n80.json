@@ -1,0 +1,47 @@
+{
+  "config": {
+    "case": "sod",
+    "cells": 80,
+    "flux": "vanleer",
+    "reconstruction": "modal-dg",
+    "gamma": 1.4,
+    "cfl": 0.25,
+    "degree": 1,
+    "tvb": 0.0,
+    "max_steps": 100000
+  },
+  "completed": true,
+  "integrity_passed": true,
+  "termination": "Final physical time reached",
+  "time": 0.2,
+  "steps": 417,
+  "elapsed_seconds": 0.9396742000244558,
+  "events": {
+    "rejected_steps": 0,
+    "reconstruction_limited_cells": 0,
+    "slope_limited_cells": 43376,
+    "positivity_scaled_cells": 0
+  },
+  "conservation_budget_defect": 1.014203140074523e-15,
+  "min_density": 0.12499961485076545,
+  "min_pressure": 0.09999901445796168,
+  "errors": {
+    "density": {
+      "L1": 0.003819211419255516,
+      "L2": 0.008628777266615418,
+      "Linf": 0.04295780183216469
+    },
+    "velocity": {
+      "L1": 0.008130796724976404,
+      "L2": 0.03834285248112483,
+      "Linf": 0.3257710636331701
+    },
+    "pressure": {
+      "L1": 0.0030007881739468603,
+      "L2": 0.007748274044043461,
+      "Linf": 0.04499088078659262
+    }
+  },
+  "reference_quadrature_change": 2.9449808439372252e-05,
+  "scope": "Inviscid transient planar Euler; completion/integrity is not an accuracy certification"
+}

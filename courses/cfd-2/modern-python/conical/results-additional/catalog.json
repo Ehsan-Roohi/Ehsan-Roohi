@@ -1,0 +1,973 @@
+{
+  "complete": true,
+  "runs": [
+    {
+      "name": "inviscid-m2.35-roe-nc-cweno3-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "roe-nc",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m2.35-steger-warming-cweno3-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "steger-warming",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m2.35-global-lf-cweno3-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "global-lf",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-vanleer-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-vanleer",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-minmod-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-minmod",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-vanalbada-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-vanalbada",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-godunov-cweno3-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "godunov",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-superbee-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-superbee",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-eno2-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "eno2",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno3-js-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno3-js",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno3-z-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno3-z",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno5-js-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno5-js",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno5-z-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno5-z",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-weno7-js-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno7-js",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-teno5-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "teno5",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-teno3-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "teno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-jst-first-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "jst",
+        "reconstruction": "first",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "standalone-jst"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-muscl-thinc-bvd-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-thinc-bvd",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m2.35-hllc-teno7-n60",
+      "config": {
+        "mach": 2.35,
+        "cone_deg": 10,
+        "outer_deg": 45,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "teno7",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-roe-nc-cweno3-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "roe-nc",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m7.95-steger-warming-cweno3-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "steger-warming",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m7.95-global-lf-cweno3-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "global-lf",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-minmod",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-vanleer-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-vanleer",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-superbee-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-superbee",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-vanalbada-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-vanalbada",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-eno2-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "eno2",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno3-js-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno3-js",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno3-z-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno3-z",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno5-js-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno5-js",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-godunov-cweno3-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "godunov",
+        "reconstruction": "cweno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno5-z-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno5-z",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-weno7-js-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "weno7-js",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-teno3-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "teno3",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-jst-first-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "jst",
+        "reconstruction": "first",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": true,
+      "group": "standalone-jst"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-teno5-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "teno5",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "adiabatic-m7.95-roe-nc-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "roe-nc",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "adiabatic",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-muscl-thinc-bvd-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "muscl-thinc-bvd",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "inviscid-m7.95-hllc-teno7-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "hllc",
+        "reconstruction": "teno7",
+        "cfl": 0.25,
+        "tolerance": 2e-08,
+        "max_steps": 6000,
+        "boundary": "wall",
+        "balance_freestream": false
+      },
+      "converged": false,
+      "group": "new-reconstruction"
+    },
+    {
+      "name": "adiabatic-m7.95-global-lf-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "global-lf",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "adiabatic",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "adiabatic-m7.95-godunov-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "godunov",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "adiabatic",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "adiabatic-m7.95-steger-warming-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "steger-warming",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "adiabatic",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "isothermal-m7.95-global-lf-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "global-lf",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "isothermal",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "isothermal-m7.95-steger-warming-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "steger-warming",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "isothermal",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "isothermal-m7.95-roe-nc-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "roe-nc",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "isothermal",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    },
+    {
+      "name": "isothermal-m7.95-godunov-primitive-minmod-n60",
+      "config": {
+        "mach": 7.95,
+        "cone_deg": 10,
+        "outer_deg": 22,
+        "cells": 60,
+        "gamma": 1.4,
+        "flux": "godunov",
+        "reconstruction": "primitive-minmod",
+        "cfl": 0.2,
+        "tolerance": 2e-08,
+        "max_steps": 80000,
+        "boundary": "wall",
+        "balance_freestream": false,
+        "viscous_operator_version": "fv-wall-quadratic-v2",
+        "reynolds": 420000,
+        "prandtl": 0.72,
+        "temperature_inf_K": 56.85715333015651,
+        "viscosity": "sutherland",
+        "thermal_wall": "isothermal",
+        "wall_temperature_ratio": 1,
+        "stretch": 3,
+        "gradient_order": 2
+      },
+      "converged": true,
+      "group": "new-flux"
+    }
+  ],
+  "new_fluxes": [
+    "godunov",
+    "roe-nc",
+    "steger-warming",
+    "global-lf"
+  ],
+  "new_reconstructions": [
+    "muscl-minmod",
+    "muscl-vanleer",
+    "muscl-superbee",
+    "muscl-vanalbada",
+    "eno2",
+    "weno3-js",
+    "weno3-z",
+    "weno5-js",
+    "weno5-z",
+    "weno7-js",
+    "teno3",
+    "teno5",
+    "teno7",
+    "muscl-thinc-bvd"
+  ]
+}

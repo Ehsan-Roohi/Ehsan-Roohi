@@ -6,67 +6,73 @@
       "cell": 1,
       "passed": true,
       "figures": 0,
-      "seconds": 1.565641300054267
+      "seconds": 6.066824999987148
     },
     {
       "cell": 3,
       "passed": true,
       "figures": 1,
-      "seconds": 8.663543200003915
+      "seconds": 9.019881900050677
     },
     {
       "cell": 5,
       "passed": true,
       "figures": 2,
-      "seconds": 15.150168799911626
+      "seconds": 11.719576800009236
     },
     {
       "cell": 7,
       "passed": true,
       "figures": 2,
-      "seconds": 10.966497599962167
+      "seconds": 11.075807800050825
     },
     {
       "cell": 9,
       "passed": true,
       "figures": 3,
-      "seconds": 11.882233300013468
+      "seconds": 78.14376550004818
     },
     {
       "cell": 11,
       "passed": true,
       "figures": 3,
-      "seconds": 12.275011599995196
+      "seconds": 88.04273760004435
     },
     {
       "cell": 13,
       "passed": true,
       "figures": 2,
-      "seconds": 11.326948100002483
+      "seconds": 83.2936271999497
     },
     {
       "cell": 15,
       "passed": true,
       "figures": 4,
-      "seconds": 20.053490499965847
+      "seconds": 77.16655909991823
     },
     {
       "cell": 17,
       "passed": true,
       "figures": 2,
-      "seconds": 12.353369499905966
+      "seconds": 27.941815400030464
     },
     {
       "cell": 19,
       "passed": true,
-      "figures": 0,
-      "seconds": 0.0011587999761104584
+      "figures": 12,
+      "seconds": 279.12060280004516
     },
     {
       "cell": 21,
       "passed": true,
       "figures": 0,
-      "seconds": 0.0008645999478176236
+      "seconds": 0.004484500037506223
+    },
+    {
+      "cell": 23,
+      "passed": true,
+      "figures": 0,
+      "seconds": 0.0004763000179082155
     }
   ],
   "default_run_converged": true,
@@ -89,14 +95,15 @@
       "accepted": 11
     }
   },
-  "recorded_runs": 68,
-  "reconstruction_methods": 6,
+  "recorded_runs": 114,
+  "extension_runs": 46,
+  "reconstruction_methods": 20,
   "dg_runs": 6,
-  "rendered_figures": 19,
+  "rendered_figures": 31,
   "no_encoded_source_in_cells": true,
   "setup_cell_collapsed": true,
   "all_fluxes_selected_for_optional_fresh_run": true,
-  "runtime_sha256": "7046ca2991b6a83f330c932ce3a1cacfbb5d5951ec02f0926f6ef068176fd574",
+  "runtime_sha256": "3e7021f4ed44aaf9aef8975346eb82d3eda5a60ab94e98e36f709034ab986ac0",
   "numpy": "2.5.3",
   "executed_on": "Local CPU; exact runtime archive supplied locally. Google runtime not remotely executed.",
   "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",

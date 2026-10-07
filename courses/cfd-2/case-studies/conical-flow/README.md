@@ -43,3 +43,9 @@ The [AUSM and viscous report](../../modern-python/conical/results-v2/report.html
 ## 2026 runnable edition
 
 [Run all implemented methods in Colab](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/conical/Conical_Flow_Modern_2026.ipynb) · [Computed flow/convergence comparisons](../../modern-python/conical/RESULTS.md) · [Code and raw results](../../downloads/conical-modern-2026.zip). The modern plots are computed by the Python solvers and are separate from the historical reconstruction above.
+
+## Expanded flux/reconstruction and shock-tube comparison
+
+[Expanded cone algorithms](../../modern-python/conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](../../modern-python/shock-tube/README.md)
+
+15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 executed runs, including the full 300-combination Sod matrix and DG mesh studies. Failed cases remain visible.

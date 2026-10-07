@@ -25,7 +25,7 @@ def rusanov(left, right, gamma=1.4):
     return .5*(physical_flux(left, gamma)+physical_flux(right, gamma)-a[..., None]*(right-left))
 
 
-def roe(left, right, gamma=1.4):
+def roe(left, right, gamma=1.4, entropy_fix=True):
     ql, cl = waves(left, gamma)
     qr, cr = waves(right, gamma)
     rl, rr = np.sqrt(ql[..., 0]), np.sqrt(qr[..., 0])
@@ -52,7 +52,7 @@ def roe(left, right, gamma=1.4):
     delta = .1*c
     def acoustic(lam):
         a = abs(lam)
-        return np.where(a < delta, .5*(a*a/delta+delta), a)
+        return np.where(a < delta, .5*(a*a/delta+delta), a) if entropy_fix else a
     diss = ((acoustic(vt-c)*am)[..., None]*rm+
             (acoustic(vt+c)*ap)[..., None]*rp+
             (abs(vt)*ac)[..., None]*rc+(abs(vt)*ash)[..., None]*rsh)
@@ -106,6 +106,9 @@ from ausm import ausm, ausm_plus, ausm_up, ausm_up2, slau2
 from entropy_flux import ec_lf
 FLUXES.update({"ausm":ausm, "ausm-plus":ausm_plus, "ausm-up":ausm_up,
                "ausm-up2":ausm_up2, "slau2":slau2, "ec-lf":ec_lf})
+from additional_fluxes import godunov, roe_uncorrected, steger_warming, global_lf
+FLUXES.update({'godunov':godunov, 'roe-nc':roe_uncorrected,
+               'steger-warming':steger_warming, 'global-lf':global_lf})
 
 
 def numerical_flux(name, left, right, gamma=1.4, mach_ref=.1):

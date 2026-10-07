@@ -18,8 +18,10 @@ def run_case(flux='hllc', physics='inviscid', cells=60, mach=2.35,
              degree=1, gradient_order=2, reynolds=420000, prandtl=.72,
              wall_temperature_ratio=1., max_newton=180, use_seed=True,
              output_dir=None, verbose=False):
-    if flux not in FLUXES:
+    if flux not in FLUXES and flux!='jst':
         raise ValueError(f'Unknown flux: {flux}')
+    if flux=='jst' and physics!='inviscid':
+        raise ValueError('JST is implemented only as a standalone uniform-grid inviscid FV scheme')
     target = Path(output_dir or ROOT/'student-results')
     target.mkdir(parents=True, exist_ok=True)
     seed_name = None
@@ -28,6 +30,8 @@ def run_case(flux='hllc', physics='inviscid', cells=60, mach=2.35,
                                          degree=degree,max_steps=max_steps))
         result = solver.run(verbose)
     elif physics == 'inviscid':
+        if flux=='jst' and reconstruction!='first':
+            raise ValueError('JST is a standalone central stencil scheme; select first')
         if reconstruction == 'primitive-minmod':
             raise ValueError('Select first, muscl or CWENO for the uniform inviscid FV solver')
         solver = ConicalSolver(Config(flux=flux,cells=cells,mach=mach,outer_deg=outer_deg,
