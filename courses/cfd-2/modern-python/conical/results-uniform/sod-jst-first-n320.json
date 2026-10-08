@@ -1,0 +1,64 @@
+{
+  "config": {
+    "case": "sod",
+    "cells": 320,
+    "flux": "jst",
+    "reconstruction": "first",
+    "gamma": 1.4,
+    "cfl": 0.25,
+    "degree": -1,
+    "tvb": 0.0,
+    "max_steps": 100000
+  },
+  "completed": true,
+  "integrity_passed": true,
+  "termination": "Final physical time reached",
+  "time": 0.2,
+  "steps": 616,
+  "elapsed_seconds": 0.2532844999805093,
+  "events": {
+    "rejected_steps": 0,
+    "reconstruction_limited_cells": 0
+  },
+  "conservation_budget_defect": 3.3306690738754696e-16,
+  "min_density": 0.12499999999983802,
+  "min_pressure": 0.09999999999981793,
+  "errors": {
+    "density": {
+      "L1": 0.0044746071054583714,
+      "L2": 0.010733453808878185,
+      "Linf": 0.09060989548576331
+    },
+    "velocity": {
+      "L1": 0.010457889080654644,
+      "L2": 0.03196031976490927,
+      "Linf": 0.23166955594601035
+    },
+    "pressure": {
+      "L1": 0.0040908482687031,
+      "L2": 0.010624217861097409,
+      "Linf": 0.06941803301411581
+    }
+  },
+  "reference_quadrature_change": 1.0603485436647787e-05,
+  "scope": "Inviscid transient planar Euler; completion/integrity is not an accuracy certification",
+  "provenance": "Executed fixed uniform TubeSolver run for this refinement study",
+  "jump_widths": {
+    "contact": {
+      "exact_location": 0.6854905240097899,
+      "width_10_90": 0.024309878192088186,
+      "width_in_cells": 7.779161021468219
+    },
+    "shock": {
+      "exact_location": 0.8504311464060357,
+      "width_10_90": 0.006815886937572846,
+      "width_in_cells": 2.1810838200233107
+    }
+  },
+  "mesh": {
+    "kind": "fixed uniform",
+    "cells": 320,
+    "dx": 0.003125,
+    "adaptation": false
+  }
+}

@@ -1,8 +1,8 @@
 # Executed shock-tube comparisons
 
-## Local refinement of rounded discontinuities
+## Fixed uniform-grid refinement
 
-The new [75-run adaptive-refinement report](AMR_RESULTS.md) compares uniform controls with moving local refinement around shocks and contacts. All 15 shared fluxes are included. The original 592-run study below remains unchanged.
+[Six-grid report and plots](UNIFORM_GRID_RESULTS.md) compare all 15 shared fluxes and standalone JST on **80, 160, 320, 640, 1280 and 2560 fixed uniform cells**. The 96 grid/method comparisons show continuous cell-center curves, shock/contact details, physical properties, L1 errors and measured transition widths. The original 592-run study remains available below.
 
 
 **592 runs executed; 589 reached the requested physical time and passed the recorded conservation/positivity checks.**

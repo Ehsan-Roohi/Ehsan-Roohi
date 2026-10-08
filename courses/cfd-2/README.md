@@ -78,4 +78,4 @@ Original documents retain their authors' reuse terms; no blanket license is assi
 
 [Expanded cone algorithms](modern-python/conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](modern-python/shock-tube/README.md)
 
-15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 uniform/DG runs plus [75 local-refinement comparisons](modern-python/shock-tube/AMR_RESULTS.md). The full 300-combination Sod matrix remains available. Failed cases remain visible.
+15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 uniform/DG runs plus [96 uniform-grid comparisons](modern-python/shock-tube/UNIFORM_GRID_RESULTS.md). The full 300-combination Sod matrix remains available. Failed cases remain visible.

@@ -12,4 +12,4 @@ The historical Fortran archive is preserved. Euler-airfoil and viscous-airfoil P
 
 [Expanded cone algorithms](conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](shock-tube/README.md)
 
-15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 uniform/DG runs plus [75 local-refinement comparisons](shock-tube/AMR_RESULTS.md). The full 300-combination Sod matrix remains available. Failed cases remain visible.
+15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 uniform/DG runs plus [96 uniform-grid comparisons](shock-tube/UNIFORM_GRID_RESULTS.md). The full 300-combination Sod matrix remains available. Failed cases remain visible.

@@ -9,10 +9,18 @@
   "reconstructions": 20,
   "standalone_stencils": 1,
   "dg_runs": 135,
-  "amr_comparison_runs": 75,
-  "amr_comparison_integrity_passed": 75,
-  "adaptive_fluxes": 15,
-  "conservative_remapping_and_2_to_1_widths_verified": true,
+  "uniform_refinement_runs": 96,
+  "uniform_refinement_integrity_passed": 96,
+  "uniform_methods": 16,
+  "uniform_refinement_grids": [
+    80,
+    160,
+    320,
+    640,
+    1280,
+    2560
+  ],
+  "adaptive_mesh_used": false,
   "all_saved_fields_positive_finite": true,
   "DG0_vs_first_order_FV_max_state_errors": {
     "roe": 0.0,
@@ -31,72 +39,88 @@
     "steger-warming": 0.0,
     "global-lf": 0.0
   },
-  "rendered_figures": 21,
+  "rendered_figures": 22,
   "cells": [
     {
       "cell": 1,
       "passed": true,
       "figures": 0,
-      "seconds": 40.85535680002067
+      "seconds": 39.22822969999834
     },
     {
       "cell": 3,
       "passed": true,
-      "figures": 2,
-      "seconds": 6.578589299926534
+      "figures": 6,
+      "seconds": 58.38512630000332
     },
     {
       "cell": 5,
       "passed": true,
-      "figures": 1,
-      "seconds": 4.260208999970928
+      "figures": 0,
+      "seconds": 0.00135009999939939
     },
     {
       "cell": 7,
       "passed": true,
-      "figures": 1,
-      "seconds": 2.3359754000557587
+      "figures": 2,
+      "seconds": 30.168413199993665
     },
     {
       "cell": 9,
       "passed": true,
-      "figures": 5,
-      "seconds": 10.235332400072366
+      "figures": 1,
+      "seconds": 14.955780600001162
     },
     {
       "cell": 11,
       "passed": true,
-      "figures": 4,
-      "seconds": 8.53266479994636
+      "figures": 1,
+      "seconds": 5.6538065999993705
     },
     {
       "cell": 13,
       "passed": true,
-      "figures": 3,
-      "seconds": 7.112588500021957
+      "figures": 5,
+      "seconds": 14.344669400001294
     },
     {
       "cell": 15,
       "passed": true,
-      "figures": 5,
-      "seconds": 25.61947739997413
+      "figures": 4,
+      "seconds": 9.156950500000676
     },
     {
       "cell": 17,
       "passed": true,
-      "figures": 0,
-      "seconds": 0.00024100008886307478
+      "figures": 3,
+      "seconds": 6.622105299997202
     },
     {
       "cell": 19,
       "passed": true,
       "figures": 0,
-      "seconds": 0.0005403999239206314
+      "seconds": 0.0005707000018446706
     }
   ],
-  "runtime_sha256": "dab1b351137643d43f02384a4faf1e76b2806fae2a927873f5de894671d3e7a0",
+  "runtime_sha256": "2cf5f58ebd6ea293cd9ba05a53114cb157fcaf04505ce2718ddc8afd0374b722",
   "executed_on": "Local CPU; exact runtime ZIP supplied locally. Google runtime not remotely executed.",
   "numpy": "2.5.3",
   "matplotlib": "3.11.2",
-  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "educational_guide": {
+    "fluxes": 15,
+    "standalone_stencils": 1,
+    "reconstructions": 20,
+    "dg_degrees": [
+      0,
+      1,
+      2
+    ],
+    "language": "English",
+    "all_selectable_method_keys_documented": true,
+    "markdown_cells": 7,
+    "executed_code_cells_and_outputs_unchanged": true,
+    "executed_code_cells_sha256": "ee77eb2d7894570e5775f9733b9e8ff86ad5a873f0dcae75edd5aea3febcfcf2",
+    "guide_sha256": "4bd42983b713915234e68f8178efe54f60e66f28c932844fde3714b8ad8333ea"
+  }
 }
