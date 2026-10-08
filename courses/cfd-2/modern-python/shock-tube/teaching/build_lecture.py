@@ -4,7 +4,7 @@ Requires reportlab and pypdf. Does not rerun numerical simulations.
 from pathlib import Path
 import hashlib, html, json, re
 from reportlab.pdfgen import canvas
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Image, KeepTogether, Flowable
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Image, KeepTogether, Flowable, HRFlowable
 from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.pagesizes import A4
@@ -15,17 +15,19 @@ from pypdf import PdfReader
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'output/pdf';OUT.mkdir(parents=True,exist_ok=True)
 PDF=OUT/'CFD_Algorithms_Lecture_2026.pdf'
-BLUE=colors.HexColor('#12344D');TEAL=colors.HexColor('#087F8C');LIGHT=colors.HexColor('#EDF5F7');GREY=colors.HexColor('#52616B')
-W,H=A4;WIDTH=W-88
-for name,file in [('Lecture','arial.ttf'),('LectureBold','arialbd.ttf'),('LectureItalic','ariali.ttf')]:
+BLUE=colors.black;TEAL=colors.black;LIGHT=colors.white;GREY=colors.black
+W,H=A4;WIDTH=W-100
+for name,file in [('Lecture','times.ttf'),('LectureBold','timesbd.ttf'),('LectureItalic','timesi.ttf'),('LectureBoldItalic','timesbi.ttf')]:
     pdfmetrics.registerFont(TTFont(name,str(Path('C:/Windows/Fonts')/file)))
-pdfmetrics.registerFontFamily('Lecture',normal='Lecture',bold='LectureBold',italic='LectureItalic',boldItalic='LectureBold')
+pdfmetrics.registerFontFamily('Lecture',normal='Lecture',bold='LectureBold',italic='LectureItalic',boldItalic='LectureBoldItalic')
 S={
- 'body':ParagraphStyle('body',fontName='Lecture',fontSize=10.2,leading=14.3,textColor=BLUE,spaceAfter=8),
- 'small':ParagraphStyle('small',fontName='Lecture',fontSize=8.6,leading=12,textColor=GREY,spaceAfter=5),
- 'title':ParagraphStyle('title',fontName='LectureBold',fontSize=24,leading=29,textColor=BLUE,spaceAfter=13),
+ 'body':ParagraphStyle('body',fontName='Lecture',fontSize=11,leading=14.5,textColor=BLUE,spaceAfter=8),
+ 'small':ParagraphStyle('small',fontName='Lecture',fontSize=9,leading=12,textColor=GREY,spaceAfter=5),
+ 'title':ParagraphStyle('title',fontName='LectureBold',fontSize=20,leading=24,textColor=BLUE,spaceAfter=13),
  'sub':ParagraphStyle('sub',fontName='LectureBold',fontSize=12.5,leading=17,textColor=TEAL,spaceBefore=8,spaceAfter=7),
- 'card':ParagraphStyle('card',fontName='LectureBold',fontSize=11,leading=15,textColor=BLUE,spaceAfter=6)}
+ 'card':ParagraphStyle('card',fontName='LectureBold',fontSize=11.5,leading=15,textColor=BLUE,spaceAfter=6),
+ 'cover':ParagraphStyle('cover',fontName='LectureBold',fontSize=27,leading=33,textColor=BLUE,alignment=1,spaceAfter=15),
+ 'coverline':ParagraphStyle('coverline',fontName='LectureItalic',fontSize=13,leading=18,textColor=BLUE,alignment=1,spaceAfter=10)}
 story=[];plan=[];seen=[]
 def p(text,style='body'):return Paragraph(text,S[style])
 def add(text,style='body'):story.append(p(text,style))
@@ -41,19 +43,25 @@ def box(label,text):
     story.extend([t,Spacer(1,10)])
 def eq(text):box('Key equation',text)
 def fig(name,caption,maxheight=400):
-    image=Image(str(ROOT/'figures'/name));r=min(WIDTH/image.imageWidth,maxheight/image.imageHeight)
+    image=Image(str(ROOT/'teaching/figures'/name));r=min(WIDTH/image.imageWidth,maxheight/image.imageHeight)
     image.drawWidth=image.imageWidth*r;image.drawHeight=image.imageHeight*r
     story.extend([image,Spacer(1,7),p(caption,'small')])
 def table(rows,widths):
     t=Table([[p(str(v),'small') for v in row] for row in rows],colWidths=widths,repeatRows=1,hAlign='LEFT')
-    t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),LIGHT),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),1,TEAL),('LINEBELOW',(0,1),(-1,-1),.3,colors.HexColor('#D8E4E8')),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
+    t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),LIGHT),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEABOVE',(0,0),(-1,0),.8,TEAL),('LINEBELOW',(0,0),(-1,0),.6,TEAL),('LINEBELOW',(0,-1),(-1,-1),.8,TEAL),('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6),('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),7)]))
     story.extend([t,Spacer(1,10)])
 def prose(text):
     d={r'\widehat F':'Fhat',r'\lambda':'λ',r'\alpha':'α',r'\beta':'β',r'\varepsilon':'ε',r'\tau':'τ',r'\rho':'ρ',r'\vert':'|',r'\pm':'±',r'\max':'max',r'\min':'min',r'\Delta':'Δ',r'\,':' '}
-    for a,b in d.items():text=text.replace(a,b)
-    text=text.replace('$','').replace('{','').replace('}','').replace('\\','')
-    text=html.escape(text).replace('—','-').replace('–','-')
-    return re.sub(r'\*\*(.*?)\*\*',r'<b>\1</b>',text)
+    pieces=re.split(r'(\$[^$]*\$)',text)
+    for i,piece in enumerate(pieces):
+        math=piece.startswith('$')
+        for a,b in d.items():piece=piece.replace(a,b)
+        piece=html.escape(piece.strip('$')).replace('—','-').replace('–','-')
+        if math:
+            piece=re.sub(r'_\{([^}]+)\}|_([A-Za-z0-9]+)',lambda m:'<sub>'+(m[1] or m[2])+'</sub>',piece)
+            piece=re.sub(r'\^\{([^}]+)\}|\^([0-9]+|[+±-])',lambda m:'<super>'+(m[1] or m[2])+'</super>',piece)
+        pieces[i]=piece.replace('{','').replace('}','').replace('\\','')
+    return re.sub(r'\*\*(.*?)\*\*',r'<b>\1</b>',''.join(pieces))
 methods={}
 for line in (ROOT/'ALGORITHM_GUIDE.md').read_text(encoding='utf-8').splitlines():
     if line.startswith('| `'):
@@ -135,7 +143,8 @@ class NumberedCanvas(canvas.Canvas):
         n=len(self.saved)
         for state in self.saved:
             self.__dict__.update(state);self.setFillColor(GREY);self.setFont('Lecture',8)
-            self.drawString(44,26,'Ehsan Roohi | CFD II | English teaching edition | 08 October 2026');self.drawRightString(W-44,26,f'{self._pageNumber} / {n}')
+            self.setStrokeColor(colors.black);self.setLineWidth(.4);self.line(50,40,W-50,40)
+            self.drawString(50,26,'Ehsan Roohi | CFD II | 2026');self.drawCentredString(W/2,26,f'{self._pageNumber}');self.drawRightString(W-50,26,'Lecture notes')
             super().showPage()
         super().save()
 class WaveFans(Flowable):
@@ -153,15 +162,22 @@ class WaveFans(Flowable):
                 c.setLineWidth(.7)
                 for z in [25,31,37,43,49]:c.line(origin,y,x+z,top)
             if j in (0,2):
-                c.setStrokeColor(colors.HexColor('#B75E21'));c.setDash(4,2);c.line(origin,y,x+panel*.67,top);c.setDash()
+                c.setStrokeColor(colors.black);c.setDash(4,2);c.line(origin,y,x+panel*.67,top);c.setDash()
             c.setFillColor(GREY);c.setFont('Lecture',8);c.drawCentredString(x+panel/2,10,'schematic wave speeds')
 def header(c,doc):
-    c.saveState();c.setStrokeColor(TEAL);c.setLineWidth(.6);c.line(44,H-37,W-44,H-37);c.setFillColor(GREY);c.setFont('Lecture',8);c.drawString(44,H-29,'MODERN CFD ALGORITHMS | FROM FACE FLUXES TO VERIFIABLE RESULTS');c.restoreState()
+    if doc.page==1:return
+    c.saveState();c.setStrokeColor(TEAL);c.setLineWidth(.4);c.line(50,H-37,W-50,H-37);c.setFillColor(GREY);c.setFont('Lecture',9);c.drawString(50,H-29,'CFD II: Modern Numerical Methods');c.drawRightString(W-50,H-29,'Cone Flow and Shock Tubes');c.restoreState()
 
-heading('CFD II / lecture notes','Modern CFD algorithms<br/>for the cone and shock tube')
-add('A teaching companion to the 2026 Python notebooks','sub');story.append(Spacer(1,18))
+plan.append('Modern CFD algorithms for the cone and shock tube')
+story.append(Spacer(1,40));add('Computational Fluid Dynamics II','coverline')
+story.append(HRFlowable(width=WIDTH,thickness=.8,color=colors.black,spaceBefore=12,spaceAfter=22))
+add('Modern CFD Algorithms<br/>for the Cone and Shock Tube','cover')
+add('Finite-volume fluxes, high-order reconstruction<br/>and verifiable numerical comparisons','coverline')
+story.append(HRFlowable(width=WIDTH,thickness=.8,color=colors.black,spaceBefore=10,spaceAfter=20))
+add('A teaching companion to the 2026 Python notebooks','coverline')
+add('English edition · 08 October 2026','coverline');story.append(Spacer(1,20))
 box('The question this lecture answers','How do numerical methods move mass, momentum and energy across a cell face, and why do their computed shocks and contacts differ?')
-add('Ehsan Roohi<br/>CFD II project modernization<br/>English edition - 08 October 2026');story.append(Spacer(1,14))
+add('Ehsan Roohi','coverline');story.append(Spacer(1,10))
 bullets(['15 implemented Euler face fluxes + standalone JST.','20 finite-volume reconstructions and DG degrees 0, 1 and 2.','Algorithm steps, advantages, limitations and coding exercises.','Actual Sod results, fixed uniform-grid refinement and exact-reference diagnostics.'])
 box('Scope','This lecture teaches the algorithms selectable in the shared cone/shock-tube code. The plotted benchmark solves inviscid planar Euler equations. It does not validate physical viscous transport or cover every CFD method in use.')
 add('Source baseline: public repository commit e7cd1655a07cbae51ab98d22bec87c274393fa55. Numerical algorithms and recorded results are unchanged by this lecture.','small')
@@ -314,9 +330,14 @@ fig('uniform-shock-contact-detail.png','HLLC + CWENO3. N=80,160,320,640,1280,256
 table([['N','Density L1','Shock width','Contact width'],['80','0.00881958','0.0355518','0.0600959'],['320','0.00239207','0.00906783','0.0225290'],['1280','0.000694095','0.00225816','0.00807732'],['2560','0.000416369','0.00112936','0.00481002']],[55,145,145,WIDTH-345])
 add('HLLC density L1 falls 95.28%. Shock width shrinks about 31.5-fold; contact width 12.5-fold. The finest shock spans 2.89 cells and contact 12.31 cells. Physical narrowing need not mean fewer transition cells.')
 
-heading('24 / all methods','Compare waves, not only one error')
-fig('uniform-all-method-shock-detail.png','All 15 pointwise fluxes use CWENO3; JST uses its own stencil. Six uniform grids in every panel, with the exact Sod shock.',485)
-box('An instructive exception','The current JST stencil shows oscillations at the jump. A narrow 10-90% width can miss this weakness. Compare width, overshoot, field errors and admissibility together; preserve unfavorable results too.')
+heading('24 / all methods / 1 of 4','Compare waves, not only one error')
+fig('uniform-all-method-shock-detail-1.png','Shock-density detail, group 1. Six uniform grids in each panel; the exact Sod reference is a long-dashed black line.',470)
+box('A controlled flux comparison','All 15 pointwise fluxes use CWENO3; JST uses its own stencil. These four comparison pages keep axis limits, final time and grids fixed. Symbols and line patterns distinguish grids without color.')
+for group in [2,3,4]:
+    heading(f'24 / all methods / {group} of 4',f'Shock resolution: method group {group}')
+    fig(f'uniform-all-method-shock-detail-{group}.png',f'Shock-density detail, group {group}. Recorded cell means are connected directly; no numerical smoothing is applied.',470)
+    if group==4:box('An instructive exception','The current JST stencil shows oscillations at the jump. A narrow 10-90% width can miss this weakness. Compare width, overshoot, field errors and admissibility together; preserve unfavorable results too.')
+    else:box('Reading prompt','Compare transition position, width and ringing as the uniform grid is refined. A visually narrower transition is useful only when strength, position and exact-reference errors remain consistent.')
 
 heading('25 / convergence','Formal order and measured error differ')
 fig('uniform-grid-error-convergence.png','Actual density, velocity and pressure L1 errors; each algorithm is held fixed as Δx decreases.',330)
@@ -338,11 +359,11 @@ bullets(['1. Shared interior terms cancel; only boundary fluxes remain. SSPRK co
 
 heading('29 / sources','Connect lessons to runnable code')
 url='https://github.com/Ehsan-Roohi/Ehsan-Roohi/tree/main/courses/cfd-2/modern-python'
-add(f'<link href="{url}" color="#087F8C">Open the course code and teaching files</link>')
+add(f'<link href="{url}" color="#000000">Open the course code and teaching files</link>')
 table([['Topic','Shared conical/ module'],['FV / DG / cases','shock_suite.py and shared DG core'],['Roe, HLL/C, LF, Van Leer','flux.py'],['Godunov, uncorrected Roe, SW, JST','additional_fluxes.py'],['AUSM / SLAU2','ausm.py'],['Entropy core + LF','entropy_flux.py'],['CWENO / MUSCL / characteristic weights','reconstruction.py'],['ENO / WENO / TENO / BVD','advanced_reconstruction.py'],['Recorded grids and diagnostics','results-uniform/catalog.json; shock-tube/UNIFORM_GRID_RESULTS.md']],[215,WIDTH-215])
 sub('Primary reading and code comparisons')
 for title,link in [('NASA shocktube: AUSM/AUSM+ examples','https://github.com/nasa/shocktube'),('Sun, Inaba and Xiao: Boundary Variation Diminishing (2016)','https://arxiv.org/abs/1602.00814'),('Ihme Group Quail: DG teaching and prototyping','https://github.com/IhmeGroup/quail'),('Riemann-Solvers: exact and approximate examples','https://github.com/cangyu/Riemann-Solvers')]:
-    add(f'<link href="{link}" color="#087F8C">{html.escape(title)}</link>','small')
+    add(f'<link href="{link}" color="#000000">{html.escape(title)}</link>','small')
 add('Descriptions and numerical values follow this course implementation and measured records. External codes/papers are reading references; their full algorithms and guarantees are not automatically implemented here.','small')
 box('Report with every numerical claim','Equations, flux, reconstruction, grid, boundaries, stepper, CFL, parameters, actual stopping time, reference definition and integrity checks. Preserve attribution and distinguish formal smooth order from measured error.')
 
@@ -353,17 +374,17 @@ readings=[
 ('Shu / Brown; NASA ICASE report (1997)','ENO and WENO lecture notes, Sections 2.1-2.3','https://academicweb.nd.edu/~zxu2/acms60790S13/Shu-WENO-notes.pdf','Teaching route: cell-average reconstruction, candidate stencils and nonlinear weights. The worked weight arithmetic here is new.'),
 ('Persson / UC Berkeley Math 228B','Discontinuous Galerkin Methods for Conservation Laws','https://persson.berkeley.edu/math228b/slides/dg_slides.pdf','Teaching route: derive FV from piecewise constants, then extend to element polynomials and common boundary fluxes.')]
 for author,title,link,idea in readings:
-    sub(author);add(f'<link href="{link}" color="#087F8C">{html.escape(title)}</link>','small');add(idea)
+    sub(author);add(f'<link href="{link}" color="#000000">{html.escape(title)}</link>','small');add(idea)
 add('Access checked 08 October 2026. These notes use original wording, exercises, diagrams and the course’s own measured figures. External lecture PDFs are linked, not reproduced. Their finite-difference, adaptive or viscous extensions are not added to this benchmark.','small')
-add('<b>Michigan context:</b> Fidkowski’s official teaching page lists CFD I/II, but that page does not supply a downloadable 2025/2026 lecture set. No such set is claimed as the source of these notes. <link href="https://public.websites.umich.edu/~kfid/teaching.html" color="#087F8C">Official teaching page</link>.','small')
+add('<b>Michigan context:</b> Fidkowski’s official teaching page lists CFD I/II, but that page does not supply a downloadable 2025/2026 lecture set. No such set is claimed as the source of these notes. <link href="https://public.websites.umich.edu/~kfid/teaching.html" color="#000000">Official teaching page</link>.','small')
 
 assert set(seen)==set(methods) and len(seen)==35
-assert len(plan)==33
-doc=SimpleDocTemplate(str(PDF),pagesize=A4,leftMargin=44,rightMargin=44,topMargin=58,bottomMargin=48,title='Modern CFD Algorithms - English Lecture Notes',author='Ehsan Roohi',subject='Finite-volume fluxes, reconstruction, DG and measured shock-tube comparisons')
+assert len(plan)==36
+doc=SimpleDocTemplate(str(PDF),pagesize=A4,leftMargin=50,rightMargin=50,topMargin=58,bottomMargin=52,title='Modern CFD Algorithms - English Lecture Notes',author='Ehsan Roohi',subject='Finite-volume fluxes, reconstruction, DG and measured shock-tube comparisons')
 doc.build(story,onFirstPage=header,onLaterPages=header,canvasmaker=NumberedCanvas)
 reader=PdfReader(PDF);texts=[page.extract_text() or '' for page in reader.pages]
 assert len(texts)==len(plan),(len(texts),len(plan),'A teaching section overflowed')
 full='\n'.join(texts);assert all(key in full for key in methods)
-record={'pages':len(texts),'language':'English','fluxes':15,'standalone_jst':True,'fv_reconstructions':20,'dg_degrees':[0,1,2],'all_selectable_methods_present':True,'sha256':hashlib.sha256(PDF.read_bytes()).hexdigest(),'bytes':PDF.stat().st_size,'planned_sections':plan,'numerical_source_commit':'e7cd1655a07cbae51ab98d22bec87c274393fa55','created_date':'2026-10-08','simulations_rerun':False}
+record={'pages':len(texts),'language':'English','font':'Times New Roman (embedded regular, bold and italic)','design':'Monochrome serif lecture notes inspired by the FlowMLLab reference layout','fluxes':15,'standalone_jst':True,'fv_reconstructions':20,'dg_degrees':[0,1,2],'all_selectable_methods_present':True,'sha256':hashlib.sha256(PDF.read_bytes()).hexdigest(),'bytes':PDF.stat().st_size,'planned_sections':plan,'numerical_source_commit':'e7cd1655a07cbae51ab98d22bec87c274393fa55','created_date':'2026-10-08','simulations_rerun':False}
 (OUT/'lecture-validation.json').write_text(json.dumps(record,indent=2)+'\n')
 print(json.dumps(record,indent=2))

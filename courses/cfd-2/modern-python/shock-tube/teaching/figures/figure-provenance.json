@@ -1,0 +1,38 @@
+{
+  "font": "Times New Roman",
+  "style": "monochrome",
+  "source_catalog_sha256": "59ba430970f4360e4e7de81a41302b7ba3e0d44c37a6c6e09a0b212c2543cc73",
+  "verified_records": 96,
+  "simulations_rerun": false,
+  "numerical_profiles": "Unmodified recorded cell means connected by straight segments",
+  "outputs": [
+    {
+      "path": "uniform-physical-properties.png",
+      "sha256": "d0c8d9cd54a6b2bd690e155c8e949a117aa01c7a0319da21290b0566fca8377b"
+    },
+    {
+      "path": "uniform-shock-contact-detail.png",
+      "sha256": "041eca81d73fc648049d9066cfc1b5fb04fea8c100807964437e5f32b77f568b"
+    },
+    {
+      "path": "uniform-all-method-shock-detail-1.png",
+      "sha256": "9afcbbbd9fa5a091c43972bf91c0d927c82273cb4ae397e7f5c36e9d00e3a4e0"
+    },
+    {
+      "path": "uniform-all-method-shock-detail-2.png",
+      "sha256": "dee2d1ab26c7834b58899488ab1cc6f6e66ddcdc97221bc09e6d7f809cca72bb"
+    },
+    {
+      "path": "uniform-all-method-shock-detail-3.png",
+      "sha256": "1868c72152affa80c300f9f913a4f1eefdb3c3a41ff7ef96c7c1807e09b1c7e4"
+    },
+    {
+      "path": "uniform-all-method-shock-detail-4.png",
+      "sha256": "80ef2151479be0ab034f386b7fc9aba81af6eccb6cad05f97f14b9bd694cbdea"
+    },
+    {
+      "path": "uniform-grid-error-convergence.png",
+      "sha256": "e465f98c5511e45577a03b9867c3301d045115a860643c76af71cd4c113662f7"
+    }
+  ]
+}

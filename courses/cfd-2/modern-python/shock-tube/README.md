@@ -1,6 +1,6 @@
 # Shock-tube algorithm comparison
 
-[Download the English lecture PDF](output/pdf/CFD_Algorithms_Lecture_2026.pdf): 33 teaching pages covering every implemented flux/reconstruction, DG, algorithm steps, advantages and limitations, worked examples, exercises with answers and measured shock-tube plots. A final reading map links the open LeVeque, Shu and Persson teaching resources that informed the explanations. [PDF source](teaching/build_lecture.py).
+[Download the English lecture PDF](output/pdf/CFD_Algorithms_Lecture_2026.pdf): 36 teaching pages covering every implemented flux/reconstruction, DG, algorithm steps, advantages and limitations, worked examples, exercises with answers and measured shock-tube plots. A final reading map links the open LeVeque, Shu and Persson teaching resources that informed the explanations. [PDF source](teaching/build_lecture.py). The monochrome edition uses embedded Times New Roman throughout, follows the FlowMLLab serif lecture layout, and separates the 16-method shock comparison into four readable pages. [Measured-figure generator](teaching/build_monochrome_figures.py) redraws the stored fields without rerunning or modifying simulations.
 
 ## Fixed uniform-grid refinement
 

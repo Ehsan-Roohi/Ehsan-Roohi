@@ -4,7 +4,7 @@ The personal CFD 2 projects are identified by Ehsan Roohi as coursework for Dr. 
 
 ## 2026 Python-project teaching companion
 
-[Modern CFD Algorithms - English lecture PDF](../modern-python/shock-tube/output/pdf/CFD_Algorithms_Lecture_2026.pdf), **33 pages**. This newly written course companion teaches all 15 implemented Euler fluxes, standalone JST, 20 FV reconstructions, DG degrees 0/1/2, SSPRK3, positivity controls and measured shock-tube refinement. It includes algorithms, advantages/limitations, worked examples and exercises with answers. The final reading map attributes the open LeVeque, Shu and Persson resources used for teaching ideas; their lecture files are linked rather than reproduced. This companion is separate from the preserved historical instructor notes below.
+[Modern CFD Algorithms - English lecture PDF](../modern-python/shock-tube/output/pdf/CFD_Algorithms_Lecture_2026.pdf), **36 pages**. This newly written course companion teaches all 15 implemented Euler fluxes, standalone JST, 20 FV reconstructions, DG degrees 0/1/2, SSPRK3, positivity controls and measured shock-tube refinement. It includes algorithms, advantages/limitations, worked examples and exercises with answers. The final reading map attributes the open LeVeque, Shu and Persson resources used for teaching ideas; their lecture files are linked rather than reproduced. This companion is separate from the preserved historical instructor notes below.
 
 
 ## Kazem Hejranfar - Sharif University of Technology
