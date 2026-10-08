@@ -1,5 +1,10 @@
 # Shock-tube algorithm comparison
 
+## Conservative local refinement
+
+[Local AMR report and plots](AMR_RESULTS.md) compare all 15 pointwise fluxes on uniform 80/160/320/640 grids and a density/pressure flagged leaf mesh: **75 additional runs, all passed**. The Colab includes raw FV stair plots, moving mesh snapshots, discontinuity widths and width-weighted errors. A separate fresh-AMR form exposes supported nonuniform CWENO/MUSCL choices. Uniform WENO/TENO, JST and DG comparisons remain separate.
+
+
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ehsan-Roohi/Ehsan-Roohi/blob/main/courses/cfd-2/modern-python/shock-tube/Shock_Tube_All_Methods_2026.ipynb)
 
 A separate results-first Python notebook for the numerical algorithms shared with [the cone project](../conical/README.md).

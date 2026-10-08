@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "nonuniform_polynomial_moment_error": 2.220446049250313e-16,
+  "split_conservation_error": 2.7755575615628914e-17,
+  "merge_conservation_error": 0.0,
+  "uniform_first_order_rhs_error": 3.552713678800501e-14,
+  "constant_rhs_max_errors": {
+    "roe": 1.7053025658242404e-13,
+    "vanleer": 4.263256414560601e-14,
+    "hllc": 1.7053025658242404e-13,
+    "hlle": 1.4210854715202004e-13,
+    "rusanov": 1.7053025658242404e-13,
+    "ausm": 4.263256414560601e-14,
+    "ausm-plus": 5.684341886080802e-14,
+    "ausm-up": 2.7000623958883807e-13,
+    "ausm-up2": 2.7000623958883807e-13,
+    "slau2": 1.7053025658242404e-13,
+    "ec-lf": 1.7053025658242404e-13,
+    "godunov": 8.526512829121202e-14,
+    "roe-nc": 1.7053025658242404e-13,
+    "steger-warming": 1.7053025658242404e-13,
+    "global-lf": 1.7053025658242404e-13
+  },
+  "nonuniform_flux_balance_errors": {
+    "roe": 9.806407205883619e-17,
+    "vanleer": 2.7755575615628914e-17,
+    "hllc": 6.869033207973463e-17,
+    "hlle": 8.337720219461964e-17,
+    "rusanov": 8.337720219461964e-17,
+    "ausm": 0.0,
+    "ausm-plus": 0.0,
+    "ausm-up": 4.42954658789487e-16,
+    "ausm-up2": 4.42954658789487e-16,
+    "slau2": 9.806407155744879e-17,
+    "ec-lf": 8.337720219461964e-17,
+    "godunov": 9.806407196331456e-17,
+    "roe-nc": 9.806407205883619e-17,
+    "steger-warming": 5.551115123125783e-17,
+    "global-lf": 4.983738675344267e-17
+  },
+  "stationary_contact_density_L1": 1.3140530330524324e-16,
+  "stationary_contact_conservation_defect": 6.585324405344726e-16,
+  "dyadic_2_to_1_partition_verified": true,
+  "supported_reconstruction_Sod_pilots": {
+    "first": {
+      "integrity_passed": true,
+      "density_L1": 0.015051542749006585,
+      "conservation_defect": 1.7103966897316636e-15
+    },
+    "muscl": {
+      "integrity_passed": true,
+      "density_L1": 0.003494947013008966,
+      "conservation_defect": 1.5543122344752192e-15
+    },
+    "minmod": {
+      "integrity_passed": true,
+      "density_L1": 0.005155777955708112,
+      "conservation_defect": 1.7250253753491463e-15
+    },
+    "cweno3": {
+      "integrity_passed": true,
+      "density_L1": 0.004542815826050907,
+      "conservation_defect": 2.4719952353674065e-15
+    },
+    "cweno5": {
+      "integrity_passed": true,
+      "density_L1": 0.002882683502088584,
+      "conservation_defect": 1.0806267496350124e-15
+    },
+    "cweno3-char": {
+      "integrity_passed": true,
+      "density_L1": 0.00438788640484064,
+      "conservation_defect": 1.8004833023533683e-15
+    },
+    "cweno5-char": {
+      "integrity_passed": true,
+      "density_L1": 0.002868902728208188,
+      "conservation_defect": 2.1878285342959465e-15
+    }
+  }
+}

@@ -9,6 +9,10 @@
   "reconstructions": 20,
   "standalone_stencils": 1,
   "dg_runs": 135,
+  "amr_comparison_runs": 75,
+  "amr_comparison_integrity_passed": 75,
+  "adaptive_fluxes": 15,
+  "conservative_remapping_and_2_to_1_widths_verified": true,
   "all_saved_fields_positive_finite": true,
   "DG0_vs_first_order_FV_max_state_errors": {
     "roe": 0.0,
@@ -27,58 +31,70 @@
     "steger-warming": 0.0,
     "global-lf": 0.0
   },
-  "rendered_figures": 16,
+  "rendered_figures": 21,
   "cells": [
     {
       "cell": 1,
       "passed": true,
       "figures": 0,
-      "seconds": 38.638890699949116
+      "seconds": 40.85535680002067
     },
     {
       "cell": 3,
       "passed": true,
       "figures": 2,
-      "seconds": 154.4297654000111
+      "seconds": 6.578589299926534
     },
     {
       "cell": 5,
       "passed": true,
       "figures": 1,
-      "seconds": 75.75944980001077
+      "seconds": 4.260208999970928
     },
     {
       "cell": 7,
       "passed": true,
       "figures": 1,
-      "seconds": 52.823850900051184
+      "seconds": 2.3359754000557587
     },
     {
       "cell": 9,
       "passed": true,
       "figures": 5,
-      "seconds": 107.14101120003033
+      "seconds": 10.235332400072366
     },
     {
       "cell": 11,
       "passed": true,
       "figures": 4,
-      "seconds": 59.58165290008765
+      "seconds": 8.53266479994636
     },
     {
       "cell": 13,
       "passed": true,
       "figures": 3,
-      "seconds": 118.88601220003329
+      "seconds": 7.112588500021957
     },
     {
       "cell": 15,
       "passed": true,
+      "figures": 5,
+      "seconds": 25.61947739997413
+    },
+    {
+      "cell": 17,
+      "passed": true,
       "figures": 0,
-      "seconds": 0.001259300042875111
+      "seconds": 0.00024100008886307478
+    },
+    {
+      "cell": 19,
+      "passed": true,
+      "figures": 0,
+      "seconds": 0.0005403999239206314
     }
   ],
-  "runtime_sha256": "89aaadabe6b112d3b82bb60a1e9e1a48aae9156b8c43a1442096407ab03ea04e",
+  "runtime_sha256": "dab1b351137643d43f02384a4faf1e76b2806fae2a927873f5de894671d3e7a0",
   "executed_on": "Local CPU; exact runtime ZIP supplied locally. Google runtime not remotely executed.",
   "numpy": "2.5.3",
   "matplotlib": "3.11.2",

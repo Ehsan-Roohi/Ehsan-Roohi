@@ -1,0 +1,66 @@
+{
+  "config": {
+    "case": "sod",
+    "flux": "global-lf",
+    "reconstruction": "cweno3",
+    "base_cells": 80,
+    "max_level": 0,
+    "gamma": 1.4,
+    "cfl": 0.25,
+    "refine_threshold": 0.02,
+    "coarsen_threshold": 0.004,
+    "buffer_cells": 4,
+    "regrid_every": 8,
+    "max_steps": 100000
+  },
+  "completed": true,
+  "integrity_passed": true,
+  "termination": "Final physical time reached",
+  "time": 0.2,
+  "steps": 137,
+  "elapsed_seconds": 0.251447300077416,
+  "active_cells": 80,
+  "peak_cells": 80,
+  "mean_active_cells": 80.0,
+  "min_cell_width": 0.012499999999999956,
+  "conservation_budget_defect": 1.5317829241088626e-15,
+  "events": {
+    "rejected_steps": 0,
+    "limited_cells": 0,
+    "regrids": 0,
+    "split_cells": 0,
+    "merged_pairs": 0,
+    "rhs_cell_updates": 32880,
+    "max_remap_defect": 0.0,
+    "cumulative_abs_remap_defect": 0.0
+  },
+  "errors": {
+    "density": {
+      "L1": 0.011665017073779016,
+      "L2": 0.019040135166772845,
+      "Linf": 0.05746236084187145
+    },
+    "velocity": {
+      "L1": 0.021814741722139874,
+      "L2": 0.05847844653634427,
+      "Linf": 0.4207991747003339
+    },
+    "pressure": {
+      "L1": 0.009809251041220735,
+      "L2": 0.018481463557790866,
+      "Linf": 0.07318235916158712
+    }
+  },
+  "reference_quadrature_change": 2.9449808439372414e-05,
+  "jump_widths": {
+    "contact": {
+      "exact_location": 0.6854905240097899,
+      "width_10_90": 0.07885194790230843
+    },
+    "shock": {
+      "exact_location": 0.8504311464060357,
+      "width_10_90": 0.03941889275306343
+    }
+  },
+  "scope": "Nonuniform FV CWENO/MUSCL; global stepping, 2:1 leaf mesh, conservative regridding; no DG or nonuniform WENO/TENO/JST"
+}

@@ -1,5 +1,10 @@
 # Executed shock-tube comparisons
 
+## Local refinement of rounded discontinuities
+
+The new [75-run adaptive-refinement report](AMR_RESULTS.md) compares uniform controls with moving local refinement around shocks and contacts. All 15 shared fluxes are included. The original 592-run study below remains unchanged.
+
+
 **592 runs executed; 589 reached the requested physical time and passed the recorded conservation/positivity checks.**
 The complete 15-flux × 20-reconstruction Sod matrix contains 300 completed runs. These are algorithm combinations, not 300 independent physical models.
 
