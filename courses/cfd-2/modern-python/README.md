@@ -10,6 +10,8 @@ The historical Fortran archive is preserved. Euler-airfoil and viscous-airfoil P
 
 ## Expanded flux/reconstruction and shock-tube comparison
 
+[English algorithm lecture PDF](shock-tube/output/pdf/CFD_Algorithms_Lecture_2026.pdf): 33 teaching pages on the shared inviscid flux/reconstruction and DG algorithms, with advantages, limitations, worked examples, exercises and the recorded shock-tube comparisons.
+
 [Expanded cone algorithms](conical/ADDITIONAL_METHODS.md) · [Separate shock-tube Colab and report](shock-tube/README.md)
 
 15 shared Euler fluxes, 20 FV reconstructions and standalone JST are available. The cone notebook retains the original study and adds 46 cases; the separate shock-tube notebook covers 592 uniform/DG runs plus [96 uniform-grid comparisons](shock-tube/UNIFORM_GRID_RESULTS.md). The full 300-combination Sod matrix remains available. Failed cases remain visible.

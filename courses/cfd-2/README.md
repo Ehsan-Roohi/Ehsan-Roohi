@@ -46,6 +46,8 @@ The Python edition is a corrected independent continuation of the archived mathe
 
 ## Lectures and study sequence
 
+[**New English algorithm lecture PDF - 33 pages**](modern-python/shock-tube/output/pdf/CFD_Algorithms_Lecture_2026.pdf) teaches the implemented inviscid Python fluxes, reconstructions, DG and time integration, with advantages/limitations, worked examples, exercises and measured shock-tube plots. Open university teaching references are credited in its reading map.
+
 [Lecture index](lectures/README.md): **23 educational PDFs** comprising eight Hejranfar chapter/scanned-note files, three Bakker/Van Leer supplementary files, and eleven RWTH Aachen lecture PDFs with one syllabus. The instructors are identified separately. Mazaheri's own independent lecture files have not been identified in the searched folders.
 
 1. Read Hejranfar chapters 1-3 for governing equations, Euler structure and boundary conditions; then examine Project 1.

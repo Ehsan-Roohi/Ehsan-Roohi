@@ -1,5 +1,7 @@
 # Shock-tube algorithm comparison
 
+[Download the English lecture PDF](output/pdf/CFD_Algorithms_Lecture_2026.pdf): 33 teaching pages covering every implemented flux/reconstruction, DG, algorithm steps, advantages and limitations, worked examples, exercises with answers and measured shock-tube plots. A final reading map links the open LeVeque, Shu and Persson teaching resources that informed the explanations. [PDF source](teaching/build_lecture.py).
+
 ## Fixed uniform-grid refinement
 
 [Six-grid report and plots](UNIFORM_GRID_RESULTS.md) compare all 15 shared fluxes and standalone JST on **80, 160, 320, 640, 1280 and 2560 fixed uniform cells**. The 96 grid/method comparisons show continuous cell-center curves, shock/contact details, physical properties, L1 errors and measured transition widths. The original 592-run study remains available below.
